@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Montserrat'; /*a name to be used later*/
+    src: url('fonts/Montserrat-Light.otf'); /*URL to font*/
+}
+
+.font {
+	font-family: 'Montserrat';
+}
+
+.navbar-custom {
+	background-color: #000000;
+	height: 6vw;
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+.navbar-container {
+	padding-left: 150px;
+	padding-right: 150px;
+	height: 100%;
+	width: 100%;
+}
+
+.navbar-header-custom {
+	height: 6vw;
+	margin-left: 150px;
+}
+
+.navbar-sep {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.navbar-nav-custom {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.navbar-header-custom::before {
+	height: 100%;
+}
+
+.navbar-header-text {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 2vw;
+}
+
+.navbar-header-text:hover {
+	text-decoration: none;
+}
+
+.navbar-home-link {
+	position: relative;
+	top: 10%;
+	transform: translateY(-10%);
+}
+
+.landing-container {
+	background-image: url('../images/space.jpg');
+	height: 45vw;
+}
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	transform: translateY(-60%);
+}
+
+.landing-text {
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.landing-sep {
+	font-size: 80px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.landing-rush-button,
+.landing-rush-button:active,
+.landing-rush-button:visited {
+	margin-top: 20px;
+	border: 2px solid white;
+	color: white;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+.landing-rush-button:hover {
+	border: 2px solid white;
+	color: white;
+	background-color: #cccccc;
+}
+
+.about-text {
+	font-size: 18px;
+}
+
+.about-est {
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.about-divider {
+	border: 1px solid #dddddd;
+}
+
+.brothers-header {
+	font-size: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.brothers-pic-container {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.brothers-pic-container:hover {
+	background-color: #95bfdf;
+}
+
+.brothers-pic {
+	width: 300px;
+}
+
+.brothers-pic-subtitle {
+	font-size: 16px;
+	text-align: center;
+	padding-top: 7px;
+	color: #000000;
+}
+
+.brothers-container {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.brothers-row {
+	margin-bottom: 30px;
+}
+
+
+
+.ventures-header {
+	font-size: 50px;
+}
+
+.ventures-row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.ventures-pic:hover {
+	background-color: #0000ff;
+	opacity: 0.8;
+}
+
+
+.rush-header {
+	padding-top: 50px;
+	font-size: 70px;
+}
+
+.rush-application-button {
+	font-size: 16px;
+	background-color: #346781;
+	color: #ffffff;
+	padding: 10px 10px 10px 10px;
+}
+
+.rush-application-button:hover {
+	background-color: #5b91ab;
+	color: #ffffff;
+}
+
+.rush-schedule-container {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
