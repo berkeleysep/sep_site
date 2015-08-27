@@ -119,10 +119,11 @@
 	border-right: 1px solid #000000;
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
+	background-color: #95bfdf;
 }
 
 .brothers-pic-container:hover {
-	background-color: #95bfdf;
+	background-color: #b3ccdf;
 }
 
 .brothers-pic {
@@ -145,7 +146,22 @@
 	margin-bottom: 30px;
 }
 
+span.brothers-text-content {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	display: table;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
 
+span.brothers-text-content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
 
 .ventures-header {
 	font-size: 50px;
