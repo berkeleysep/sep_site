@@ -1,22 +1,41 @@
 @font-face {
     font-family: 'Montserrat'; /*a name to be used later*/
-    src: url('fonts/Montserrat-Light.otf'); /*URL to font*/
+    src: url('fonts/Montserrat-Bold.ttf'); /*URL to font*/
 }
 
-.font {
+@font-face {
+	font-family: 'Crimson';
+	src: url('fonts/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url('fonts/Montserrat-Light.otf');
+}
+
+.montserrat {
 	font-family: 'Montserrat';
 }
 
+.crimson {
+	font-family: 'Crimson';
+}
+
+.montserrat-light {
+	font-family: 'Montserrat-Light';
+}
+
 .navbar-custom {
-	background-color: #2b3130;
+	background-color: transparent;
 	height: 6vw;
 	margin-bottom: 0;
 	border-bottom: 0;
 }
 
 .navbar-container {
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
 	height: 100%;
 	width: 100%;
 }
@@ -32,7 +51,10 @@
 }
 
 .navbar-nav-custom {
-	background-color: #2b3130;
+	color: #ffffff;
+}
+
+.navbar-nav-custom:hover {
 	color: #ffffff;
 }
 
@@ -50,21 +72,39 @@
 	text-decoration: none;
 }
 
+.navbar-rush-link {
+	border: 2px solid #ffffff;
+	border-radius: 25px;
+}
+
+.navbar-rush-link:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
 .navbar-home-link {
 	position: relative;
-	top: 10%;
-	transform: translateY(-10%);
+	top: 15%;
+	transform: translateY(-15%);
 }
 
 .landing-container {
-	background-image: url('../images/space.jpg');
-	height: 45vw;
+	background-image: url('../images/home1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 55vw;
+}
+
+.landing-header-vertical-align {
+	position: relative;
+	transform: translateY(-60%);
+	top: 40%;
 }
 
 .vertical-align {
 	position: relative;
 	top: 50%;
-	transform: translateY(-60%);
+	transform: translateY(-50%);
 }
 
 .landing-text {
@@ -75,7 +115,7 @@
 }
 
 .landing-sep {
-	font-size: 80px;
+	font-size: 70px;
 	color: #ffffff;
 	text-align: center;
 }
@@ -83,15 +123,21 @@
 .landing-rush-button,
 .landing-rush-button:active,
 .landing-rush-button:visited {
-	margin-top: 20px;
+	margin-top: 10px;
 	border: 2px solid #36b3a8;
-	color: white;
 	background-color: #36b3a8;
+	color: white;
 	font-size: 16px;
+	border-radius: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .landing-rush-button:hover {
-	opacity: .8;
+	background-color: #57c7bd;
+	border: 2px solid #57c7bd;
 }
 
 .landing-potential-header {
@@ -129,13 +175,43 @@
 	color: #36b3a8;
 }
 
+.pre-footer {
+	background-color: #3d4040;
+	height: 10%;
+}
+
 .footer {
-	background-color: #3a4d4a;
-	height: 15%;
+	background-color: #212222;
+	height: 20%;
+}
+
+.about-container {
+	background-image: url('../images/statistics1.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 35vw;
+	background-position: 30% 45%;
+}
+
+.about-banner {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(-65%);
+	top: 40%;
+}
+
+.about-header {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .about-text {
 	font-size: 18px;
+	padding-left: 200px;
+	padding-right: 200px;
+	line-height: 30px;
+	padding-bottom: 100px;
 }
 
 .about-est {
@@ -145,6 +221,24 @@
 
 .about-divider {
 	border: 1px solid #dddddd;
+	margin-top: 0;
+	width: 75%;
+}
+
+.brothers-banner {
+	background-image: url('../images/about1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 35vw;
+	background-position: 30% 40%;
+}
+
+.brothers-banner-text {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(-65%);
+	top: 40%;
 }
 
 .brothers-header {
@@ -153,20 +247,20 @@
 	padding-bottom: 20px;
 }
 
+.brothers-container {
+	padding-top: 75px;
+	padding-bottom: 100px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
 .brothers-pic-container {
-	border-left: 1px solid #000000;
-	border-right: 1px solid #000000;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	background-color: #95bfdf;
+	border-radius: 15%;
+	overflow: hidden;
 }
 
 .brothers-pic-container:hover {
 	background-color: #b3ccdf;
-}
-
-.brothers-pic {
-	width: 300px;
 }
 
 .brothers-pic-subtitle {
@@ -176,13 +270,68 @@
 	color: #000000;
 }
 
-.brothers-container {
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
 .brothers-row {
 	margin-bottom: 30px;
+}
+
+.brothers-pic {
+	position: relative;
+}
+
+.brothers-pic img {
+	vertical-align: top;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.brothers-pic:after, .brothers-pic:before {
+	position: absolute;
+	opacity: 0;
+}
+
+.brothers-pic:after {
+	content: '\A';
+	width: 100%; height: 100%;
+	top: 0; left:0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.brothers-pic:before {
+	content: attr(data-content);
+	width: 100%;
+	color: #fff;
+	z-index: 1;
+	bottom: 0;
+	padding-bottom: 50%;
+	text-align: center;
+	font-size: 18px;
+}
+
+.brothers-pic:hover:after, .brothers-pic:hover:before {
+	opacity: 1;
+	border-radius: 10px;
+}
+
+.brothers-caption {
+	position: absolute;
+	color: #fff;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	margin-top: -100%;
+	text-align: center;
+	padding-top: 20%;
+}
+
+.brothers-caption:hover {
+	opacity: 1;
+}
+
+.brothers-caption-divider {
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 span.brothers-text-content {
@@ -202,6 +351,22 @@ span.brothers-text-content span {
 	vertical-align: middle;
 }
 
+.ventures-banner {
+	background-image: url('../images/ventures1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 35vw;
+	background-position: 30% 40%;
+}
+
+.ventures-banner-text {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(-65%);
+	top: 40%;
+}
+
 .ventures-header {
 	font-size: 50px;
 }
@@ -218,6 +383,28 @@ span.brothers-text-content span {
 	opacity: 0.8;
 }
 
+.rush-banner {
+	background-image: url('../images/rush1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 35vw;
+	background-position: 30% 40%;
+}
+
+.rush-banner-text {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(-65%);
+	top: 40%;
+}
+
+.rush-container {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
 
 .rush-header {
 	padding-top: 50px;
@@ -240,4 +427,10 @@ span.brothers-text-content span {
 	text-align: center;
 	padding-bottom: 100px;
 }
+
+.rush-event-container {
+	height: 15em;
+}
+
+
 
