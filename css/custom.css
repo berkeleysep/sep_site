@@ -401,14 +401,6 @@ span.brothers-text-content span {
 	transform: translateY(200%);
 }
 
-.rush-banner {
-	background-image: url('../images/rush1.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 35vw;
-	background-position: 30% 40%;
-}
-
 .rush-banner-text {
 	font-size: 60px;
 	color: #ffffff;
@@ -417,11 +409,9 @@ span.brothers-text-content span {
 	top: 40%;
 }
 
-.rush-container {
+.rush-box {
 	padding-top: 80px;
 	padding-bottom: 100px;
-	padding-left: 10%;
-	padding-right: 10%;
 }
 
 .rush-header {
@@ -447,6 +437,29 @@ span.brothers-text-content span {
 }
 
 .rush-event-container {
-	height: 15em;
+	height: 3em;
+}
+
+.rush-container {
+	background-image: url('../images/rush1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 35vw;
+	background-position: 30% 45%;
+}
+
+.rush-banner {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(-65%);
+	top: 40%;
+}
+
+.rush-banner-text {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(150%);
 }
 
