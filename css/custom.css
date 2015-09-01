@@ -206,7 +206,7 @@
 	font-size: 60px;
 	color: #ffffff;
 	position: relative;
-	transform: translateY(170%);
+	transform: translateY(200%);
 }
 
 .about-header {
@@ -231,19 +231,27 @@
 	width: 75%;
 }
 
-.brothers-banner {
+.brothers-container {
 	background-image: url('../images/about1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 35vw;
-	background-position: 30% 40%;
+	background-position: 30% 45%;
+}
+
+.brothers-banner {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(-65%);
+	top: 40%;
 }
 
 .brothers-banner-text {
 	font-size: 60px;
 	color: #ffffff;
 	position: relative;
-	transform: translateY(170%);
+	transform: translateY(200%);
 }
 
 .brothers-header {
@@ -252,7 +260,7 @@
 	padding-bottom: 20px;
 }
 
-.brothers-container {
+.brothers-box {
 	padding-top: 70px;
 	padding-bottom: 100px;
 }
@@ -354,20 +362,12 @@ span.brothers-text-content span {
 	vertical-align: middle;
 }
 
-.ventures-banner {
+.ventures-container {
 	background-image: url('../images/ventures1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 35vw;
-	background-position: 30% 40%;
-}
-
-.ventures-banner-text {
-	font-size: 60px;
-	color: #ffffff;
-	position: relative;
-	transform: translateY(-65%);
-	top: 40%;
+	background-position: 30% 45%;
 }
 
 .ventures-header {
@@ -384,6 +384,21 @@ span.brothers-text-content span {
 .ventures-pic:hover {
 	background-color: #0000ff;
 	opacity: 0.8;
+}
+
+.ventures-banner {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(-65%);
+	top: 40%;
+}
+
+.ventures-banner-text {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(200%);
 }
 
 .rush-banner {
