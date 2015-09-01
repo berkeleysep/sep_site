@@ -75,6 +75,8 @@
 .navbar-rush-link {
 	border: 2px solid #ffffff;
 	border-radius: 25px;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .navbar-rush-link:hover {
@@ -92,13 +94,13 @@
 	background-image: url('../images/home1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 55vw;
+	height: 700px;
 }
 
 .landing-header-vertical-align {
 	position: relative;
-	transform: translateY(-60%);
-	top: 40%;
+	transform: translateY(50%);
+	top: 50%;
 }
 
 .vertical-align {
@@ -117,7 +119,6 @@
 .landing-sep {
 	font-size: 70px;
 	color: #ffffff;
-	text-align: center;
 }
 
 .landing-rush-button,
@@ -201,6 +202,13 @@
 	top: 40%;
 }
 
+.about-banner-text {
+	font-size: 60px;
+	color: #ffffff;
+	position: relative;
+	transform: translateY(170%);
+}
+
 .about-header {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -208,8 +216,6 @@
 
 .about-text {
 	font-size: 18px;
-	padding-left: 200px;
-	padding-right: 200px;
 	line-height: 30px;
 	padding-bottom: 100px;
 }
@@ -237,8 +243,7 @@
 	font-size: 60px;
 	color: #ffffff;
 	position: relative;
-	transform: translateY(-65%);
-	top: 40%;
+	transform: translateY(170%);
 }
 
 .brothers-header {
@@ -248,10 +253,8 @@
 }
 
 .brothers-container {
-	padding-top: 75px;
+	padding-top: 70px;
 	padding-bottom: 100px;
-	padding-left: 150px;
-	padding-right: 150px;
 }
 
 .brothers-pic-container {
