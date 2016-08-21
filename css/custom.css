@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Montserrat'; /*a name to be used later*/
+    font-family: 'Montserrat'; a name to be used later
     src: url('fonts/Montserrat-Bold.ttf'); /*URL to font*/
 }
 
@@ -12,15 +12,15 @@
 	font-family: 'BlenderPro-Medium';
 	src: url('fonts/BlenderPro-Medium.ttf');
 }
-
+/*
 @font-face {
 	font-family: 'Montserrat-Light';
 	src: url('fonts/Montserrat-Light.otf');
-}
-
+}*/
+/*
 .montserrat {
 	font-family: 'Montserrat';
-}
+}*/
 
 .blender-bold {
 	font-family: 'BlenderPro-Bold';
@@ -30,9 +30,9 @@
 	font-family: 'BlenderPro-Medium';
 }
 
-.montserrat-light {
+/*.montserrat-light {
 	font-family: 'Montserrat-Light';
-}
+}*/
 
 h2 {
 	margin-top: 0px;
@@ -122,12 +122,33 @@ p {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 960px;
+	width: 100%;
+}
+
+.landing-container figure img{
+	width: 100%;
+	margin-top: 4em;
 }
 
 .landing-header-vertical-align {
 	position: relative;
 	transform: translateY(50%);
 	top: 50%;
+}
+
+.parallax-container {
+	margin: 0;
+	padding: 0;
+}
+
+.parallax-container{
+	background-image: url('../images/_home_symbols.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 960px;
+	width: 100%;
+	position: absolute;
+	top: 0;
 }
 
 .vertical-align {
@@ -147,6 +168,7 @@ p {
 	font-size: 70px;
 	color: #ffffff;
 }
+
 
 .landing-rush-button,
 .landing-rush-button:active,
@@ -206,7 +228,7 @@ p {
 }
 
 .about-container {
-	background-image: url('../images/statistics1.jpeg');
+	background-image: url('../images/_about1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 35vw;
