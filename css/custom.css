@@ -34,12 +34,18 @@
 	font-family: 'Montserrat-Light';
 }*/
 
+h1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 h2 {
 	margin-top: 0px;
 	font-size: 48px;
 	letter-spacing: 5px;
 	line-height: 64px;
 	vertical-align: text-top;
+
 }
 
 p {
@@ -99,15 +105,23 @@ p {
 	text-decoration: none;
 }
 
+.about .navbar-rush-link {
+	border: 2px solid #000;
+}
+
+.brothers .navbar-rush-link {
+	border: 2px solid #000;
+}
+
 .navbar-rush-link {
-	border: 2px solid #ffffff;
+	border: 2px solid #fff;
 	border-radius: 25px;
 	padding-top: 0;
 	padding-bottom: 0;
 }
 
 .navbar-rush-link:hover {
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #000000;
 }
 
@@ -118,10 +132,16 @@ p {
 }
 
 .landing-container {
-	background-image: url('../images/_home1.png');
-	background-repeat: no-repeat;
+	/*background-image: url('../images/_home1.png');*/
+	/*background-repeat: no-repeat;*/
 	background-size: 100%;
 	height: 960px;
+	width: 100%;
+}
+
+.landing-container .landing-hero-img {
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 
@@ -149,6 +169,10 @@ p {
 	width: 100%;
 	position: absolute;
 	top: 0;
+}
+
+.parallax-window {
+	min-height: 400px;
 }
 
 .vertical-align {
@@ -218,20 +242,40 @@ p {
 }
 
 .pre-footer {
-	background-color: #3d4040;
+	background-color: transparent;
 	height: 10%;
 }
 
 .footer {
-	background-color: #212222;
+	background-color: #fff;
 	height: 20%;
 }
 
+.about a, navbar a,  img, navbar a span {
+	color: #000 !important;
+}
+
+.about .navbar-sep {
+	color: #000 !important;
+}
+
+.brothers a, navbar a,  img, navbar a span {
+	color: #000 !important;
+}
+
+.brothers .navbar-sep {
+	color: #000 !important;
+}
+
+.rush navbar a span {
+	color: #fff !important;
+}
+
 .about-container {
-	background-image: url('../images/_about1.jpg');
+	/*background-image: url('../images/_about1.jpg');*/
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 35vw;
+	/*height: 35vw;*/
 	background-position: 30% 45%;
 }
 
@@ -248,6 +292,11 @@ p {
 	color: #ffffff;
 	position: relative;
 	transform: translateY(200%);
+}
+
+.about .container  {
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 
 .about-header {
@@ -273,7 +322,7 @@ p {
 }
 
 .brothers-container {
-	background-image: url('../images/about1.jpg');
+	background-image: url('../images/_about1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 35vw;
