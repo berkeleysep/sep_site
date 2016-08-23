@@ -5,67 +5,62 @@
 		<link rel="stylesheet" type="text/css" href="css/custom.css">
 	</head>
 	<body class='blender-medium' >
-	    <div class='landing-container' >
-	    	<img class="landing-hero-img" src="images/_home1.png"  />
-	    	<nav class="navbar navbar-default navbar-static-top navbar-custom">
-			    <div class='navbar-container'>
-			    	<a href='home.html' class='navbar-home-link'>
-				    	<img src='images/logo.png' width='50px'>
-				    	<span class='navbar-sep blender-bold'>SIGMA ETA PI</span>
-			    	</a>
-			    	<ul class="nav navbar-nav pull-right vertical-align navbar-nav-custom blender-bold">
-			    		<li class='active'><a href='about.html'>ABOUT</a></li>
-			    		<li class='active'><a href='brothers.html'>BROTHERS</a></li>
-			    		<li class='active'><a href='ventures.html'>VENTURES	</a></li>
-			    		<li class='active navbar-rush-link'><a href='rush.html'>RUSH</a></li>
-			    	</ul>
-			    </div>
-		    </nav>
-		<!--     <div class='container'>
+
+
+		<nav class="blender-bold navbar navbar-default navbar-static-top navbar-custom">
+		    <div class='navbar-container'>
+		    	<a href='home.html' class='navbar-home-link'>
+			    	<img src='images/logo.png' width='50px'>
+			    	<span class='navbar-sep'>SIGMA ETA PI</span>
+		    	</a>
+		    	<ul class="nav navbar-nav pull-right vertical-align navbar-nav-custom">
+		    		<li class='active'><a href='about.html'>ABOUT</a></li>
+		    		<li class='active'><a href='brothers.html'>BROTHERS</a></li>
+		    		<li class='active'><a href='ventures.html'>VENTURES	</a></li>
+		    		<li class='active navbar-rush-link'><a href='rush.html'>RUSH</a></li>
+		    	</ul>
+		    </div>
+	    </nav>
+	    <div id="bg1" class='skrollable' data-0="background-position:0px 0px;" data-10000="background-position:-500px -10000px;">
+		    <div class='landing-container' >
+
+		    	<img class="landing-hero-img" src="images/_home1.png"  />
+
+		    </div>
+
+		    <div class='container'>
 			    <div class='row'>
-			    	<div class='col-md-12 col-sm-12 col-xs-12'>
-				    	<div class='text-center landing-header-vertical-align'>
-				    		<span class='landing-sep montserrat'>SIGMA ETA PI</span>
-				    		<br>
-				    		<div class='landing-text'><i>Berkeley's Premier Co-Ed Entrepreneurship Fraternity</i></div>
-				    		<br>
-				    		<a class='btn btn-default landing-rush-button montserrat-light' href='rush.html'>RUSH</a>
-				    	</div>
+			    	<div class='col-md-6 col-sm-12 col-xs-12'>
+				    	<h2 class='left-header'> Sigma Eta Pi is dedicated to developing human potential.</h2>
+				    </div>
+				    <div class='col-md-6 col-sm-12'>
+						<p class='left-align'>Our mission is to transform individuals into starters who follow their passion, develop lasting relationships, and create value through innovative pursuits. We educate our brothers with the most comprehensive knowledge of the startup ecosystem and venture processes and equip them with a concrete set of skills sourced from the diverse backgrounds of our house.</p>
 				    </div>
 			    </div>
-			</div> -->
-	    </div>
-	   <!--  <div class="parallax-container parallax-window" data-parallax="scroll">
-	    </div> -->
-	    <div class='container'>
-		    <div class='row text-center'>
-		    	<div class='col-md-6 col-sm-12 col-xs-12'>
-			    	<h2 class='landing-potential-header'> Sigma Eta Pi is dedicated to developing human potential.</h2>
-			    </div>
-			    <div class='col-md-6 col-sm-12'>
-					<p class='landing-potential-text'>Our mission is to transform individuals into starters who follow their passion, develop lasting relationships, and create value through innovative pursuits. We educate our brothers with the most comprehensive knowledge of the startup ecosystem and venture processes and equip them with a concrete set of skills sourced from the diverse backgrounds of our house.</p>
-			    </div>
-		    </div>
-		</div>
-		<!-- <div class="container landing-container">
-			<div class='row text-center'>
-				<div class="col-md-12">
-					<figure>
-						<img class src="images/_home2.jpg"/>
-					</figure>
-				</div>
 			</div>
-		</div> -->
 
-    	<div class="container">
-	    	<div class="row">
-	    			<div class="col-md-6"> </div>
-	    			<div class="col-md-6">
-	    				<br/><br/><br/><br/><br/>
-	    				&copy; Sigma Eta Pi 2016</div>
+	    	<div class="container">
+		    	<div class="row">
+		    			<div class="col-md-6"> </div>
+		    			<div class="col-md-6">
+		    				<br/><br/><br/><br/><br/>
+		    				&copy; Sigma Eta Pi 2016</div>
 	    		</div>
 	    		<br/>
 	    	</div>
+    	</div>
+    	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	    <script type="text/javascript">
+	    var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	    </script>
 	</body>
 	<footer>
 	</footer>
