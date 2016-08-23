@@ -33,6 +33,20 @@
 /*.montserrat-light {
 	font-family: 'Montserrat-Light';
 }*/
+/*.skrollable {
+	position:fixed;
+}*/
+
+
+#bg1 {
+	z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(../images/_home_symbols.png) repeat 0 0;
+    /*overflow: hidden;*/
+    background-size: contain;
+}
 
 h1 {
 	margin-top: 0px;
@@ -45,6 +59,7 @@ h2 {
 	letter-spacing: 5px;
 	line-height: 64px;
 	vertical-align: text-top;
+	font-family: BlenderPro-Bold;
 
 }
 
@@ -58,19 +73,28 @@ p {
 	max-width: 1080px;
 }
 
+.about.container, .ventures.container {
+	padding-top: 4em;
+}
+
 .navbar-custom {
 	background-color: transparent;
 	height: 6vw;
 	margin-bottom: 0;
 	border-bottom: 0;
+	position:fixed;
 }
 
 .navbar-container {
-	padding-top: 10px;
+	padding-top: 3em;
 	padding-left: 25px;
 	padding-right: 25px;
-	height: 100%;
+	/*height: 100%;*/
 	width: 100%;
+
+	clear: both;
+    display: block;
+    position: fixed;
 }
 
 .navbar-header-custom {
@@ -105,11 +129,7 @@ p {
 	text-decoration: none;
 }
 
-.about .navbar-rush-link {
-	border: 2px solid #000;
-}
-
-.brothers .navbar-rush-link {
+.black-nav .navbar-rush-link {
 	border: 2px solid #000;
 }
 
@@ -129,6 +149,7 @@ p {
 	position: relative;
 	top: 15%;
 	transform: translateY(-15%);
+	float:left;
 }
 
 .landing-container {
@@ -139,9 +160,10 @@ p {
 	width: 100%;
 }
 
-.landing-container .landing-hero-img {
+.landing-hero-img {
 	position: absolute;
 	top: 0;
+	/*height: 960px;*/
 	width: 100%;
 }
 
@@ -150,47 +172,10 @@ p {
 	margin-top: 4em;
 }
 
-.landing-header-vertical-align {
-	position: relative;
-	transform: translateY(50%);
-	top: 50%;
-}
-
-.parallax-container {
-	margin: 0;
-	padding: 0;
-}
-
-.parallax-container{
-	background-image: url('../images/_home_symbols.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 960px;
-	width: 100%;
-	position: absolute;
-	top: 0;
-}
-
-.parallax-window {
-	min-height: 400px;
-}
-
 .vertical-align {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-}
-
-.landing-text {
-	margin-top: 20px;
-	font-size: 24px;
-	color: #ffffff;
-	text-align: center;
-}
-
-.landing-sep {
-	font-size: 70px;
-	color: #ffffff;
 }
 
 
@@ -214,31 +199,14 @@ p {
 	border: 2px solid #57c7bd;
 }
 
-.landing-potential-header {
+.left-header {
 	text-align: left;
 	text-transform:uppercase;
+	font: BlenderPro-Bold;
 }
 
-.landing-potential-text {
+.left-align {
 	text-align: left;
-}
-
-.landing-link-container {
-	padding-left: 15%;
-	padding-right: 15%;
-	padding-bottom: 100px;
-}
-
-.landing-about-link-text {
-	line-height: 30px;
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-}
-
-.landing-about-link-link {
-	color: #36b3a8;
 }
 
 .pre-footer {
@@ -251,19 +219,11 @@ p {
 	height: 20%;
 }
 
-.about a, navbar a,  img, navbar a span {
+.black-nav a, navbar a,  img, navbar a span {
 	color: #000 !important;
 }
 
-.about .navbar-sep {
-	color: #000 !important;
-}
-
-.brothers a, navbar a,  img, navbar a span {
-	color: #000 !important;
-}
-
-.brothers .navbar-sep {
+.black-nav .navbar-sep {
 	color: #000 !important;
 }
 
@@ -294,10 +254,6 @@ p {
 	transform: translateY(200%);
 }
 
-.about .container  {
-	padding-top: 4em;
-	padding-bottom: 4em;
-}
 
 .about-header {
 	padding-top: 50px;
@@ -325,23 +281,11 @@ p {
 	background-image: url('../images/_about1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 35vw;
+	/*height: 35vw;*/
 	background-position: 30% 45%;
-}
 
-.brothers-banner {
-	font-size: 60px;
-	color: #ffffff;
-	position: relative;
-	transform: translateY(-65%);
-	top: 40%;
-}
-
-.brothers-banner-text {
-	font-size: 60px;
-	color: #ffffff;
-	position: relative;
-	transform: translateY(200%);
+	padding-top: 13em;
+	padding-bottom: 13em;
 }
 
 .brothers-header {
@@ -456,8 +400,12 @@ span.brothers-text-content span {
 	background-image: url('../images/ventures1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 35vw;
+	/*height: 35vw;*/
 	background-position: 30% 45%;
+
+	padding-top: 13em;
+	padding-bottom: 13em;
+
 }
 
 .ventures-header {
@@ -476,19 +424,18 @@ span.brothers-text-content span {
 	opacity: 0.8;
 }
 
-.ventures-banner {
+.header-banner {
 	font-size: 60px;
 	color: #ffffff;
 	position: relative;
-	transform: translateY(-65%);
+	/*transform: translateY(-65%);*/
 	top: 40%;
 }
 
-.ventures-banner-text {
+.header-banner-text {
 	font-size: 60px;
 	color: #ffffff;
 	position: relative;
-	transform: translateY(200%);
 }
 
 .rush-banner-text {
