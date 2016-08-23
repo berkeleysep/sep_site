@@ -73,8 +73,8 @@ p {
 	max-width: 1080px;
 }
 
-.about.container, .ventures.container {
-	padding-top: 4em;
+.about-text {
+	padding-top: 10em;
 }
 
 .navbar-custom {
@@ -105,6 +105,11 @@ p {
 .navbar-sep {
 	color: #ffffff;
 	font-size: 20px;
+}
+
+/*add wherever needs black to replace*/
+.navbar-dark {
+	color: #000 !important;
 }
 
 .navbar-nav-custom {
@@ -402,10 +407,13 @@ span.brothers-text-content span {
 	background-size: 100%;
 	/*height: 35vw;*/
 	background-position: 30% 45%;
-
 	padding-top: 13em;
 	padding-bottom: 13em;
 
+}
+
+.ventures .container {
+	padding-top: 4em;
 }
 
 .ventures-header {
@@ -481,10 +489,12 @@ span.brothers-text-content span {
 	background-image: url('../images/rush1.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 35vw;
+	/*height: 35vw;*/
 	background-position: 30% 45%;
+	padding-top: 13em;
+	padding-bottom: 13em;
 }
-
+/*
 .rush-banner {
 	font-size: 60px;
 	color: #ffffff;
@@ -499,4 +509,4 @@ span.brothers-text-content span {
 	position: relative;
 	transform: translateY(150%);
 }
-
+*/
