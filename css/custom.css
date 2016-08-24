@@ -37,6 +37,12 @@
 	position:fixed;
 }*/
 
+@media (min-width: 2000px) {
+  .landing-container {
+    padding-bottom:100%;
+  }
+}
+
 
 #bg1 {
 	z-index: 50;
@@ -166,7 +172,7 @@ p {
 }
 
 .landing-hero-img {
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	/*height: 960px;*/
 	width: 100%;
