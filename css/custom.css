@@ -242,6 +242,28 @@ p {
 	color: #fff !important;
 }
 
+.hero-button {
+	border-radius: 0;
+    background-color: transparent;
+    border-color: #4FF0E1;
+    color: #4FF0E1;
+    margin: 0.5em;
+}
+
+.btn-xlg {
+	font-size: 57px;
+}
+
+.hero-button:hover {
+	background-color: #4FF0E1;
+	color: #fff;
+	border-color: #4FF0E1;
+}
+
+.align-right {
+	text-align: right;
+}
+
 .about-container {
 	/*background-image: url('../images/_about1.jpg');*/
 	background-repeat: no-repeat;
@@ -289,7 +311,7 @@ p {
 }
 
 .brothers-container {
-	background-image: url('../images/_about1.jpg');
+	background-image: url('../images/about.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	/*height: 35vw;*/
