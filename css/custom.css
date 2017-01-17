@@ -430,7 +430,7 @@ span.brothers-text-content span {
 }
 
 .ventures-container {
-	background-image: url('../images/faq.jpg');
+	background-image: url('../images/ventures.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	/*height: 35vw;*/
@@ -521,6 +521,37 @@ span.brothers-text-content span {
 	background-position: 30% 45%;
 	padding-top: 13em;
 	padding-bottom: 13em;
+}
+
+.faq-container {
+	background-image: url('../images/faq.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*height: 35vw;*/
+	background-position: 30% 45%;
+	padding-top: 13em;
+	padding-bottom: 13em;
+
+}
+
+.faq .container {
+	padding-top: 4em;
+}
+
+.faq-header {
+	font-size: 50px;
+}
+
+.faq-row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.faq-pic:hover {
+	background-color: #0000ff;
+	opacity: 0.8;
 }
 /*
 .rush-banner {
