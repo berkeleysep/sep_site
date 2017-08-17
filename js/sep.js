@@ -315,45 +315,45 @@
           rotate: shapes[pos].rotate+'deg'
         });
       });
-      watcher.exitViewport(function() {
-        const idx = !watcher.isAboveViewport ? pos-1 : pos+1;
-
-        if( idx <= contentElemsTotal && step !== idx ) {
-          console.log("exited viewport");
-          console.log(idx);
-          console.log(pos);
-          step = idx;
-          anime.remove(DOM.shapeEl);
-          anime({
-            targets: DOM.shapeEl,
-            duration: shapes[idx].animation.path.duration,
-            easing: shapes[idx].animation.path.easing,
-            elasticity: shapes[idx].animation.path.elasticity || 0,
-            d: shapes[idx].path,
-            fill: {
-              value: shapes[idx].fill.color,
-              duration: shapes[idx].fill.duration,
-              easing: shapes[idx].fill.easing
-            },
-            complete: function() {
-              initShapeLoop(idx);
-            }
-          });
-
-          anime.remove(DOM.svg);
-          anime({
-            targets: DOM.svg,
-            duration: shapes[idx].animation.svg.duration,
-            easing: shapes[idx].animation.svg.easing,
-            elasticity: shapes[idx].animation.svg.elasticity || 0,
-            scaleX: shapes[idx].scaleX,
-            scaleY: shapes[idx].scaleY,
-            translateX: shapes[idx].tx+'px',
-            translateY: shapes[idx].ty+'px',
-            rotate: shapes[idx].rotate+'deg'
-          });
-        }
-      });
+      // watcher.exitViewport(function() {
+      //   const idx = !watcher.isAboveViewport ? pos-1 : pos+1;
+      //
+      //   if( idx <= contentElemsTotal && step !== idx ) {
+      //     console.log("exited viewport");
+      //     console.log(idx);
+      //     console.log(pos);
+      //     step = idx;
+      //     anime.remove(DOM.shapeEl);
+      //     anime({
+      //       targets: DOM.shapeEl,
+      //       duration: shapes[idx].animation.path.duration,
+      //       easing: shapes[idx].animation.path.easing,
+      //       elasticity: shapes[idx].animation.path.elasticity || 0,
+      //       d: shapes[idx].path,
+      //       fill: {
+      //         value: shapes[idx].fill.color,
+      //         duration: shapes[idx].fill.duration,
+      //         easing: shapes[idx].fill.easing
+      //       },
+      //       complete: function() {
+      //         initShapeLoop(idx);
+      //       }
+      //     });
+      //
+      //     anime.remove(DOM.svg);
+      //     anime({
+      //       targets: DOM.svg,
+      //       duration: shapes[idx].animation.svg.duration,
+      //       easing: shapes[idx].animation.svg.easing,
+      //       elasticity: shapes[idx].animation.svg.elasticity || 0,
+      //       scaleX: shapes[idx].scaleX,
+      //       scaleY: shapes[idx].scaleY,
+      //       translateX: shapes[idx].tx+'px',
+      //       translateY: shapes[idx].ty+'px',
+      //       rotate: shapes[idx].rotate+'deg'
+      //     });
+      //   }
+      // });
     });
   };
 
