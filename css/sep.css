@@ -19,8 +19,6 @@
 }
 
 
-/* GLOBAL */
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -70,6 +68,8 @@ table {
 	border-spacing: 0;
 }
 
+/* GLOBAL */
+
 html {
 	box-sizing: border-box;
 }
@@ -104,6 +104,7 @@ header {
   align-items: center;
   height: 18vh;
   padding: 0 10%;
+  border-color: red;
 }
 
 .navigation {
@@ -296,4 +297,73 @@ header {
   fill: var(--background-color-2);
   flex: none;
   opacity: 0.6;
+}
+
+/* BROTHERS PAGE */
+
+.brothers-box {
+  width: 65%;
+  margin: auto;
+}
+
+.brothers-pic {
+	position: relative;
+  margin: 0 10px;
+}
+
+.brothers-pic img {
+	vertical-align: top;
+	border-radius: 10px;
+}
+
+.brothers-pic:after, .brothers-pic:before {
+	position: absolute;
+	opacity: 0;
+}
+
+.brothers-pic:after {
+	content: '\A';
+	width: 100%;
+  height: 100%;
+	top: 0; left:0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.brothers-pic:before {
+	content: attr(data-content);
+	width: 100%;
+	color: #fff;
+	z-index: 1;
+	bottom: 0;
+	padding-bottom: 50%;
+	text-align: center;
+	font-size: 18px;
+}
+
+.brothers-pic:hover:after, .brothers-pic:hover:before {
+	opacity: 1;
+	border-radius: 10px;
+}
+
+.brothers-caption {
+	position: absolute;
+	color: #fff;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	margin-top: -100%;
+	text-align: center;
+  padding: 10%;
+	padding-top: 20%;
+}
+
+.brothers-caption:hover {
+	opacity: 1;
+}
+
+.brothers-caption-divider {
+	width: 70%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

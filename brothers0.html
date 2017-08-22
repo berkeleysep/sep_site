@@ -1,55 +1,51 @@
 <html>
-	<head>
-
-		<title> SEP </title>
+  <head>
+		<title>UC Berkeley SEP </title>
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/sep.css">
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/handlebars.min-latest.js"></script>
-		<script src="js/templates.js"></script>
-	</head>
-	<body class='about black-nav blender-medium'>
-	    	<nav class="blender-bold navbar navbar-default navbar-static-top navbar-custom">
-		    <div class='navbar-container'>
-		    	<a href='home.html' class='navbar-home-link'>
-			    	<img src='images/sep_logo_black.png' width='50px'>
-			    	<span class='navbar-sep'>SIGMA ETA PI</span>
-		    	</a>
-		    	<ul class="nav navbar-nav pull-right vertical-align navbar-nav-custom">
-		    		<li class='active'><a href='about.html'>ABOUT</a></li>
-		    		<li class='active'><a href='brothers.html'>BROTHERS</a></li>
-		    		<li class='active'><a href='classes.html'>PLEDGE CLASSES </a></li>
-		    		<li class='active'><a href='ventures.html'>VENTURES	</a></li>
-			    	<li class='active'><a href='sponsorships.html'>SPONSORSHIPS </a></li>
-			    	<li class='active'><a href='faq.html'>FAQ </a></li>
-		    		<li class='active navbar-rush-link'><a href='rush.html'>RUSH</a></li>
-		    	</ul>
-		    </div>
-	    </nav>
-		    <div class='brothers-container'>
+  </head>
 
-		     <div class='container'>
-			    <div class='row'>
-			    	<div class='col-md-12 col-sm-12 col-xs-12'>
-					    <div class='text-center header-banner'>
-					    	<div class='header-banner-text'>
-					    		BROTHERS
-					    	</div>
-					    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class='container brothers-box'>
+  <body>
+    <div style="width:100%; margin:auto;">
+      <header class="apercu-bold header">
+        <a href='home.html' class='header_logo'>
+          <img class="logo-image" src='logo.svg'>
+          <span class='logo-text'> SIGMA ETA PI</span>
+        </a>
+        <ul class="navigation">
+          <li><a href='brothers.html'>brothers</a></li>
+          <li><a href='ventures.html'>ventures</a></li>
+          <li><a href='sponsorships.html'>sponsorships</a></li>
+          <li><a href='rush.html'>RUSH</a></li>
+        </ul>
+      </header>
+
+      <div class="morph-wrap">
+        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+					<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+				</svg>
+      </div>
+
+      <section class="intro content-wrap">
+        <div class="intro_text">
+          <h1 class="apercu-bold">meet our brothers</h1>
+        </div>
+      </section>
+
+
+
+    </div>
+
+		<div class='container brothers-box' style="margin-top:-20%">
 			<div class='row'>
-
 				<div class="content-placeholder"></div>
-
-
 				<div class="clearfix visible-xs-block"></div>
-
 			</div>
 		</div>
+
 		<div class="container">
     	<div class="row">
   			<div class="col-md-6"> </div>
@@ -57,7 +53,44 @@
   		</div>
   		<br/>
   	</div>
-		<script type="text/javascript" src="js/load_brothers.js"></script>
 
-	</body>
+		<script id="brother-template" type="text/x-handlebars-template">
+			{{#each brothers}}
+			  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
+			    <a href={{linkedin}}>
+			      <div class='brothers-pic'>
+			        <img src={{img_src}} class='img-responsive'>
+			        <div class='brothers-caption'>
+			          <h5>{{name}}</h5>
+			          <hr class='brothers-caption-divider'>
+			          <h6>{{major}}</h6>
+			          <h6>{{year}}</h6>
+			        </div>
+			      </div>
+			    </a>
+			  </div>
+			{{/each}}
+		</script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/sep.js"></script>
+
+    <script>
+    $(function () {
+      var source   = $('#brother-template').html();
+      var template = Handlebars.compile(source);
+
+      // Define our data object
+      $.getJSON('templates/brothers.json').then(function(data){
+        // Pass our data to the template
+        var theCompiledHtml = template(data);
+
+        // Add the compiled html to the page
+        $('.content-placeholder').html(theCompiledHtml);
+      });
+    });
+    </script>
+
+  </body>
 </html>

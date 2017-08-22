@@ -1,5 +1,8 @@
 $(function () {
-  var template = Handlebars.templates['brother'];
+  // var template = Handlebars.templates['brother'];
+
+  var source   = $('#brother-template').html();
+  var template = Handlebars.compile(source);
 
   // Define our data object
   $.getJSON('templates/brothers.json').then(function(data){
