@@ -89,6 +89,14 @@ a {
   color: black;
 }
 
+a:hover {
+  color:inherit;
+}
+
+b {
+  font-family:'Apercu-Bold'
+}
+
 h1 {
   font-size: 3.35rem;
 }
@@ -366,4 +374,10 @@ header {
 	width: 70%;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+/* VENTURES PAGE */
+
+.venture-item img {
+  padding: 10px;
 }
