@@ -1,7 +1,7 @@
 import csv
 import json
 
-with open('../brothers.csv', 'rU') as csvfile:
+with open('../templates/brothers.csv', 'rU') as csvfile:
     r = csv.reader(csvfile, delimiter=',', dialect=csv.excel_tab)
     # row in form [name,major,year,class,linkedin,img_url]
     data = {}
