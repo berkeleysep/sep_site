@@ -245,12 +245,17 @@ header {
   margin-left: 25vh;
 }
 
+.img-container {
+  background: #fff;
+}
+
 .rush_img {
-  position:absolute;
-  left: 0;
-  top: 20%;
-  width: 50%;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  width: 25%;
   z-index: -1;
+  opacity: 0.8;
 }
 
 /* FAQ SECTION */
@@ -405,7 +410,7 @@ header {
 .right-arrow {
   max-width: 25%;
   position:absolute;
-  transform: translate(0%, 120%);
+  transform: translate(80%, 140%);
   left: calc(50% - 20px);
 }
 
