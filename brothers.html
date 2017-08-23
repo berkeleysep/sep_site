@@ -1,770 +1,96 @@
 <html>
-	<head>
-
-		<title> SEP </title>
+  <head>
+		<title>UC Berkeley SEP </title>
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/custom.css">
-		<script src="/js/handlebars.min-latest.js"></script>
-	</head>
-	<body class='about black-nav blender-medium'>
-	    	<nav class="blender-bold navbar navbar-default navbar-static-top navbar-custom">
-		    <div class='navbar-container'>
-		    	<a href='home.html' class='navbar-home-link'>
-			    	<img src='images/sep_logo_black.png' width='50px'>
-			    	<span class='navbar-sep'>SIGMA ETA PI</span>
-		    	</a>
-		    	<ul class="nav navbar-nav pull-right vertical-align navbar-nav-custom">
-		    		<li class='active'><a href='about.html'>ABOUT</a></li>
-		    		<li class='active'><a href='brothers.html'>BROTHERS</a></li>
-		    		<li class='active'><a href='classes.html'>PLEDGE CLASSES </a></li>
-		    		<li class='active'><a href='ventures.html'>VENTURES	</a></li>
-			    	<li class='active'><a href='sponsorships.html'>SPONSORSHIPS </a></li>
-			    	<li class='active'><a href='faq.html'>FAQ </a></li>
-		    		<li class='active navbar-rush-link'><a href='rush.html'>RUSH</a></li>
-		    	</ul>
-		    </div>
-	    </nav>
-		    <div class='brothers-container'>
+		<!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/sep.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/handlebars.min-latest.js"></script>
+  </head>
 
-		     <div class='container'>
-			    <div class='row'>
-			    	<div class='col-md-12 col-sm-12 col-xs-12'>
-					    <div class='text-center header-banner'>
-					    	<div class='header-banner-text'>
-					    		BROTHERS
-					    	</div>
-					    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class='container brothers-box'>
-			<div class='row'>
+  <body>
+    <div style="width:100%; margin:auto;">
+      <header class="apercu-bold header">
+        <a href='home.html' class='header_logo'>
+          <img class="logo-image" src='logo.svg'>
+          <span class='logo-text'> SIGMA ETA PI</span>
+        </a>
+        <ul class="navigation">
+          <li><a href='brothers.html'>brothers</a></li>
+          <li><a href='ventures.html'>ventures</a></li>
+          <li><a href='sponsorships.html'>sponsorships</a></li>
+          <li><a href='rush.html'>RUSH</a></li>
+        </ul>
+      </header>
 
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/adampramono'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/adam-pramono.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Adam Pramono</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Haas</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
+      <div class="morph-wrap">
+        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+					<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+				</svg>
+      </div>
 
+      <section class="intro content-wrap">
+        <div class="intro_text">
+          <h1 class="apercu-bold">meet our brothers:</h1>
+        </div>
+      </section>
 
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/alkamurthy'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/alka-murthy.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Alka Murthy</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Economics</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/amritayalur'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/amrit-ayalur.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Amrit Ayalur</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>EECS</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/pub/annhien-nguyen/a6/741/82a'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/annhien-nguyen.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Annhien Nguyen</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Haas & Rhetoric</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-
-
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/aryanf'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/aryan-falahatpisheh.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Aryan Falahatpisheh</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div> -->
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/calvindong'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/calvin-dong.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Calvin Dong</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div> -->
-
-
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/pub/claire-lei/83/ba3/5b6'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/claire.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Claire Lei</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Economics</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/chinesewhiteboi'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/doug-boyle.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Douglas Boyle</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>EECS</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/drey-gerger-748326b2/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/drey.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Drey Gerger</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science/Pre-Haas</h6>
-								<h6>Freshmen</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/evanjkatz'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/evan-katz.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Evan Katz</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/farbod-nowzad-245339108'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/farbod-nowzad.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Farbod Nowzad</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div> -->
-
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/gabriela-cibils-a5798089/en'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/gaby-cibils.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Gaby Cibils</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Cognitive Science</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div> -->
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/gyjcn'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/gary-chen.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Gary Chen</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/grantkalasky'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/grant-kalasky.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Grant Kalasky</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="clearfix visible-xs-block"></div>
-				<div class="clearfix visible-sm-block"></div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/huanghannah'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/hannah.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Hannah Huang</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/hongyexu'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/hongye.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Hongye Xu</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Statistics</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/isabel-llacer-421571124/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/isabel.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Isabel Llacer</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>EECS</h6>
-								<h6>Freshmen</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/ijayapurna/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/ivan.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Ivan Jayapurna</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science/Chemical Engineering</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/jackylu97/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/jacky.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Jacky Lu</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>EECS</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/jason-tu/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/jason.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Jason Tu</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>EECS/IEOR</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- <div class="clearfix visible-xs-block"></div> -->
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/jessmchang'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/jessica.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Jessica Chang</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Cognitive Science</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/kishanbpatel1'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/kishan-patel.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Kishan Patel</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Cognitive Science</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div> -->
-
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/kunal-chaudhary-60744298'>
-					<div class='brothers-pic montserrat-light'>
-						<img src='images/kunal-chaudhary.jpg' class='img-responsive'>
-						<div class='brothers-caption'>
-							<h5>Kunal Chaudhary</h5>
-							<hr class='brothers-caption-divider'>
-							<h6>Computer Science & Haas</h6>
-							<h6>Senior</h6>
-						</div>
-					</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/leanne-chan/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/leanne.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>LeAnne Chan</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science/Film</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/louannyong'>
-					<div class='brothers-pic montserrat-light'>
-						<img src='images/louann-yong.jpg' class='img-responsive'>
-						<div class='brothers-caption'>
-							<h5>Louann Yong</h5>
-							<hr class='brothers-caption-divider'>
-							<h6>Economics</h6>
-							<h6>Senior</h6>
-						</div>
-					</div>
-				</a>
-				</div> -->
-
-				<div class="clearfix visible-sm-block"></div>
-				<div class="clearfix visible-xs-block"></div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/matthew-hilado-14b0b0106'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/matt_hilado.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Matthew Hilado</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Pre-Haas</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/meghna-dasgupta-779765a2'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/meghna-dasgupta.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Meghna Dasgupta</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science and Economics</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/monicavarin'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/monica-vathanavarin.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Monica Vathanavarin</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Cognitive Science</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/nelida-almeida-bb8833114'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/nelly-almeida.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Nelly Almeida</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Pre-Haas</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/nikolai-sadeghi-973831114'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/nicole-huxtable.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Nicole Huxtable</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Economics</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div> -->
-<!-- 				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/nikolai-sadeghi-973831114'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/nikolai-sadeghi.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Nikolai Sadeghi</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Pre-Haas</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
- -->
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/noah-tseng-22b0abb7'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/noah-tseng.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Noah Tseng</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Chemical Engineering</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/prashandharmasena'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/prashan-dharmasena.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Prashan Dharmasena</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/querisau'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/queris-au.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Queris Au</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Haas</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/pub/raylene-chew/96/a00/93'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/raylene.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Raylene Chew</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Cognitive Science</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/rishabhparikh'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/rishabh-parikh.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Rishabh Parikh</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/rohanpunamia'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/rohan.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Rohan Punamia</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Haas</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/samhayat/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/sam.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Sam Hayat</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Political Economy</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/steven-truong-43726791'>
-					<div class='brothers-pic montserrat-light'>
-							<img src='images/steven-truong.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Steven Truong</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Economics</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/sbhargava0'>
-					<div class='brothers-pic montserrat-light'>
-							<img src='images/shashank-bhargava.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Shashank Bhargava</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science & Statistics</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="clearfix visible-xs-block"></div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/chsherry'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/sherry.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Sherry Chen</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Economics</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div><!--
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<div class='brothers-pic montserrat-light'>
-						<img src='images/shota-pangilinan.jpg' class='img-responsive'>
-						<div class='brothers-caption'>
-							<h5>Shota Pangilinan</h5>
-							<hr class='brothers-caption-divider'>
-							<h6>Cognitive Science</h6>
-							<h6>Junior</h6>
-						</div>
-					</div>
-				</div>
-
-				<div class="clearfix visible-sm-block"></div>
-				<div class="clearfix visible-xs-block"></div> -->
-<!--
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/siddhantdange'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/siddhant-dange.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Siddhant Dange</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div> -->
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/sohil-kshirsagar-80209a89/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/sohil.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Sohil Kshirsagar</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>EECS</h6>
-								<h6>Freshmen</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/sophia-shatas-84116a7b'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/sophia.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Sophia Shatas</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Pre-Haas</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/pub/vincent-tu/90/785/498'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/vincent-tu.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Vincent Tu</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Economics</h6>
-								<h6>Senior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/wesley-hopkins/'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/wes.png' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Wesley Hopkins</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Computer Science/Pre-Haas</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/yanika-magan-851598114'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/yanika-magan.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Yanika Magan</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>Pre-Haas</h6>
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/yizhen-zhang-b5a8ab105'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/yizhen-zhang.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Yizhen Zhang</h5>
-								<hr class='brothers-caption-divider'>
-								<!-- <h6>Economics</h6> -->
-								<h6>Sophomore</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class='col-lg-2 col-md-2 col-sm-3 col-xs-6'>
-					<a href='https://www.linkedin.com/in/z-wang-a9392ab9'>
-						<div class='brothers-pic montserrat-light'>
-							<img src='images/z-wang.jpg' class='img-responsive'>
-							<div class='brothers-caption'>
-								<h5>Z Wang</h5>
-								<hr class='brothers-caption-divider'>
-								<h6>EECS</h6>
-								<h6>Junior</h6>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="clearfix visible-xs-block"></div>
-
-			</div>
-		</div>
-		<div class="container">
-    	<div class="row">
-  			<div class="col-md-6"> </div>
-  			<div class="col-md-6">&copy; Sigma Eta Pi 2017</div>
+      <div class='content-wrap container brothers-box' style="margin-top:-20%">
+  			<div class='row'>
+  				<div class="content-placeholder"></div>
+  				<div class="clearfix visible-xs-block"></div>
+  			</div>
   		</div>
-  		<br/>
-  	</div>
-		<script type="text/javascript" src="js/load_brothers.js"></script>
 
-	</body>
+  		<div class="container">
+      	<div class="row">
+    			<div class="col-md-6"> </div>
+    			<div class="col-md-6">&copy; Sigma Eta Pi 2017</div>
+    		</div>
+    		<br/>
+    	</div>
+
+    </div>
+
+
+
+		<script id="brother-template" type="text/x-handlebars-template">
+			{{#each brothers}}
+			  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
+			    <a href={{linkedin}}>
+			      <div class='brothers-pic'>
+			        <img src={{img_src}} class='img-responsive'>
+			        <div class='brothers-caption'>
+			          <h5>{{name}}</h5>
+			          <hr class='brothers-caption-divider'>
+			          <h6>{{major}}</h6>
+			          <h6>{{year}}</h6>
+			        </div>
+			      </div>
+			    </a>
+			  </div>
+			{{/each}}
+		</script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/sep.js"></script>
+
+    <script>
+    $(function () {
+      var source   = $('#brother-template').html();
+      var template = Handlebars.compile(source);
+
+      // Define our data object
+      $.getJSON('templates/brothers.json').then(function(data){
+        // Pass our data to the template
+        var theCompiledHtml = template(data);
+
+        // Add the compiled html to the page
+        $('.content-placeholder').html(theCompiledHtml);
+      });
+    });
+    </script>
+
+  </body>
 </html>
