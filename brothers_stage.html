@@ -57,7 +57,6 @@
       {{/each}}
     </script>
 
-
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/scrollMonitor.js"></script>
@@ -69,7 +68,7 @@
       var template = Handlebars.compile(source);
 
       // Define our data object
-      $.getJSON('templates/brothers.json').then(function(data){
+      $.getJSON('templates/brothersv2.json').then(function(data){
         // Pass our data to the template
         var theCompiledHtml = template(data);
 
