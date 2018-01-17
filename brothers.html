@@ -1,80 +1,74 @@
 <html>
   <head>
-		<title>UC Berkeley SEP </title>
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
-		<link rel="stylesheet" type="text/css" href="css/sep.css">
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/handlebars.min-latest.js"></script>
-  </head>
-
-  <body>
-    <div style="width:100%; margin:auto;">
+    <title>UC Berkeley SEP </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/sep.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/handlebars.min-latest.js"></script>
+<body>
+    <script type="text/javascript">
+      if (screen.width <= 800) {
+        document.location = "http://apply.ucberkeleysep.com";
+      }
+    </script>
+    <div class="navigationdiv" style="width:100%; margin:auto;" >
       <header class="apercu-bold header">
         <a href='home.html' class='header_logo'>
           <img class="logo-image" src='logo.svg'>
           <span class='logo-text'> SIGMA ETA PI</span>
         </a>
-        <ul class="navigation">
-          <li><a href='brothers.html'>brothers</a></li>
-          <li><a href='ventures.html'>ventures</a></li>
-          <li><a href='sponsorships.html'>sponsorships</a></li>
+        <nav>        
+          <ul class="navigation">
+          <li><a href='about.html'>ABOUT</a></li>
+          <li><a href='brothers.html'>BROTHERS</a></li>
+          <li><a href='ventures.html'>VENTURES</a></li>
+          <li><a href='sponsorships.html'>SPONSORSHIPS</a></li>
           <li><a href='rush.html'>RUSH</a></li>
         </ul>
+      </nav>
       </header>
 
-      <div class="morph-wrap">
-        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
-					<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
-				</svg>
-      </div>
 
-      <section class="intro content-wrap">
-        <div class="intro_text">
-          <h1 class="apercu-bold">meet our brothers:</h1>
+      <section class="aboutIntro content-wrap">
+        <div class="intro_text_about">
+          <h1 class="apercu-bold">Meet our brothers:</h1>
         </div>
       </section>
 
-      <div class='content-wrap container brothers-box' style="margin-top:-20%">
-  			<div class='row'>
-  				<div class="content-placeholder"></div>
-  				<div class="clearfix visible-xs-block"></div>
-  			</div>
-  		</div>
+      <div class='flexcontainer'>
+          <div class="content-placeholder"></div>
 
-  		<div class="container">
-      	<div class="row">
-    			<div class="col-md-6"> </div>
-    			<div class="col-md-6">&copy; Sigma Eta Pi 2017</div>
-    		</div>
-    		<br/>
-    	</div>
-
+    <script id="brother-template" type="text/x-handlebars-template">
+      {{#each brothers}}
+        <div class="bro_container" style="width:30%;">
+            <div class='brothers-pic'>
+              <a href="{{linkedin}}">
+              <img src={{img_src}} class='img-responsive'>
+              <div class='brothers-caption'>
+                <h5>{{name}}</h5>
+                <hr class='brothers-caption-divider'>
+                <h6>{{major}}</h6>
+                <h6>{{year}}</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      {{/each}}
+    </script>
+    <div class="containerCR">
+        <div class="row">
+          <div>&copy; Sigma Eta Pi 2017</div>
+        </div>
+        <br/>
+      </div>
     </div>
 
 
-
-		<script id="brother-template" type="text/x-handlebars-template">
-			{{#each brothers}}
-			  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-			    <a href={{linkedin}}>
-			      <div class='brothers-pic'>
-			        <img src={{img_src}} class='img-responsive'>
-			        <div class='brothers-caption'>
-			          <h5>{{name}}</h5>
-			          <hr class='brothers-caption-divider'>
-			          <h6>{{major}}</h6>
-			          <h6>{{year}}</h6>
-			        </div>
-			      </div>
-			    </a>
-			  </div>
-			{{/each}}
-		</script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/anime.min.js"></script>
-		<script src="js/scrollMonitor.js"></script>
-		<script src="js/sep.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/sep.js"></script>
 
     <script>
     $(function () {
@@ -90,6 +84,7 @@
         $('.content-placeholder').html(theCompiledHtml);
       });
     });
+    
     </script>
 
   </body>
