@@ -45,7 +45,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -81,11 +80,9 @@ html {
 html, body {
   font-family: 'Apercu';
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
-body{
-  background-color: #7ECDC5;
-}
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -133,15 +130,6 @@ header {
   display: block;
   padding: 0.8em;
   font-size: 1.55vw;
-  color: white;
-}
-.navigation a:hover {
-  text-decoration: none;
-  display: block;
-  padding: 0.8em;
-  font-size: 1.55vw;
-  color: #EB747C;
-  border-bottom: 2px solid #EB747C;
 }
 
 .logo-image {
@@ -149,9 +137,7 @@ header {
   vertical-align: middle;
   margin-top: -5px;
 }
-hr{
-  border-color:black;
-}
+
 .logo-text {
   font-size: 1.55vw;
   margin: 10px;
@@ -161,29 +147,19 @@ hr{
 .intro {
   width: 100%;
   height: 90%;
-  left:10%;
 }
+
 .intro_text {
   text-align: left;
   position: absolute;
-  margin-top: 3%;
+  top: 50%;
   transform: translate(35%,-35%);
-  margin-bottom: 10%
+  margin-top: -5rem;
 }
-.intro_text_about{
-  text-align: left;
-  position: absolute;
-  margin-top: 3%;
-  transform: translate(35%,-35%);
-  margin-bottom: 10%
-}
-.intro_text_about h1 {
-  max-width: 50vw;
-  font-size: 5vh;
-}
+
 .intro_text h1 {
   max-width: 50vw;
-  font-size: 5vh;
+  font-size: 7vh;
 }
 
 .intro_text span {
@@ -191,23 +167,6 @@ hr{
   display: inline-block;
   font-size: 2.7vh;
   margin-left: 25vh;
-}
-.intro_text_home {
-  text-align: left;
-  position: absolute;
-  top: 44%;
-  transform: translate(35%,-35%);
-  left: 50%; }
-
-.intro_text_home h1 {
-  max-width: 20vw;
-  font-size: 7vh;
-
-}
-
-.intro_text_home span {
-  max-width: 15vw;
-  font-size: 2.8vh;
 }
 
 .arrow {
@@ -218,124 +177,12 @@ hr{
 }
 
 /* ABOUT SECTION */
-.aboutIntro {
-  width: 70%;
-  height:30%;
-  left:10%;
-}
-.aboutIntro h1 {
-  font-size: 5vh;
-}
-
-.aboutsection1 {
-  margin-left: 12%;
-  width: 80%;
-  height: 31%;
-  margin-bottom: 9%;
-}
-.aboutsection1 img{
-  float: left;
-  height:100%;
-  width: 30%;
-  position: relative;
-  vertical-align: middle;
-}
-.aboutsection1 span {
-  margin-top: 0;
-  max-width: 47vw;
-  display: inline-block;
-  font-size: 3.3vh;
-  margin-left: 10vh;
-}
-
-.aboutsection2 {
-  margin-left: 12%;
-  width: 70%;
-  height: 42%;
-  margin-bottom: 9%;
-}
-.aboutsection2 img{
-  float: right;
-  width: 40%;
+.about {
+  width: 100%;
   height: 100%;
-}
-.aboutsection2 span {
-  margin-top: 4%;
-  max-width: 38vw;
-  display: inline-block;
-  font-size: 3.3vh;
-  height: 90%;
-}
-.faq {
-  margin-left: 11.5%;
-  width: 80%;
-  height: 31%;
-}
-.faq h1{
-  font-size: 5vh;
-  border-bottom: 2px solid black;
-  width:23%;
-}
-.faq2{
-  margin-left: 22%;
-  width: 80%;
-}
-.faq2 i{
-  float: left;
-  margin-top: 0.5%;
-}
-.faq2 h2{
-  font-size: 3.8vh;
-  margin-left: 3.5%;
-}
-.faq span {
-  margin-top: -0.75%;
-  max-width: 52vw;
-  display: inline-block;
-  font-size: 3vh;
-  margin-left: 3.5%;
+  position: relative;
 }
 
-
-
-/* Sponsorships Page */
-.ventureSection {
-  margin-left: 12%;
-  width: 80%;
-  height: 31%;
-  margin-bottom: 9%;
-}
-.ventureSection span {
-  margin-top: 0;
-  max-width: 58vw;
-  display: inline-block;
-  font-size: 3.3vh;
-  margin-left: 10vh;
-}
-.VentureContainer{
-  margin-top: -10%;
-  margin-left:15%;
-}
-.VentureContainer img{
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    background-color: #F7C733;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: left;
-    text-decoration: none;
-    display: inline;
-    font-size: 23px;
-    margin:4px -8px;
-    border-radius: 30px;
-}
-button:hover{
-  cursor: pointer;
-}
 .about_text {
   text-align: left;
   position: absolute;
@@ -366,34 +213,13 @@ button:hover{
 }
 
 /* RUSH SECTION */
-.RushIntro {
-  width: 70%;
-  height:30%;
-  left:10%;
-}
-.intro_text_rush{
-  text-align: left;
-  position: absolute;
-  margin-top: 1%;
-  transform: translate(35%,-35%);
-  margin-bottom: 10%;
-}
-.intro_text_rush h1 {
-  max-width: 50vw;
-  font-size: 5vh;
-}
+
 .rush {
-  width: 60%;
+  width: 100%;
   height: 80%;
   position: relative;
-  margin-left: 39.2%;
-  margin-top: -7.4%;
 }
-.rush button {
-  margin-top: 27%;
-  margin-left:54%;
-  font-size: 4vh;
-}
+
 .rush_logo {
   height: 8vh;
   margin-left: 15%;
@@ -490,38 +316,15 @@ button:hover{
 }
 
 /* BROTHERS PAGE */
-.flexcontainer{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width:80%;
-  margin: auto;
-  position: relative;
-}
 
-.content-placeholder {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-/*
 .brothers-box {
   width: 65%;
   margin: auto;
 }
-*/
-
-.bro_container {
-  flex-basis: 23%;
-  margin: 1% 1%;
-}
 
 .brothers-pic {
 	position: relative;
-  flex-basis: 15%;
-
-
+  margin: 0 10px;
 }
 
 .brothers-pic img {
@@ -582,56 +385,20 @@ button:hover{
 }
 
 /* VENTURES PAGE */
-.ventureIntro {
-  width: 70%;
-  height:20%;
-  left:10%;
-}
+
 .venture-item img {
   padding: 10px;
 }
 
-.ventureSection {
-  margin-left: 12%;
-  width: 80%;
-  height: 31%;
-  margin-bottom: 9%;
-}
-.ventureSection span {
-  margin-top: 0;
-  max-width: 58vw;
-  display: inline-block;
-  font-size: 3.3vh;
-  margin-left: 10vh;
-}
-.VentureContainer{
-  margin-top: -10%;
-  margin-left:15%;
-}
-.VentureContainer img{
-    max-width: 100%;
-    height: auto;
-}
-.containerCR{
-  margin: 0 auto;
-  position: absolute;
-  z-index: 100;
-  border-style: solid;
-  bottom: -30%;
-  width: 100%;
-  text-align: center;
-}
-
-
 /* RUSH PAGE */
 
 .rush_content {
-
+  text-align: left;
   position: absolute;
   top: 50%;
   transform: translate(120%,-100%);
   margin-top: -5rem;
-  
+  z-index: 1;
 }
 
 .rush-img {
