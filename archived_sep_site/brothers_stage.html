@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>UC Berkeley SEP </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/custom.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/sep2.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/handlebars.min-latest.js"></script>
+<body>
+    <script type="text/javascript">
+      if (screen.width <= 800) {
+        document.location = "http://apply.ucberkeleysep.com";
+      }
+    </script>
+    <div class="navigationdiv" style="width:100%; margin:auto;" >
+      <header class="apercu-bold header">
+        <a href='home.html' class='header_logo'>
+          <img class="logo-image" src='logo.svg'>
+          <span class='logo-text'> SIGMA ETA PI</span>
+        </a>
+        <nav>        
+          <ul class="navigation">
+          <li><a href='about.html'>ABOUT</a></li>
+          <li><a href='brothers.html'>BROTHERS</a></li>
+          <li><a href='ventures.html'>VENTURES</a></li>
+          <li><a href='sponsorships.html'>SPONSORSHIPS</a></li>
+          <li><a href='rush.html'>RUSH</a></li>
+        </ul>
+      </nav>
+      </header>
+
+
+      <section class="aboutIntro content-wrap">
+        <div class="intro_text_about">
+          <h1 class="apercu-bold">Meet our brothers:</h1>
+        </div>
+      </section>
+
+      <div class='flexcontainer'>
+          <div class="content-placeholder"></div>
+
+    <script id="brother-template" type="text/x-handlebars-template">
+      {{#each brothers}}
+        <div class="bro_container" style="width:30%;">
+            <div class='brothers-pic'>
+              <a href="{{linkedin}}">
+              <img src={{img_src}} class='img-responsive'>
+              <div class='brothers-caption'>
+                <h5>{{name}}</h5>
+                <hr class='brothers-caption-divider'>
+                <h6>{{major}}</h6>
+                <h6>{{year}}</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      {{/each}}
+    </script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/sep.js"></script>
+
+    <script>
+    $(function () {
+      var source   = $('#brother-template').html();
+      var template = Handlebars.compile(source);
+
+      // Define our data object
+      $.getJSON('templates/brothersv2.json').then(function(data){
+        // Pass our data to the template
+        var theCompiledHtml = template(data);
+
+        // Add the compiled html to the page
+        $('.content-placeholder').html(theCompiledHtml);
+      });
+    });
+    
+    </script>
+
+  </body>
+</html>

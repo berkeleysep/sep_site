@@ -1,0 +1,259 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.navbar {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+}
+
+.navbar-nav > li{
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.content {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+}
+
+.title-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 8vmin;
+  font-weight: bold;
+}
+
+.subtitle-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #707070;
+  font-size: 2vmin;
+  font-weight: bold;
+}
+
+.full-screen-grid {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 80%;
+  height: auto;
+  padding-top: 10vmin;
+}
+
+.venture-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 18vmin;
+  height: 18vmin;
+  margin: 30px;
+}
+
+.venture-image {
+  width: 100%;
+  height: auto;
+}
+.body-grid-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+#in-memory-of {
+  padding: 2vmin;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  background-color: #fad762;
+  background-image: url('../media/entrepreneur.png');
+  background-size: 125% auto;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1 / 13;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+  position: absolute;
+  bottom: 0;
+}
+
+.sponsored-by {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 40vh;
+  background-color: #E7E7E7;
+  padding: 3vmin;
+}
+
+#sponsored-title-container {
+  font-weight: 600;
+  font-size: 3vmin;
+  width: 100%;
+  height: 5.5vh;
+}
+
+#sponsors-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.sponsor-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50vmin;
+  height: auto;
+  margin: 10vmin;
+}
+
+.sponsor-image {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: static;
+  width: 100%;
+  height: 45vh;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.footer-column-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.social-media-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+}
+
+.social-media-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 6vmin;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B0DBDC;
+    text-decoration: none;
+}
+
+.sep-copyright {
+
+}
+
+#triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 100vh solid white;
+	border-left: 100vw solid transparent;
+}
+
+#triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100vh solid white;
+	border-left: 100vw solid transparent;
+}
+
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100vh solid white;
+	border-right: 100vw solid transparent;
+}
+
+#triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100vh solid white;
+	border-right: 100vw solid transparent;
+}
+
+#one {
+  width: 100vw;
+  height: 100vh;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#two {
+  width: 100vw;
+  height: 100vh;
+}
+
+#three {
+  width: 100vw;
+  height: 100vh;
+}
+
+#four {
+  width: 100vw;
+  height: 100vh;
+}
