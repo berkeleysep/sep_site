@@ -110,7 +110,7 @@ body {
   font-size: 14vmin;
   font-weight: bold;
   color: #d82959;
-  font-family: 'Montserrat', sans-serif;  
+  font-family: sans-serif;  
   text-align: left;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -275,10 +275,10 @@ h2 {
 .home-page-cards {
   display: flex;
   justify-content: space-around;
-  flex-direction: row wrap;
-  margin-top: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
+  flex-flow: row wrap;
+  margin-top: 75px; 
+  margin-right: 75px;
+  margin-left: 75px;
 }
 
 #home-about-card {
@@ -287,6 +287,7 @@ h2 {
   background-color: #f9f9f9;
   width: 330px;
   height: 430px;
+  margin: 25px;
   box-shadow: 0 0 10px 5px #e5e5e5;
   border-radius: 10px;
 
@@ -322,6 +323,7 @@ h2 {
   background-color: #f9f9f9;
   width: 330px;
   height: 430px;
+  margin: 25px;
   box-shadow: 0 0 10px 5px #e5e5e5;
   border-radius: 10px;
 
@@ -340,6 +342,7 @@ h2 {
   background-color: #f9f9f9;
   width: 330px;
   height: 430px;
+  margin: 25px;
   box-shadow: 0 0 10px 5px #e5e5e5;
   border-radius: 10px;
 }
@@ -359,8 +362,8 @@ h2 {
   text-align: center;
   width: 100%;
   font-size: 20px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   color: #0B0783;
   font-family: Montserrat, sans-serif;
 }
