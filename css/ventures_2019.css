@@ -48,6 +48,7 @@ body {
   align-items: center;
   width: 100%;
   height: 15vh;
+  margin-top: 50px;
 }
 
 .title-text {
@@ -92,6 +93,7 @@ body {
   height: auto;
   /*padding-top: 10vmin;*/
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 #company {
