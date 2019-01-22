@@ -1,0 +1,33 @@
+@charset "utf-8";
+	.NormalCharacterStyle1
+{
+	font-family : Myriad Pro;
+	font-size : 22px;
+	letter-spacing : 1.1px;
+	color : #D82959;
+	color : rgb(216, 41, 89);
+}
+.NormalCharacterStyle
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	letter-spacing : 0.75px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle3
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	letter-spacing : 0.75px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
+.NormalCharacterStyle2
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	letter-spacing : 0.75px;
+	color : #000000;
+	color : rgb(0, 0, 0);
+}
