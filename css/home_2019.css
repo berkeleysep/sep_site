@@ -44,6 +44,7 @@ body {
   margin-bottom: 7px; 
 */
   font-weight: 600
+  color: white;
 }
 
 .navbar-nav > li {
@@ -217,7 +218,10 @@ body {
 
 #home-page-main-content {
   display: flex;
+  flex: 1;
+  justify-content: center;
   flex-direction: column;
+/*  justify-content: space-around;*/
   grid-column: 1 / 13;
   background-color: #f9f9f9;
   text-align: center;
@@ -246,6 +250,7 @@ body {
   margin-top: 50px;
   align-content: center;
   justify-content: space-around;
+  align-self: center;
 }
 
 .home-content-title {
@@ -280,6 +285,46 @@ h2 {
   margin: auto;
 }*/
 
+.full-screen-grid {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 80%;
+  height: auto;
+  /*padding-top: 10vmin;*/
+  margin-bottom: 50px;
+  margin-top: 30px;
+  background-color: pink;
+  align-self: center;
+}
+
+.home-tile {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  position: relative;
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 0 10px 5px #e3e3ea;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.home-image {
+  width: 200px;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+}
+
 .home-page-cards {
   display: flex;
   justify-content: space-around;
@@ -287,6 +332,7 @@ h2 {
   margin-top: 75px; 
   margin-right: 75px;
   margin-left: 75px;
+  align-items: center;
 }
 
 #home-about-card {
@@ -334,7 +380,6 @@ h2 {
   margin: 25px;
   box-shadow: 0 0 10px 5px #e5e5e5;
   border-radius: 10px;
-
 }
 
 #home-venture-card:hover {
@@ -822,7 +867,7 @@ h2 span {
   background-image: url('../media/phoenix.png');
   background-repeat: no-repeat;
   background-size: 550px;
-  background-position: 60px 70px   
+  background-position: 60px 70px; 
 }
 
 .nav-link>a {

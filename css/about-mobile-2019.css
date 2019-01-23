@@ -5,6 +5,17 @@ body {
 }
 
 .navbar {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background-color: rgba(8, 13, 53, 0.7);
+/*
+  margin-top: 7px; 
+  margin-bottom: 7px; 
+*/
+  font-weight: 600
+}
+
+.navbar {
   font-family: Lato, sans-serif;
   font-size: 16px;
   background-color: white;
@@ -14,8 +25,7 @@ body {
 .navbar-nav > li {
   margin-left: 3vw;
   margin-right: 3vw;
-  color: #ffffff;
-  font-family: Lato, sans-serif;
+  color: #ffffff
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -103,8 +113,11 @@ body {
   align-items: center;
   width: 100%;
   color: #707070;
-  font-size: 2vmin;
+  font-size: 4vw;
   font-weight: bold;
+  text-align: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
@@ -120,24 +133,24 @@ body {
 
 .about-container > div {
   display: flex; 
-  flex-basis: calc(50% - 40px);  
+  flex-basis: calc(100% - 40px);  
   justify-content: center;
   flex-direction: column;
 }
 .about-container > div > div {
   display: flex;
-  /*justify-content: center;*/
+  justify-content: center;
   flex-direction: column;
 }
 .box { 
   margin: 20px;
-  font-size: 20px; 
+  font-size: 1em; 
 }
 .box1 { 
   font-family: Lato, sans-serif;
-  text-align: left;
-  padding-left: 100px;
-  padding-right: 70px;
+  text-align: center;
+  padding-left: 3vw;
+  padding-right: 3vw;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   animation: slide-in-left 1s forwards;
@@ -146,7 +159,7 @@ body {
 }
 .box2 {
   /*background-color: red;*/
-  padding-left: 50px;
+  padding-left: 70px;
   /*padding-right: 50px;*/
   /*background-color: lightblue;*/
   /*box-shadow: -20px 20px #7179A1;*/
@@ -155,10 +168,8 @@ body {
   -webkit-animation: slide-in-right 1s forwards;
 }
 .box3 { 
-  /*background-color: purple;*/
   font-family: Lato, sans-serif; 
-  padding-left: 100px;
-  padding-right: 45px;
+  padding-left: 50px;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   animation: slide-in-left 1s forwards;
@@ -167,10 +178,10 @@ body {
 .box4 {
   display: flex;
   flex-direction: column; 
-  text-align: left;
+  text-align: center;
   padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 150px;
+  padding-left: 3vw;
+  padding-right: 3vw;
   -webkit-transform: translateX(-20%);
   animation: slide-in-right 1s forwards;
   -webkit-animation: slide-in-right 1s forwards;
@@ -270,42 +281,40 @@ a:hover {
   height: auto;
   /*background-color: #f4f4ff;*/
   background-color: white;
-  padding-top: 130px;
+  padding-top: 50px;
   padding-bottom: 100px;
 
 }
 
 .jen-content {
-  margin-left: 20px;
-  margin-right: 20px;
+
   display: flex;
   flex-direction: row;
   background-color: white;
   border-radius: 10px;
+flex-flow: row wrap;
   /*box-shadow: 0 0 10px 5px #eeeeee;*/
 }
 
 .jen-pic-container {
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  border-right-style: solid;
-  border-right-color: #d82959;
-  border-right-width: 3px;
+  flex-direction: row;
+  width: 100%;
   align-items: center;
+  justify-content: center
 }
 
 .jen-image {
   width: 70%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 100%;
   align-items: center;
   text-align: center;
 }
 
 .jen-caption {
-  margin-top: 10px;
-  font-size: 17px;
+  margin-top: 5px;
+  font-size: 10px;
   align-items: center;
   font-weight: lighter;
 }
@@ -318,17 +327,17 @@ a:hover {
 
 .jen-text {
   text-align: center;
-  padding-left: 50px;
-  padding-right: 25px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .jen-text > p {
-  text-align: left;
+  text-align: center;
 }
 
 #jen-title {
   padding-top: 5px;
-  text-align: left;
+  text-align: center;
 
   font-size: 30px;
   font-family: 'Lato', sans-serif;
@@ -337,8 +346,8 @@ a:hover {
 }
 
 #jen-paragraph {
-  text-align: left;
-  font-size: 22px;
+  text-align: center;
+  font-size: 1em;
   font-family: 'Lato', sans-serif;
   /*font-style: italic;*/
   font-weight: lighter;
@@ -414,7 +423,7 @@ a:hover {
   align-items: center;
   position: relative;
   width: 55vmin;
-  height: 55vmin;
+  height: auto;
   margin: 18px;  
 }
 
