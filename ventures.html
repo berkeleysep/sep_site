@@ -6,49 +6,36 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="icon" href="./media/sep-favicon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="./css/ventures_2019.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<!--     <script type="text/javascript">
-    if (screen.width <= 699) {
-      document.location = "./ventures-mobile.html";
-    }
-    </script> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ventures.css">
   </head>
   <body>
-    <nav class="navbar navbar-right sticky-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./media/SEP_logo.png" width="40" height=auto alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">ABOUT <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./members.html">MEMBERS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./ventures.html">VENTURES</a>
-          </li>
-          <li class="nav-item" id="highlighted-nav-item">
-            <a class="nav-link" href="./rush.html">RUSH</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./media/SEP_logo.png" width="40" height=auto alt="SEP logo">
+        </a>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">ABOUT</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./ventures.html">VENTURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://medium.com/sep-berkeley">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./rush.html">RUSH</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="content" id="grid-wrapper">
-      <div class="title-container" id="meet-the-family-container">
-        <div class="title-text" id="meet-the-family">
-          <p>VENTURES</p>
-        </div>
-        <div class="subtitle-text" id="">
-          <p>WHAT WE'RE BUILDING</p>
-        </div>
-      </div>
+    <section>
+      <h1>VENTURES</h1>
+      <p class="section-description">WHAT WE'RE BUILDING</p>
       <div class="body-grid-container">
         <div class="full-screen-grid" id="members-grid">
           <div class="venture-tile left-tile" id="home-venture-card">
@@ -199,9 +186,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="content" id="companies-grid-wrapper">
+    <section class="content" id="companies-grid-wrapper">
       <div class="title-container" id="company">
 <!--         <div class="title-text" id="meet-the-family">
           <p>COMPANIES</p>
@@ -297,31 +284,18 @@
           </div> -->
         </div>
       </div>
-    </div>
-
-    <section class="footer-container">
-      <footer class="block">
-        <div>
-          <a href="https://www.facebook.com/BerkeleySEP/"><img src="./media/facebook.png" alt="facebook" class="facebook"></a>
-          <a href="https://www.instagram.com/ucberkeleysep/"><img src="./media/instagram.png" alt="instagram" class="instagram"></a>
-
-        </div>
-        <div class="sep-copyright">
-          <p>(c) 2018 — Sigma Eta Pi | UCB Beta Chapter</p>
-        </div>
-      </footer>
     </section>
-    <div class="background">
-      <div class="" id="one">
-        <div class="" id="triangle-topleft">
-        </div>
-      </div>
 
-      <div class="" id="two">
-        <div class="" id="triangle-bottomleft">
-        </div>
+    <footer class="block">
+      <div>
+        <a href="https://www.facebook.com/BerkeleySEP/"><img src="./media/facebook.png" alt="facebook" class="facebook"></a>
+        <a href="https://www.instagram.com/ucberkeleysep/"><img src="./media/instagram.png" alt="instagram" class="instagram"></a>
+
       </div>
-    </div>
+      <div class="sep-copyright">
+        <p>(c) 2018 — Sigma Eta Pi | UCB Beta Chapter</p>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>

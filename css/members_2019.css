@@ -32,13 +32,12 @@ body {
 
 #highlighted-nav-item {
   border: 1.25px solid #d82959;
-  background-color: rgb(255, 255,255, 0.9)
+  background-color: rgb(255, 255,255, 0.9);
   padding: 0;
   border-color: #d82959;
   margin-left: 6vw;
   padding-left: 18px;
   padding-right: 18px;
-
 }
 
 .content {
@@ -180,11 +179,6 @@ a:hover {
   color: white;
 }
 
-.body-grid-container {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
 
 #in-memory-of {
   padding-top: 15vh;
