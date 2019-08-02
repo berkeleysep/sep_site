@@ -6,121 +6,76 @@
     <title>Sigma Eta Pi | Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="icon" href="./media/sep-favicon.png" type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
-    <script type="text/javascript">
-    if (screen.width <= 699) {
-      document.location = "./index-mobile.html";
-    }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-right sticky-top navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="home-navbar">
       <a class="navbar-brand" href="./index.html">
-        <img src="./media/sep-white.png" width="40" height=auto alt="">
+        <img src="./media/sep-white.png" width="40" height=auto alt="SEP logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./about.html">ABOUT <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./about.html">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./ventures.html">VENTURES</a>
+            <a class="nav-link" href="./projects.html">PROJECTS</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="https://medium.com/sep-berkeley">BLOG</a>
+            <a class="nav-link" href="https://medium.com/sep-berkeley">BLOG</a>
           </li>
-          <li class="nav-item" id="highlighted-nav-item">
+          <li class="nav-item nav-rush">
             <a class="nav-link" href="./rush.html">RUSH</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="content" id="grid-wrapper">
 
-      <div class="" id="landing-container">
-        <div class="tiny-arrow-container" id="">
-          <a href="#about-card">
-            <div class="tiny-arrow" id="">
-            </div>
-          </a>
-        </div>
-        <div class="" id="landing-content-container">
-          <div class="" id="sigma-eta-pi-title">
-            <h1 class="sigma-eta-pi-text">SIGMA<br>ETA PI</h1>
-          </div>
-          <div class="" id="sub-title">
-            <h2 class="sub-title-text">SPRING RUSH 2019</h2>
-          </div>
-          <div class="" id="rush-button-container">
-            <a type="btn btn-primary" href="./rush.html" class="btn btn-primary">RUSH</a>
-          </div>
-          <div class="" id="super-sub-title">
-            <p>UC BERKELEY'S PREMIER CO-ED<br>ENTREPRENEURSHIP FRATERNITY</p>
-    
-          </div>
-          <div class="button" id="button">
-              <a href="#home-page-main-content"><img src="./media/button.png" alt="" class="button"></a>
-          </div>
-        </div>
-          
+    <section class="landing">
+      <h1 class="sep-title">SIGMA<br>ETA PI</h1>
+      <h2 class="sep-subtitle">FALL RUSH 2019</h2>
+      <a href="./rush.html" class="rush-button">RUSH</a>
+      <p class="sep-text">UC BERKELEY'S PREMIER CO-ED<br>ENTREPRENEURSHIP FRATERNITY</p>
+      <a href="#post-landing" class="arrow"><img src="./media/button.png" alt="Scroll down"></a>
+    </section>
+
+    <section class="president-section" id="post-landing">
+      <div class="president-message">
+        <p>I’m Andrea Chisholm, SEP’s current president. As a math + cognitive science major, I’ve always 
+          been curious about where we can step out of the SV bubble and apply the design principles and 
+          software acumen we’ve learned in underserved industries.<br>
+          <br>
+          If you’re looking to be surrounded by students who constantly chase self-growth, seek new projects 
+          to build, and question the limits of entrepreneurship, you’ve found the right place 🙂 <br>
+          <br>
+          Excited to catch you at rush! Don’t be afraid to ask bold questions and dive into deeper discussions 
+          beyond the rush process — this is, after all, an iterative learning process on both ends. 🚀</p>
       </div>
-
-    </div>
-
-    <div class="middle" id="home-page-main-content">
-        <div class="" id="home-page-info"> <p>Our mission is to transform individuals into starters who <strong>follow their passion</strong>, <strong>develop lasting relationships</strong>, and <strong>create value through innovative pursuits.</strong></p>
+      <div class="president-image">
+        <img src="./media/individuals/Andrea-Chisholm.jpg" alt="Andrea Chisholm">
+      </div>
+    </section>
+    <section class="options">
+      <div class="home-image-0" id="home-image"></div>
+      <div class="home-options">
+        <div class="option about-option">
+          <h1>ABOUT US</h1>
         </div>
-        <div class="home-content-grid">
-          <h2 class=home-page-title><span>WHO WE ARE</span></h2>
-          <div class="home-page-cards">
-            <div class="" id="home-about-card"> 
-              <div class="nu-retreat-image-container">
-                <img src="./media/omicron-retreat.jpg" alt="" class="nu-retreat-image">
-              </div>
-              <div class="card-text" id="home-about-card-text"> <p>Sigma Eta Pi is UC Berkeley’s premier co-ed entrepreneurship fraternity.</p>
-              </div>
-              <div class="h_line" id="about-line">
-              </div>
-              <hr>
-              <div class="card-link-text" id="about-card-link-text"> <a href="./about.html">
-                <p>About Us</p>
-                </a>
-              </div>
-            </div>
-
-            <div class="" id="home-venture-card">
-              <div class="nu-retreat-image-container"> 
-                <img src="./media/nus.png" alt="" class="nu-retreat-image">
-              </div>
-              <div class="card-text" id="home-venture-card-text"> <p>Our brothers are self-starters. We’re always searching, iterating, and improving.</p>
-              </div>
-              <hr>
-              <div class="card-link-text" id="venture-card-link-text"> <a href="./ventures.html"> <p>Ventures</p> </a>
-              </div>
-            </div> 
-
-            <div class="" id="home-rush-card">
-              <div class="nu-retreat-image-container">
-                <img src="./media/berk-proj.jpg" alt="" class="nu-retreat-image" id="omicron-rush">
-              </div>
-              <div class="card-text" id="home-rush-card-text"> <p>We're a community of best friends collaborating to do amazing things. Join us!</p>
-              </div>
-              <hr>
-              <div class="card-link-text" id="rush-card-link-text"> <a href="./rush.html"><p>Rush</p></a>
-              </div>
-            </div> 
-          </div> 
+        <div class="option projects-option">
+          <h1>PROJECTS</h1>
         </div>
-        <div class="" id="home-page-footer"> 
-          <p>JOIN THE BROTHERHOOD.</p>
+        <div class="option rush-option">
+          <h1>FALL RUSH</h1>
         </div>
-    </div>
+      </div>
+    </section>
+    <section class="medium">
+        <div id="medium-widget"></div>
+        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/sep-berkeley","postsPerLine":2,"limit":2,"picture":"big","fields":["description","author","publishAt"],"ratio":"landscape"}})</script>    
+    </section>
 
     <section class="footer-container">
       <footer class="block">
@@ -134,40 +89,7 @@
         </div>
       </footer>
     </section>
-
-    <div class="background">
-      <div class="" id="one">
-        <div class="" id="triangle-topleft">
-        </div>
-      </div>
-
-      <div class="" id="two">
-        <div class="" id="triangle-bottomleft">
-        </div>
-      </div>
-
-      <!-- <div class="" id="three">
-        <div class="" id="triangle-topright">
-        </div>
-      </div>
-
-      <div class="" id="four">
-        <div class="" id="triangle-bottomright">
-        </div>
-      </div>
-
-      <div class="" id="five">
-        <div class="" id="triangle-topleft">
-        </div>
-      </div>
-
-      <div class="" id="six">
-        <div class="" id="triangle-bottomleft">
-        </div>
-      </div> -->
-    </div>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/homeHover.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>

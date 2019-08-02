@@ -20,7 +20,7 @@ body {
 
 nav {
   background-color: white;
-  box-shadow: 0px 0px 5px #CCCCCC;
+  box-shadow: 0px 0px 5px #DDDDDD;
 }
 
 .navbar a {
@@ -34,18 +34,21 @@ nav {
   margin: 5px 15px;
 }
 
-.active a {
+.nav-rush a {
   color: var(--blue);
 }
 
-#highlighted-nav-item {
-  border: 1.25px solid #d82959;
-  background-color: rgb(255, 255,255, 0.9);
-  padding: 0;
-  border-color: #d82959;
-  margin-left: 6vw;
-  padding-left: 18px;
-  padding-right: 18px;
+.active a:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 2px;
+  border-bottom: 3px solid var(--blue);
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /* Main */
