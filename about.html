@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="icon" href="./media/sep-favicon.png" type="image/x-icon"/>   
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -47,7 +50,7 @@
           <img src="./media/group/alumni.jpg" alt="">
         </div>
         <div class="box about-image">
-          <img src="./media/marcel-event.jpg" alt="">
+          <img src="./media/group/marcel-event.jpg" alt="">
         </div>
         <div class="box about-text">
           <p>We educate our brothers with the most comprehensive knowledge of the startup ecosystem and 
@@ -874,24 +877,31 @@
             </div>
           </div>
         </div>
-        <div class="photo-carousel">
-          <div class="group-tile">
-            <img src="./media/group/alumni.jpg">
+
+        <div class="main-gallery">
+          <div class="gallery-cell">
+            <img src="./media/group/snowboarding.jpg">
           </div>
-          <div class="group-tile">
+          <div class="gallery-cell">
             <img src="./media/group/banquet1.jpg">
           </div>
-          <div class="group-tile">
+          <div class="gallery-cell">
             <img src="./media/group/xcretreat.jpg">
           </div>
-          <div class="group-tile">
+          <div class="gallery-cell">
             <img src="./media/group/banquet2.jpg">
           </div>
-          <div class="group-tile">
+          <div class="gallery-cell">
             <img src="./media/group/holi.jpg">
           </div>
-          <div class="group-tile">
+          <div class="gallery-cell">
+            <img src="./media/group/thailand1.jpg">
+          </div>
+          <div class="gallery-cell">
             <img src="./media/group/banquet3.jpg">
+          </div>
+          <div class="gallery-cell">
+            <img src="./media/group/thailand2.jpg">
           </div>
         </div>
       </section> 
@@ -916,31 +926,47 @@
       <section class="dark-section">
         <h1>SISTER CHAPTERS</h1>
         <p class="section-description">Want to start a chapter? Email main.sep@gmail.com for more information.</p>
+        
         <div class="chapter-grid">
           <a href="https://uclasep.com/">
-            <div class="chapter">
+            <figure class="chapter">
               <img src="./media/chapters/ucla.png" alt="UCLA">
-            </div>
+              <figcaption>
+                <p>UCLA</p>
+              </figcaption>
+            </figure>
           </a>
           <a href="https://sigmaetapi.org/">
-            <div class="chapter">
+            <figure class="chapter">
               <img src="./media/chapters/usc.png" alt="USC">
-            </div>
+              <figcaption>
+                <p>USC</p>
+              </figcaption>
+            </figure>
           </a>
           <a href="http://www.ucsbsep.com/">
-            <div class="chapter">
+            <figure class="chapter">
               <img src="./media/chapters/ucsb.png" alt="UC Santa Barbara">
-            </div>
+              <figcaption>
+                <p>UC Santa Barbara</p>
+              </figcaption>
+            </figure>
           </a>
           <a href="https://www.linkedin.com/company/stanford-sigma-eta-pi">
-            <div class="chapter">
+            <figure class="chapter">
               <img src="./media/chapters/stanford.png" alt="Stanford">
-            </div>
+              <figcaption>
+                <p>Stanford</p>
+              </figcaption>
+            </figure>
           </a>
           <a href="https://www.smartstockecosystem.com/">
-            <div class="chapter">
+            <figure class="chapter">
               <img src="./media/chapters/umich.png" alt="University of Michigan">
-            </div>
+              <figcaption>
+                <p>University of Michigan</p>
+              </figcaption>
+            </figure>
           </a>
         </div>
       </section>
@@ -956,8 +982,7 @@
           <p>(c) 2018 — Sigma Eta Pi | UCB Beta Chapter</p>
       </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/flickity.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
