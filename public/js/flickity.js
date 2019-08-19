@@ -6,3 +6,5 @@ $('.main-gallery').flickity({
     pageDots: false
 
   });
+
+
