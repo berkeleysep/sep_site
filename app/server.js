@@ -26,6 +26,10 @@ app.get('/rush', function(req, res) {
     res.sendFile(path.join(__dirname, 'rush.html'));
 });
 
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, '404.html'));
+});
+
 app.listen(process.env.PORT || 4000, function(){
     console.log('Your node js server is running');
 }); 

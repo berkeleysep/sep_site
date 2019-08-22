@@ -4,22 +4,13 @@
   --mediumBlue: #64DCF0;
   --lightBlue: #F2FBFC;
   --grayText: #393939;
+  --violet: #0D004C;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
 }
 
-.tiny-arrow-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 50%;
-  height: 100%;
-  padding-bottom: 15vh;
-}
-
 .navbar {
-  background-color: var(--darkBlue);
+  background-color: var(--violet);
   color: white;
   z-index: 2;
 }
@@ -33,20 +24,124 @@
 }
 
 .landing {
-  background-color: var(--darkBlue);
+  background-color: var(--violet);
   width: 100%;
   height: 100vh;
   z-index: 1;
-  margin: auto;
+  padding: 0;
+  color: white;
+  position: relative;
+}
+
+.landing h1 {
   color: white;
 }
 
-.arrow {
-  opacity: 0.5;
+.landing img {
+  position: absolute;
+  left: 0;
+  z-index: 0;
 }
 
-.arrow img {
-  width: 5vw;
+.landing-box {
+  border: white 3px solid;
+  margin: auto;
+  padding: 30px;
+  margin-top: 20vh;
+  position: relative;
+  display: inline-block;
+  background-color: var(--violet);
+}
+
+/* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */ 
+
+.rush-button {
+  width: 320px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  font-size: 0;
+}
+
+.rush-button::before, .rush-button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.3s linear;
+  background: #fff;
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.3s linear;
+  background: #fff;
+}
+
+.rush-button-border::before, .rush-button-border::after{
+  width: 100%;
+}
+
+.rush-button-border span::before, .rush-button-border span::after{
+  height: 100%;
+}
+
+.rush-button::before, .rush-button::after{
+  transition-delay: 0s;
+}
+.rush-button span::before, .rush-button span::after{
+  transition-delay: 0.3s;
+}
+.rush-button::before{
+  right: 0;
+  top: 0;
+}
+.rush-button::after{
+  left: 0;
+  bottom: 0;
+}
+.rush-button span::before{
+  left: 0;
+  top: 0;
+}
+.rush-button span::after{
+  right: 0;
+  bottom: 0;
+}
+.rush-button-border::before, .rush-button-border::after{
+  transition-delay: 0.3s;
+}
+
+.piece {
+  background: var(--blue);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.rush-button h1 {
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 13px;
+}
+
+.arrow {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-left: -3vw;
+  opacity: 0.5;
+  width: 6vw;
   min-width: 40px;
 }
 
@@ -83,52 +178,169 @@
 
 /* Options section */
 
-#home-image {
-  width: 50vw;
-  height: 35vw;
-  margin-left: 10%;
-  display: inline-block;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.home-image-0 {
-  background-image: url("/img/group/hill.jpg");
-}
-
-.home-image-1 {
-  background-image: url("/img/group/nu-sf.jpg");
-}
-
-.home-image-2{
-  background-image: url("/img/group/xcretreat.jpg");
-}
-
-.home-image-3 {
-  background-image: url("/img/group/xi-beach.jpg");
-}
-
-.home-options {
-  display: inline-block;
-  width: 30%;
-  border-style: solid;
-  vertical-align: middle;
-}
-
 .option {
-  background-color: var(--lightBlue);
-  padding: 10px;
-  padding-top: 30px;
-  margin: 10px 0;
-  z-index: 2;
+  background-color: #EBFEFF;
+  padding: 2vw;
+  width: 25vw; 
 }
+
+.option h1 {
+  text-align: left;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 20vw;
+}
+
+.option-group span {
+  font-size: 36px;
+  position: absolute;
+  right: 2vw;
+}
+
+@media screen and (min-width: 700px) {
+  .home-image {
+    position: absolute;
+    z-index: -1;
+    width: 50vw;
+    height: 35vw;
+    margin-left: 10vw;
+  }
+
+  .home-options {
+    width: 100%;
+    height: 70vh;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .option {
+    position: absolute;
+    right: 10vw;
+    padding: 2vw;
+    width: 25vw; 
+    overflow: hidden;
+    transition:width 0.5s ease-in-out;
+    -webkit-transition: width 0.5s;
+  }
+  
+  .option p {
+    width: 25vw;
+    text-align: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: inline-block;
+  }
+
+  .about-option {
+    top: 5%;
+  }
+  
+  .projects-option {
+    top: 38%;
+  }
+  
+  .rush-option {
+    top: 71%;
+  }
+  
+  .option:hover {
+    cursor: pointer;
+    width: 60vw;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+  }
+
+  .option:hover h1 {
+    transition: all 1s linear;
+  }
+
+  .option-group {
+    display:inline-block;
+    width:60vw;
+  }
+}
+
+
+/* .about-option:hover::after {
+  content: 'Sigma Eta Pi is UC Berkeley’s premier co-ed entrepreneurship fraternity.';
+} */
 
 /* Medium spotlight */
 .medium {
-  margin: 0 10%;
+  margin: 0;
   font-family: 'Lato';
+  background-color: var(--lightBlue);
 }
+
+.medium-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 5vh;
+}
+
+.medium-title img {
+  height: 50px;
+}
+
+.medium-title > * {
+  margin: 30px;
+}
+
+#medium-widget {
+  margin: 0 10%;
+}
+
+/* Mobile-responsive */
+
+@media screen and (max-width: 700px) {
+  .landing img {
+    top: 15%;
+  }
+
+  .president-message {
+    width: 100%;
+    border: none;
+  }
+
+  .president-image {
+    width: 100%;
+  }
+
+  .arrow, .medium {
+    display: none;
+  }
+
+  .home-image {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+  
+  .home-options {
+    margin-top: 20px;
+  }
+
+  .option {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .option p {
+    display: none;
+  }
+
+  .option h1 {
+    width: auto;
+  }
+}
+
+/* Keyframes */
 
 @keyframes fadein {
     from { opacity: 0; }

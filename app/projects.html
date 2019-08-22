@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/projects.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/js/footer.js"></script>
+    <script src="/js/loadFooter.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -35,57 +35,127 @@
       </div>
     </nav>
 
-    <section>
+    <section class="pledging">
       <h1>OUR VENTURE PROCESS</h1>
-      <p class="section-description">Description about pledging.</p>
+      <p class="section-description">
+        Our pledge education process is, in its own way, our own product. We’re constantly iterating 
+        on what equips new members with the tools needed to successfully dive into their own ventures. <br>
+        <br>
+        While the specifics are left as a surprise to the new members, here’s an overview of the different phases 
+        of the venture-building aspect of pledging:</p>
       <div class="pledging-aspect">
         <div class="pledging-image-circle"></div>
-        <div class="pledging-description">hello</div>
+        <h3>Ideate</h3>
+        <p>Idea generation -> validation -> research.</p>
       </div>
       <div class="pledging-aspect">
         <div class="pledging-image-circle"></div>
-        <div class="pledging-description">hello</div>
+        <h3>Sell a product (idea)</h3>
+        <p>Learning what sells to people and what doesn’t through direct experience.</p>
       </div>
       <div class="pledging-aspect">
         <div class="pledging-image-circle"></div>
-        <div class="pledging-description">hello</div>
+        <h3>Build an MVP</h3>
+        <p>Using the past two phases to build a solid MVP with backed research.</p>
       </div>
       <div class="pledging-aspect">
         <div class="pledging-image-circle"></div>
-        <div class="pledging-description">hello</div>
+        <h3>Present to VCs</h3>
+        <p>Testing the culmination of the semester of hard work.</p>
       </div>
       
     </section>
   
     <section>
-      <h1>VENTURES</h1>
-      <p class="section-description">WHAT WE'RE BUILDING</p>
+      <h1>WHAT ARE ACTIVES BUILDING?</h1>
+      <p class="section-description">Sky's the limit - we're currently building: </p>
       <div class="grid">
         <div class="venture-tile">
             <div class="venture-image">
-              <img src="./img/projects/kustom-life-logo.png" alt="">
+              <img src="./img/projects/fratty-bear.png" alt="Fratty Bear">
             </div>
-            <p>Fratty Bear, custom apparel.</p>
+            <p>Fratty Bear, custom apparel in bulk.</p>
             <hr>
-            <a href="http://klcwholesale.com/">Learn More</a>
+            <span id="fratty-open">Learn More</span>
+        </div>
+        <div class="modal" id="fratty-modal">
+          <div class="modal-content">
+            <span class="close" id="fratty-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/fratty-bear-drey.jpg"> 
+            </div>
+            <div class="modal-description">
+              <h1>Fratty Bear</h1>
+              <p>{WIP} Description here.</p>
+              <p>Check out the <a href="http://frattybear.com/" class="underline-magical">website</a>!</p>
+            </div>
+          </div>
         </div>
           
         <div class="venture-tile">
           <div class="venture-image">
-            <img src="./img/projects/triplethread.png" alt="Triple Thread">
+            <img src="./img/projects/triple-thread.png" alt="Triple Thread">
           </div>
-          <p>Curated fashion blog for the modern woman.</p>
+          <p>Triple Thread, a curated fashion blog.</p>
           <hr>
-          <a href="https://triplethread.blog/">Learn More</a>
+          <span id="tt-open">Learn More</span>
+        </div>
+        <div class="modal" id="tt-modal">
+          <div class="modal-content">
+            <span class="close" id="tt-close">×</span>
+            <div class="modal-image">
+              <img src="./img/projects/triple-thread-3.jpg"> 
+            </div>
+            <div class="modal-description">
+              <h1>Triple Thread</h1>
+              <p>{WIP} Description here.</p>
+              <p>Check out their <a href="https://triplethread.blog/" class="underline-magical">blog</a>!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="venture-tile">
+            <div class="venture-image">
+              <img src="./img/projects/fmb.png" alt="">
+            </div>
+            <p>FMB Tech., empowering preclinical researchers.</p>
+            <hr>
+            <span id="fmb-open">Learn More</span>
+        </div>
+        <div class="modal" id="fmb-modal">
+          <div class="modal-content">
+            <span class="close" id="fmb-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/fmb-rohan.jpg"> 
+            </div>
+            <div class="modal-description">
+              <h1>FMB Technologies</h1>
+              <p>{WIP} Description here.</p>
+              <p>Check out the <a href="http://fmbtechnologies.com" class="underline-magical">website</a>!</p>
+            </div>
+          </div>
         </div>
 
         <div class="venture-tile">
           <div class="venture-image">
-            <img src="./img/projects/tester.png" alt="" >
+            <img src="./img/projects/clean-slate.png" alt="" >
           </div>
           <p>Clean Slate Diagnostics, rapid tester for STIs.</p>
           <hr>
-          <a href="https://www.kanoacook.com/std-detection">Learn More</a>
+          <span id="cs-open">Learn More</span>
+        </div>
+        <div class="modal" id="cs-modal">
+          <div class="modal-content">
+            <span class="close" id="cs-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/clean-slate-kanoa.png"> 
+            </div>
+            <div class="modal-description">
+              <h1>Clean Slate</h1>
+              <p>{WIP} Description here.</p>
+              <p>Check out the <a href="https://www.kanoacook.com/std-detection" class="underline-magical">website</a>!</p>
+            </div>
+          </div>
         </div>
 
         <div class="venture-tile">
@@ -94,7 +164,7 @@
             </div>
             <p>BlitzIQ, sales assistant for sales team. (YC W19)</p>
             <hr>
-            <a href="">Learn More</a>
+            <span id="blitz-open">Learn More</span>
         </div>        
 
         <div class="venture-tile" id="home-venture-card">
@@ -112,7 +182,7 @@
             </div>
             <p>Mentorship program for Berkeley High.</p>
             <hr>
-            <a href="./ventures">Learn More</a>
+            <span id="be-open">Learn More</span>
         </div>
 
         <div class="venture-tile" id="home-venture-card">
@@ -121,7 +191,7 @@
             </div>
             <p>Good Riddance, a streetwear brand.</p>
             <hr>
-            <a href="./ventures">Learn More</a>
+            <span id="gr-open">Learn More</span>
         </div>
 
         <div class="venture-tile right-tile">
@@ -141,15 +211,6 @@
             <hr>
             <a href="https://jenniferzlu.com/dingo.html">Learn More</a>
         </div>
-        
-        <div class="venture-tile">
-            <div class="venture-image">
-              <img src="./img/projects/fbm.png" alt="">
-            </div>
-            <p>FMB Tech., empowering preclinical researchers.</p>
-            <hr>
-            <a href="http://fmbtechnologies.com">Learn More</a>
-        </div>
 
         <div class="venture-tile">
             <div class="venture-image">
@@ -158,15 +219,6 @@
             <p>Flow, bettering traffic control.</p>
             <hr>
             <a href="https://flow-project.github.io/index">Learn More</a>
-        </div>
-
-        <div class="venture-tile">
-            <div class="venture-image">
-              <img src="./img/projects/battery.png" alt="">
-            </div>
-            <p>Superior alternative to Lithium-ion batteries.</p>
-            <hr>
-            <a href="">Learn More</a>
         </div>
 
         <div class="venture-tile">
@@ -181,7 +233,7 @@
     </section>
 
     <section class="dark-section">
-      <h1>WHAT WE'VE FOUNDED</h1>
+      <h1>WHAT HAS SEP FOUNDED?</h1>
       <div class="grid">
         <a href="https://www.bayesimpact.org/en/">
           <figure class="company-tile" id="bayes">
@@ -233,6 +285,7 @@
 
     <footer class="footer"></footer>
     <script src="/js/navbar.js"></script>
+    <script src="/js/projects.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>

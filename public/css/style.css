@@ -4,8 +4,13 @@
   --mediumBlue: #64DCF0;
   --lightBlue: #F2FBFC;
   --grayText: #393939;
+  --violet: #0D004C;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 img {
@@ -35,25 +40,17 @@ nav {
 }
 
 .nav-rush a {
-  color: var(--blue);
+  color: #ed7cf1;
 }
-
-@media screen and (min-width: 992px) {
-  .active a:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    padding-top: 2px;
-    border-bottom: 3px solid var(--blue);
-    animation: scale 0.75s;
-	  -webkit-animation: scale 0.75s;
-  }
-}
-
 
 a:hover {
   cursor: pointer;
+  color: var(--blue);
+}
+
+.navbar button {
+  border: none;
+  outline: none;
 }
 
 .animated-icon {
@@ -74,11 +71,6 @@ a:hover {
 .animated-icon:hover {
   cursor: pointer;
 }
-
-.animated-icon.focus, .animated-icon:focus {
-  outline: 0;
-  box-shadow: none!important;
-}
   
 .animated-icon span {
   background: #000000;
@@ -97,6 +89,10 @@ a:hover {
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+}
+
+.animated-icon-dark span {
+  background: #FFFFFF;
 }
 
 .animated-icon span:nth-child(1) {
@@ -153,12 +149,12 @@ section {
   background-color: var(--lightBlue);
 }
 
-h1 {
+section h1 {
   font-family: var(--hFont);
   font-size: 36px;
   font-weight: bold;
   color: var(--blue);
-  margin: 0 50px 20px 50px;
+  margin-bottom: 20px;
 }
 
 .grid {
@@ -170,13 +166,31 @@ h1 {
   padding-top: 5px;
 }
 
+/* Credit: https://gist.github.com/CodeMyUI/1742d679c031cfea06948681e24cefd4 */
+.underline-magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  color: var(--grayText);
+}
+
+.underline-magical:hover {
+  background-size: 100% 88%;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
 /* Footer */
 
 footer {
   padding-top: 50px;
+  padding-bottom: 20px;
   position: absolute;
   width: 100%;
-  background: rgba(13, 0, 76,1);
+  background: var(--violet);
 }
 
 footer a img {
@@ -203,4 +217,28 @@ footer p {
 @-webkit-keyframes scale {
   from { width: 0px; }
   to   { width: 90%; }
+}
+
+/* Mobile Responsive */
+
+@media screen and (min-width: 992px) {
+  .active a:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 2px;
+    border-bottom: 3px solid var(--blue);
+    animation: scale 0.75s;
+	  -webkit-animation: scale 0.75s;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;  
+    padding-top: 5px;
+  }
 }

@@ -7,16 +7,6 @@
   --pFont: 'Open Sans';
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #B0DBDC;
-  text-decoration: none;
-}
-
 .section-description {
   margin-bottom: 40px;
   font-size: 16px;
@@ -226,4 +216,26 @@ a:hover {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 500px) {
+  .liquify-diagonal {
+    opacity: 0;
+  }
+
+  .about-section {
+    width: 90%;
+    margin: auto;
+    color: var(--grayText);
+  }
+
+  .about-text { 
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+  }
 }
