@@ -18,9 +18,16 @@ img {
 }
 
 body {
-  font-family: var(--pFont), sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  color: var(--grayText);
   font-weight: 600;
   text-align: center;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -30,7 +37,7 @@ nav {
 
 .navbar a {
   font-family: var(--pFont), sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   color: #505050;
   font-size: 14px;
 }
@@ -43,8 +50,7 @@ nav {
   color: #ed7cf1;
 }
 
-a:hover {
-  cursor: pointer;
+nav a:hover {
   color: var(--blue);
 }
 
@@ -154,7 +160,7 @@ section h1 {
   font-size: 36px;
   font-weight: bold;
   color: var(--blue);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .grid {
@@ -173,7 +179,6 @@ section h1 {
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
-  color: var(--grayText);
 }
 
 .underline-magical:hover {
@@ -186,8 +191,7 @@ section h1 {
 /* Footer */
 
 footer {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   position: absolute;
   width: 100%;
   background: var(--violet);

@@ -64,6 +64,7 @@
   -o-animation: fadein 2.5s; /* Opera < 12.1 */
   animation: fadein 2.5s;
   -webkit-transition: all 250ms;
+  background-color: white;
 }
 
 .venture-tile:hover {

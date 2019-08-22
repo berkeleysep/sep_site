@@ -147,9 +147,10 @@ html {
   font-size: 20px;
   text-align: right;
   margin-right: 5%;
-  vertical-align: middle;
+  vertical-align: top;
   margin-top: 50px;
   color: var(--darkBlue);
+  font-weight: bold;
 }
 
 .answer {
