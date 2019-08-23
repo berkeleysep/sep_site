@@ -24,36 +24,84 @@
 }
 
 .landing {
-  background-color: var(--violet);
+  background-image: linear-gradient(to bottom right, #343686, #0d0d30);
+  padding: 0px;
+  margin: 0px;
   width: 100%;
   height: 100vh;
-  z-index: 1;
-  padding: 0;
+  max-height: 700px;
+  min-height: 550px;
   color: white;
+  display: flex;
+}
+
+.landing-info {
+  align-self: center;
+  text-align: left;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+.sep-title {
+  font-size: 100px;
   position: relative;
+  font-weight: 800;
+  letter-spacing: 5px;
+  line-height: 1;
 }
 
-.landing h1 {
-  color: white;
+.white-sep {
+  position: absolute;
+  z-index: 2;
 }
 
-.landing img {
+.blue-sep {
+  color: var(--blue);
+  position: relative;
+  top: 5px;
+  left: 4px;
+  z-index: 1;
+}
+
+.rush-container {
+  margin-top: 40px;
+}
+
+.landing-liquid {
+  height: 100vh;
+  max-height: 700px;
+  min-height: 550px;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+
+.liquify-home {
+  height: 100%;
+  max-width: none;
+}
+
+.rush-text {
+  height: 40px;
+}
+
+/*.landing img {
   position: absolute;
   left: 0;
   z-index: 0;
 }
+*/
 
-.landing-box {
-  border: white 3px solid;
-  margin: auto;
-  padding: 30px;
-  margin-top: 20vh;
-  position: relative;
-  display: inline-block;
-  background-color: var(--violet);
+.rush-landing {
+  height: 100%;
+  position: absolute;
+  right: 0px;
 }
 
-/* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */ 
+/* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */
 
 .rush-button {
   width: 320px;
@@ -181,7 +229,7 @@ span::before, span::after{
 .option {
   background-color: #EBFEFF;
   padding: 2vw;
-  width: 25vw; 
+  width: 25vw;
 }
 
 .option h1 {
@@ -212,17 +260,17 @@ span::before, span::after{
     vertical-align: middle;
     position: relative;
   }
-  
+
   .option {
     position: absolute;
     right: 10vw;
     padding: 2vw;
-    width: 25vw; 
+    width: 25vw;
     overflow: hidden;
     transition:width 0.5s ease-in-out;
     -webkit-transition: width 0.5s;
   }
-  
+
   .option p {
     width: 25vw;
     text-align: left;
@@ -234,15 +282,15 @@ span::before, span::after{
   .about-option {
     top: 5%;
   }
-  
+
   .projects-option {
     top: 38%;
   }
-  
+
   .rush-option {
     top: 71%;
   }
-  
+
   .option:hover {
     cursor: pointer;
     width: 60vw;
@@ -297,10 +345,6 @@ span::before, span::after{
 /* Mobile-responsive */
 
 @media screen and (max-width: 700px) {
-  .landing img {
-    top: 15%;
-  }
-
   .president-message {
     width: 100%;
     border: none;
@@ -319,7 +363,7 @@ span::before, span::after{
     margin: 0;
     position: relative;
   }
-  
+
   .home-options {
     margin-top: 20px;
   }
