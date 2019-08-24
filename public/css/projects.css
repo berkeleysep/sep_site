@@ -84,7 +84,7 @@
 
 .venture-tile p {
   margin: 20px 15px 10px 15px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--grayText);
 }
 
@@ -175,7 +175,7 @@ hr {
 	padding: 20px;
 	background: #2c3f52;
   color: var(--mediumBlue);
-  
+
   height: 100px;
 	width: 100%;
 	bottom: 0;

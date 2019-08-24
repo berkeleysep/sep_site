@@ -18,11 +18,11 @@ img {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
   font-style: normal;
   color: var(--grayText);
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@ nav {
 }
 
 .navbar a {
-  font-family: var(--pFont), sans-serif;
+  font-family: futura-pt, sans-serif;
   font-weight: 800;
   color: #505050;
   font-size: 14px;
@@ -77,7 +77,7 @@ nav a:hover {
 .animated-icon:hover {
   cursor: pointer;
 }
-  
+
 .animated-icon span {
   background: #000000;
   display: block;
@@ -104,35 +104,35 @@ nav a:hover {
 .animated-icon span:nth-child(1) {
   top: 0px;
 }
-  
+
 .animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
   top: 10px;
 }
-  
+
 .animated-icon span:nth-child(4) {
   top: 20px;
 }
-  
+
 .animated-icon.open span:nth-child(1) {
   top: 11px;
   width: 0%;
   left: 50%;
 }
-  
+
 .animated-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-  
+
 .animated-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-  
+
 .animated-icon.open span:nth-child(4) {
   top: 11px;
   width: 0%;
@@ -168,7 +168,7 @@ section h1 {
   justify-content: center;
   flex-flow: row wrap;
   width: 80%;
-  margin: auto;  
+  margin: auto;
   padding-top: 5px;
 }
 
@@ -242,7 +242,7 @@ footer p {
     justify-content: center;
     flex-flow: row wrap;
     width: 90%;
-    margin: auto;  
+    margin: auto;
     padding-top: 5px;
   }
 }

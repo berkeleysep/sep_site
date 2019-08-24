@@ -156,7 +156,7 @@ html {
 .answer {
   display: inline-block;
   width: 65%;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   vertical-align: middle;
   margin-top: 50px;
@@ -229,4 +229,3 @@ canvas#spiders {
   position: absolute;
   bottom: 0;
 }
-
