@@ -33,6 +33,7 @@
   min-height: 550px;
   color: white;
   display: flex;
+  overflow: hidden;
 }
 
 .landing-info {
