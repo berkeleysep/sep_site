@@ -41,7 +41,7 @@
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 28px;
   letter-spacing: 1.5px;
   display: flex;
   align-items: center;
@@ -88,16 +88,30 @@
   max-width: none;
 }
 
-.rush-text {
-  height: 40px;
+.landing-button {
+  background-color: rgba(255,255,255, 0.13);
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 8px;
+  width: 300px;
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*.landing img {
-  position: absolute;
-  left: 0;
-  z-index: 0;
+.rush-text {
+  height: 35px;
+  position: relative;
+  z-index: 1;
 }
-*/
+
+.landing-button:hover {
+  background-color: rgba(255,255,255);
+  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  cursor: pointer;
+}
 
 .rush-landing {
   height: 100%;
