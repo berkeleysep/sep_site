@@ -377,6 +377,11 @@ span::before, span::after{
     font-size: 50px;
   }
 
+  .blue-sep {
+    top: 2px;
+    right: 2px;
+  }
+
   .landing-button {
     width: 195px;
   }
