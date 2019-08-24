@@ -36,13 +36,17 @@
 }
 
 .landing-info {
-  align-self: center;
+  width: 75%;
   text-align: left;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
   letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -75px;
 }
 
 .sep-title {
