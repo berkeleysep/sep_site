@@ -55,6 +55,7 @@
   font-weight: 800;
   letter-spacing: 5px;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .white-sep {
@@ -363,6 +364,30 @@ span::before, span::after{
 /* Mobile-responsive */
 
 @media screen and (max-width: 700px) {
+  .landing-info {
+    width: 100%;
+    margin-top: 0px;
+    font-size: 20px;
+    z-index: 1;
+    margin-top: -150px;
+  }
+
+  .sep-title {
+    font-size: 60px;
+  }
+
+  .landing-button {
+    width: 225px;
+  }
+
+  .rush-text {
+    height: 30px;
+  }
+
+  .landing-liquid {
+    right: -175px;
+  }
+
   .president-message {
     width: 100%;
     border: none;
