@@ -368,21 +368,21 @@ span::before, span::after{
   .landing-info {
     width: 100%;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 17px;
     z-index: 1;
     margin-top: -150px;
   }
 
   .sep-title {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .landing-button {
-    width: 225px;
+    width: 195px;
   }
 
   .rush-text {
-    height: 30px;
+    height: 28px;
   }
 
   .landing-liquid {
