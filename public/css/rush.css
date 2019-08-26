@@ -144,67 +144,22 @@ html {
 @media screen and (max-width: 767px) {
   .faq .question {
     font-size: 18px;
+    width: 100%;
+    text-align: left;
+    display: block;
+  }
+
+  .faq .answer {
+    width: 100%;
+    display: block;
+    margin-top: 0;
   }
 }
 
-.majors-container {
-  margin-top: 3vh;
-  margin-left: -10px;
-}
-
-.majors-container > img {
-  width: 70%;
-  height: 90%;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-#grid-wrapper {
-  display: flex;
-  background-color: #020135;
-  /*background-image: url('../media/centered-phoenix.png');*/
-  height: 100vh;
-}
-
-i {
-  position: absolute;
-  top:0; bottom:0;left:0;right:0;
-  display:block;
-  background:rgb(2,1,53);
-  z-index:-1;
-  height: 100vh;
-}
 
 canvas#spiders {
   /*height:100vh;*/
   height: 100vh;
   position: absolute;
   z-index: -1;
-}
-
-.btn-primary:hover {
-  background-color: #707070;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
-  background-color: white;
-  /*background-image: url('../media/entrepreneur.png');*/
-  background-size: 125% auto;
-}
-
-.bottom-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-column: 1 / 13;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 10vh;
-  position: absolute;
-  bottom: 0;
 }

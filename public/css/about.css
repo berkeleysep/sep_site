@@ -259,4 +259,12 @@ i {
   .grid {
     width: 90%;
   }
+
+  .box { 
+    margin: 10px 0px;
+  }
+
+  .company-tile {
+    margin: 5px;
+  }
 }

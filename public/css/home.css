@@ -92,92 +92,118 @@
 
 /* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */
 
-.rush-button {
-  border-radius: 10px;
-  width: 310px;
-  height: auto;
-  margin-top: 20px;
-  position: relative;
-  font-size: 0;
-  transition: background-color 1s;
-  -webkit-transition: background-color 1s;
+
+@media screen and (max-width: 700px) {
+  .rush-button {
+    background-color: rgba(255,255,255, 0.13);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 8px;
+    width: 50%;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rush-button img {
+    height: 30px;
+    position: relative;
+    z-index: 1;
+  }
 }
 
-.rush-button:hover {
-  background-color: rgba(255,255,255, 0.2);
-  transition: background-color 1s;
-  -webkit-transition: background-color 1s;
-  cursor: pointer;
+@media screen and (min-width: 700px) {
+  .rush-button {
+    border-radius: 10px;
+    width: 310px;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    font-size: 0;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+  }
+
+  .rush-button:hover {
+    background-color: rgba(255,255,255, 0.2);
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    cursor: pointer;
+  }
+  
+  .rush-button::before, .rush-button::after{
+    content:"";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #fff;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:1px;
+    height:0;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #fff;
+  }
+  
+  .rush-button-border::before, .rush-button-border::after{
+    width: 100%;
+  }
+  
+  .rush-button-border span::before, .rush-button-border span::after{
+    height: 100%;
+  }
+  
+  .rush-button::before, .rush-button::after{
+    transition-delay: 0s;
+  }
+  .rush-button span::before, .rush-button span::after{
+    transition-delay: 0.5s;
+  }
+  .rush-button::before{
+    right: 0;
+    top: 0;
+  }
+  .rush-button::after{
+    left: 0;
+    bottom: 0;
+  }
+  .rush-button span::before{
+    left: 0;
+    top: 0;
+  }
+  .rush-button span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .rush-button-border::before, .rush-button-border::after{
+    transition-delay: 0.3s;
+  }
+  
+  .piece {
+    background: rgba(255,255,255, 0.13);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .rush-button img {
+    position: absolute;
+    height: 50%;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    margin-left: 100px;
+  }
+  
 }
 
-.rush-button::before, .rush-button::after{
-  content:"";
-  width: 0;
-  height: 1px;
-  position: absolute;
-  transition: all 0.3s linear;
-  background: #fff;
-}
 
-span::before, span::after{
-  content:"";
-  width:1px;
-  height:0;
-  position: absolute;
-  transition: all 0.3s linear;
-  background: #fff;
-}
-
-.rush-button-border::before, .rush-button-border::after{
-  width: 100%;
-}
-
-.rush-button-border span::before, .rush-button-border span::after{
-  height: 100%;
-}
-
-.rush-button::before, .rush-button::after{
-  transition-delay: 0s;
-}
-.rush-button span::before, .rush-button span::after{
-  transition-delay: 0.5s;
-}
-.rush-button::before{
-  right: 0;
-  top: 0;
-}
-.rush-button::after{
-  left: 0;
-  bottom: 0;
-}
-.rush-button span::before{
-  left: 0;
-  top: 0;
-}
-.rush-button span::after{
-  right: 0;
-  bottom: 0;
-}
-.rush-button-border::before, .rush-button-border::after{
-  transition-delay: 0.3s;
-}
-
-.piece {
-  background: rgba(255,255,255, 0.13);
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-}
-
-.rush-button img {
-  position: absolute;
-  height: 50%;
-  width: auto;
-  top: 0;
-  left: 0;
-  margin-top: 13px;
-  margin-left: 100px;
-}
 
 .arrow {
   position: absolute;
@@ -366,7 +392,7 @@ span::before, span::after{
   }
 
   .landing-liquid {
-    right: -175px;
+    right: -190px;
   }
 
   .president-section {

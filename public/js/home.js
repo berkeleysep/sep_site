@@ -57,8 +57,10 @@ function breakGlass(toReverse){
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
+if($(window).width() >= 700){
+    $('.rush-button').hover(function() {
+        breakGlass(false);
+        $('.rush-button').addClass('rush-button-border');
+    });
+}
 
-$('.rush-button').hover(function() {
-    breakGlass(false);
-    $('.rush-button').addClass('rush-button-border');
-});
