@@ -82,17 +82,6 @@ html {
   background-color: #020135;
 }
 
-/*.btn-primary {
-  font-size: 40px;
-  width: 175px;
-  height: 60px;
-  background-image: linear-gradient(rgba(204,83,51,0.85), rgba(35, 7, 77, 0.85));
-  color: white;
-  border: none;
-  border-radius: 30px;
-  padding: 0;
-}*/
-
 .btn-primary {
   display: flex;
   flex-direction: column;
@@ -108,16 +97,6 @@ html {
   /*border-radius: 20px;*/
   padding: 0;
   border-color: #d82959;
-}
-
-.button {
-  text-align: left;
-  width: 60px;
-  height: auto;
-  opacity: 0.75;
-  position: absolute;
-  bottom: 6vh;
-  /*background-color: pink;*/
 }
 
 /* Timeline */

@@ -46,8 +46,8 @@
   font-style: normal;
   font-size: 28px;
   letter-spacing: 1.5px;
-  margin-top: 20vh;
-  margin-left: 5vw;
+  margin-top: 25vh;
+  margin-left: 8vw;
 }
 
 .sep-title {
@@ -198,7 +198,7 @@ span::before, span::after{
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  width: 50%;
+  width: 60%;
   margin-left: 5%;
   padding-left: 5%;
   border-left-style: solid;
@@ -349,6 +349,7 @@ span::before, span::after{
   .landing-info {
     width: 100%;
     font-size: 17px;
+    margin-left: 10vw;
   }
 
   .navbar {

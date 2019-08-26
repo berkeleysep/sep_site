@@ -1,0 +1,44 @@
+/* Signup form */
+
+#mc_embed_signup{
+    background: #fff; 
+    clear: left; 
+    font: 16px futura-pt,Arial,sans-serif; 
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 2px 10px #dddddd;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  
+  #mc_embed_signup .custom-input {
+    border: none;
+    background-color: #eeeeee;
+  }
+  
+  #mc_embed_signup #inline-FNAME {
+    width: 45%;
+    margin-right: 5%;
+    display: inline-block;
+  }
+  
+  #mc_embed_signup #inline-LNAME {
+    width: 45%;
+    display: inline-block;
+  }
+  
+  #mc_embed_signup #mc-embedded-subscribe {
+    background-color: #EBFEFF;
+    font-family: 'Futura';
+    color: var(--darkBlue);
+    transition: all 250ms;
+    -webkit-transition: all 250ms;
+    box-shadow: 0 2px 5px #dddddd;
+  }
+  
+  #mc_embed_signup #mc-embedded-subscribe:hover {
+    background-color: var(--darkBlue);
+    color: var(--lightBlue);
+    transition: all 250ms;
+    -webkit-transition: all 250ms;
+  }

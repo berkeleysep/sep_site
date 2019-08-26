@@ -46,6 +46,10 @@ nav {
   margin: 5px 15px;
 }
 
+.navbar-brand {
+  margin-left: 5px;
+}
+
 .nav-rush a {
   color: #ed7cf1;
 }
