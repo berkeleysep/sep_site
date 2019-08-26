@@ -16,10 +16,18 @@
   width: 80%;
 }
 
+a {
+  color: var(--grayText);
+}
+
+span {
+  font-family: 'Futura';
+}
+
 /* Venture process section */
 .pledging .section-description {
   text-align: left;
-  width: 60%;
+  width: 80vmin;
   margin: auto;
   margin-bottom: 50px;
 }

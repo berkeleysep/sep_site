@@ -9,7 +9,6 @@
 
 .section-description {
   margin-bottom: 40px;
-  font-size: 16px;
   width: 100%;
 }
 
@@ -69,8 +68,9 @@
   transition: .2s ease;
   background-image: linear-gradient(to right, rgba(204,83,51,0.85), rgba(35, 7, 77, 0.85));
   color: white;
-  font-size: 2.5vmin;
-  font-weight: 600;
+  font-family: 'Futura', sans-serif;
+  font-size: 3vmin;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -137,8 +137,19 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px;
   width: 20vmin;
   margin: 10px;
+  transition: all 250ms;
+  -webkit-transition: all 250ms;
+}
+
+.company-tile:hover {
+  border-radius: 10px;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px #dddddd;
+  transition: all 250ms;
+  -webkit-transition: all 250ms;
 }
 
 /* Sister chapter section */
@@ -157,39 +168,35 @@ i {
   z-index: 1;
 }
 
-.chapter:hover img {
-	opacity: 0.4;
-}
-
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
 
 .chapter figcaption::before,
 .chapter figcaption::after {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
 }
 
 .chapter figcaption::before {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
 }
 
 .chapter figcaption::after {
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-	-webkit-transform: scale(1,0);
-	transform: scale(1,0);
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
 }
 
 .chapter p {
@@ -201,29 +208,36 @@ i {
   height: 50%;
   color: #ffffff;
   font-size: 24px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
-}
-
-.chapter:hover figcaption::before,
-.chapter:hover figcaption::after {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
-.chapter:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
 }
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 800px) {
+  .chapter:hover img {
+    opacity: 0.4;
+  }
+
+  /** Bubba hover only on non-mobile */
+  .chapter:hover figcaption::before,
+  .chapter:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .chapter:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+@media screen and (max-width: 800px) {
   .liquify-diagonal {
     opacity: 0;
   }
@@ -240,5 +254,9 @@ i {
 
   .about-image {
     width: 100%;
+  }
+
+  .grid {
+    width: 90%;
   }
 }

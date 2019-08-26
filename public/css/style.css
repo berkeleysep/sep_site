@@ -19,7 +19,7 @@ img {
 
 body {
   font-family: futura-pt, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   color: var(--grayText);
   font-weight: 400;
@@ -36,7 +36,7 @@ nav {
 }
 
 .navbar a {
-  font-family: futura-pt, sans-serif;
+  font-family: var(--pFont), sans-serif;
   font-weight: 800;
   color: #505050;
   font-size: 16px;
@@ -244,5 +244,11 @@ footer p {
     width: 90%;
     margin: auto;
     padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 50px 50px;
   }
 }

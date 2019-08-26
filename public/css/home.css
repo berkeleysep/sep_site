@@ -10,7 +10,9 @@
 }
 
 .navbar {
-  background-color: var(--violet);
+  background-color: rgba(255,255,255,0);
+  width: 100%;
+  position: absolute;
   color: white;
   z-index: 2;
 }
@@ -44,10 +46,8 @@
   font-style: normal;
   font-size: 28px;
   letter-spacing: 1.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -75px;
+  margin-top: 20vh;
+  margin-left: 5vw;
 }
 
 .sep-title {
@@ -57,19 +57,7 @@
   letter-spacing: 5px;
   line-height: 1;
   white-space: nowrap;
-}
-
-.white-sep {
-  position: absolute;
-  z-index: 2;
-}
-
-.blue-sep {
-  color: var(--blue);
-  position: relative;
-  top: 5px;
-  left: 4px;
-  z-index: 1;
+  text-shadow: 5px 5px var(--blue);
 }
 
 .rush-container {
@@ -90,29 +78,10 @@
   max-width: none;
 }
 
-.landing-button {
-  background-color: rgba(255,255,255, 0.13);
-  border: 1px solid white;
-  border-radius: 10px;
-  margin-top: 8px;
-  width: 300px;
-  padding: 15px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .rush-text {
   height: 35px;
   position: relative;
   z-index: 1;
-}
-
-.landing-button:hover {
-  background-color: rgba(255,255,255);
-  transition: background-color 0.25s;
-  -webkit-transition: background-color 0.25s;
-  cursor: pointer;
 }
 
 .rush-landing {
@@ -124,18 +93,27 @@
 /* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */
 
 .rush-button {
-  width: 320px;
+  border-radius: 10px;
+  width: 310px;
   height: auto;
-  margin: auto;
   margin-top: 20px;
   position: relative;
   font-size: 0;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+.rush-button:hover {
+  background-color: rgba(255,255,255, 0.2);
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  cursor: pointer;
 }
 
 .rush-button::before, .rush-button::after{
   content:"";
   width: 0;
-  height: 2px;
+  height: 1px;
   position: absolute;
   transition: all 0.3s linear;
   background: #fff;
@@ -143,7 +121,7 @@
 
 span::before, span::after{
   content:"";
-  width:2px;
+  width:1px;
   height:0;
   position: absolute;
   transition: all 0.3s linear;
@@ -162,7 +140,7 @@ span::before, span::after{
   transition-delay: 0s;
 }
 .rush-button span::before, .rush-button span::after{
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
 }
 .rush-button::before{
   right: 0;
@@ -185,22 +163,20 @@ span::before, span::after{
 }
 
 .piece {
-  background: var(--blue);
+  background: rgba(255,255,255, 0.13);
   display: inline-block;
   width: 30px;
   height: 30px;
 }
 
-.rush-button h1 {
-  font-size: 24px;
-  color: white;
+.rush-button img {
   position: absolute;
-  width: 100%;
   height: 50%;
+  width: auto;
   top: 0;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  left: 0;
   margin-top: 13px;
+  margin-left: 100px;
 }
 
 .arrow {
@@ -223,12 +199,12 @@ span::before, span::after{
   vertical-align: middle;
   text-align: left;
   width: 50%;
-  margin-right: 5%;
-  padding-right: 5%;
-  border-right-style: solid;
-  border-right-color: #d82959;
-  border-right-width: 3px;
-  border-right-style: solid;
+  margin-left: 5%;
+  padding-left: 5%;
+  border-left-style: solid;
+  border-left-color: #d82959;
+  border-left-width: 3px;
+  border-left-style: solid;
   border-image-source: linear-gradient(180deg, var(--blue), var(--mediumBlue));
   border-image-slice: 1;
 }
@@ -364,26 +340,24 @@ span::before, span::after{
 
 /* Mobile-responsive */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  .landing {
+    background-image: none;
+    background-color:#1f2357;
+  }
+
   .landing-info {
     width: 100%;
-    margin-top: 0px;
     font-size: 17px;
-    z-index: 1;
-    margin-top: -150px;
+  }
+
+  .navbar {
+    background-color: #1f2357;
+    position: relative;
   }
 
   .sep-title {
     font-size: 50px;
-  }
-
-  .blue-sep {
-    top: 2px;
-    right: 2px;
-  }
-
-  .landing-button {
-    width: 195px;
   }
 
   .rush-text {
@@ -394,13 +368,20 @@ span::before, span::after{
     right: -175px;
   }
 
+  .president-section {
+    margin: 0;
+  }
+
   .president-message {
     width: 100%;
     border: none;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .president-image {
-    width: 100%;
+    width: 70%;
+    margin-bottom: 5vh;
   }
 
   .arrow, .medium {
@@ -418,7 +399,8 @@ span::before, span::after{
   }
 
   .option {
-    width: 90%;
+    width: 100%;
+    padding: 20px;
     position: relative;
     margin: auto;
     margin-top: 10px;

@@ -18,7 +18,12 @@
       <a class="navbar-brand" href="./index.html">
         <img src="./img/SEP_logo.png" width="40" height=auto alt="SEP logo">
       </a>
-      <div class="navbar-collapse">
+      <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent23">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="./about">ABOUT</a>
@@ -87,30 +92,10 @@
             </div>
             <div class="modal-description">
               <h1>Fratty Bear</h1>
-              <p>{WIP} Description here.</p>
-              <p>Check out the <a href="http://frattybear.com/" class="underline-magical">website</a>!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="venture-tile">
-          <div class="venture-image">
-            <img src="./img/projects/triple-thread.png" alt="Triple Thread">
-          </div>
-          <p>Triple Thread, a curated fashion blog.</p>
-          <hr>
-          <span id="tt-open">Learn More</span>
-        </div>
-        <div class="modal" id="tt-modal">
-          <div class="modal-content">
-            <span class="close" id="tt-close">×</span>
-            <div class="modal-image">
-              <img src="./img/projects/triple-thread-3.jpg">
-            </div>
-            <div class="modal-description">
-              <h1>Triple Thread</h1>
-              <p>{WIP} Description here.</p>
-              <p>Check out their <a href="https://triplethread.blog/" class="underline-magical">blog</a>!</p>
+              <p>Fratty Bear handles bulk custom clothing orders for large student organizations,
+                particularly frats. Drey founded Fratty Bear (originally KLC Wholesale) with one of his friends.</p>
+              <p>Check out the <a target=_blank href="http://frattybear.com/" class="underline-magical">website</a> and 
+                <a target=_blank href="https://www.instagram.com/frattybear/" class="underline-magical">Instagram</a>!</p>
             </div>
           </div>
         </div>
@@ -131,8 +116,37 @@
             </div>
             <div class="modal-description">
               <h1>FMB Technologies</h1>
-              <p>{WIP} Description here.</p>
-              <p>Check out the <a href="http://fmbtechnologies.com" class="underline-magical">website</a>!</p>
+              <p>FMB standardizes and improves rodent research through devices that are attached to rodents during
+                testing and that send back data through Bluetooth. Rohan founded FMB with a couple of his high school friends,
+                 and they've been working full-time on this venture for the past few months off of NIH funding.
+              </p>
+              <p>Check out the <a target=_blank href="http://fmbtechnologies.com" class="underline-magical">website</a>! 
+              Or check out Rohan's blog post about his past summer working on FMB 
+              <a target=_blank href="https://medium.com/sep-berkeley/of-rodents-and-reflection-863f9c76a458" class="underline-magical">here</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="venture-tile">
+          <div class="venture-image">
+            <img src="./img/projects/triple-thread.png" alt="Triple Thread">
+          </div>
+          <p>Triple Thread, a curated fashion blog.</p>
+          <hr>
+          <span id="tt-open">Learn More</span>
+        </div>
+        <div class="modal" id="tt-modal">
+          <div class="modal-content">
+            <span class="close" id="tt-close">×</span>
+            <div class="modal-image">
+              <img src="./img/projects/triple-thread-3.jpg">
+            </div>
+            <div class="modal-description">
+              <h1>Triple Thread</h1>
+              <p>Triple Thread is a fashion blog started by three actives (LeAnne, Isabel, and Alex) 
+                dedicated to giving fashion ideas for the modern women from 3 different style perspectives.
+              </p>
+              <p>Check out their <a target=_blank href="https://triplethread.blog/" class="underline-magical">blog</a>!</p>
             </div>
           </div>
         </div>
@@ -141,7 +155,7 @@
           <div class="venture-image">
             <img src="./img/projects/clean-slate.png" alt="" >
           </div>
-          <p>Clean Slate Diagnostics, rapid tester for STIs.</p>
+          <p>Clean Slate, rapid tester for STIs.</p>
           <hr>
           <span id="cs-open">Learn More</span>
         </div>
@@ -153,8 +167,13 @@
             </div>
             <div class="modal-description">
               <h1>Clean Slate</h1>
-              <p>{WIP} Description here.</p>
-              <p>Check out the <a href="https://www.kanoacook.com/std-detection" class="underline-magical">website</a>!</p>
+              <p>Clean Slate increases accessibility for STD testing by providing
+                inexpensive, personal-use tests for chlamydia. Currently in 
+                research/testing phase.
+              </p>
+              <p>Check out the <a target=_blank href="https://www.kanoacook.com/std-detection" class="underline-magical">website</a>! 
+                Or check out Kanoa's blog post about his experiences working on Clean Slate 
+                <a target=_blank href="https://medium.com/sep-berkeley/rethinking-stds-41bdde8e84ec" class="underline-magical">here</a>.</p>
             </div>
           </div>
         </div>
@@ -167,14 +186,45 @@
             <hr>
             <span id="blitz-open">Learn More</span>
         </div>
-
-        <div class="venture-tile" id="home-venture-card">
-            <div class="venture-image">
-              <img src="./img/projects/goodpoint.png" alt="" id="goodpoint-image">
+        <div class="modal" id="blitz-modal">
+          <div class="modal-content">
+            <span class="close" id="blitz-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/clean-slate-kanoa.png">
             </div>
-            <p>Goodpoint, the feedback button for the web.</p>
+            <div class="modal-description">
+              <h1>Blitz IQ</h1>
+              <p>Blitz IQ is B2B sales product that streamlines note-taking across apps for sales teams. This is a YC W19 company.</p>
+              <p>Check out the <a target=_blank href="https://www.blitziq.com/" class="underline-magical">website</a>!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="venture-tile">
+            <div class="venture-image">
+              <img src="./img/projects/dv.png" alt="">
+            </div>
+            <p>Dollar Vote, political action in purchases.</p>
             <hr>
-            <a href="https://goodpoint.io/">Learn More</a>
+            <span id="dv-open">Learn More</span>
+        </div>
+        <div class="modal" id="dv-modal">
+          <div class="modal-content">
+            <span class="close" id="dv-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/dv-three.png">
+            </div>
+            <div class="modal-description">
+              <h1>Dollar Vote</h1>
+              <p>Dollar Vote integrates political action into one's daily routine 
+                as a browser extension on Amazon, informing customers about where 
+                the political agendas of the companies they buy from align with their
+                own values. Part of Coding It Forward's 
+                <a target=_blank href="https://blog.codingitforward.com/introducing-coding-it-forwards-inaugural-build-cohort-2edfc448d42d" class="underline-magical">inaugural Build program cohort</a>.
+              </p>
+              <p>Check out their <a target=_blank href="https://medium.com/sep-berkeley/integrating-political-action-into-your-daily-routine-83e6c67fadc6" class="underline-magical">blog post</a>!</p>
+            </div>
+          </div>
         </div>
 
         <div class="venture-tile">
@@ -185,14 +235,72 @@
             <hr>
             <span id="be-open">Learn More</span>
         </div>
+        <div class="modal" id="be-modal">
+          <div class="modal-content">
+            <span class="close" id="be-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/be-lunch.jpg">
+            </div>
+            <div class="modal-description">
+              <h1>Berkeley Entrepreneurs</h1>
+              <p>Berkeley Entrepreneurs was a weekly program where SEP
+                actives and Berkeley High students met and discussed entrepeneurship ideas,
+                themes, and lessons. It was kickstarted by 2 actives (Rags and Yoohyun).
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div class="venture-tile" id="home-venture-card">
             <div class="venture-image">
-              <img src="./img/projects/streetwear.png" alt="" >
+              <img src="./img/projects/gr.png" alt="" >
             </div>
             <p>Good Riddance, a streetwear brand.</p>
             <hr>
             <span id="gr-open">Learn More</span>
+        </div>
+        <div class="modal" id="gr-modal">
+          <div class="modal-content">
+            <span class="close" id="gr-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/gr-murad.jpg">
+            </div>
+            <div class="modal-description">
+              <h1>Good Riddance</h1>
+              <p>Good Riddance is a streetwear clothing brand run by Murad. He focuses
+                primarily on making subtle political statement through the graphics on 
+                his clothing. <br>
+                <br>
+                [Disclaimer: the picture does not feature clothes that he has designed - 
+                just an example of how incredibly ~fashionable~ this kid is.]
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="venture-tile" id="home-venture-card">
+            <div class="venture-image">
+              <img src="./img/projects/goodpoint.png" alt="" id="goodpoint-image">
+            </div>
+            <p>Goodpoint, the feedback button for the web.</p>
+            <hr>
+            <span id="gp-open">Learn More</span>
+        </div>
+        <div class="modal" id="gp-modal">
+          <div class="modal-content">
+            <span class="close" id="gp-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/goodpoint-keshav.jpg">
+            </div>
+            <div class="modal-description">
+              <h1>Goodpoint</h1>
+              <p>Goodpoint connects individuals with experts to get feedback on documents like resumes, 
+                pitch decks, marketing material, design, and more. Keshav co-founded this with 2 others 
+                and went through Pear VC's summer program.
+              </p>
+              <p>Check out the <a target=_blank href="https://goodpoint.io/" class="underline-magical">website</a>!</p>
+            </div>
+          </div>
         </div>
 
         <div class="venture-tile right-tile">
@@ -201,7 +309,23 @@
             </div>
             <p>Clynx, gamifying physical therapy.</p>
             <hr>
-            <a href="https://clynx.io/">Learn More</a>
+            <span id="clynx-open">Learn More</span>
+        </div>
+        <div class="modal" id="clynx-modal">
+          <div class="modal-content">
+            <span class="close" id="clynx-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/clynx-eia.jpg">
+            </div>
+            <div class="modal-description">
+              <h1>Clynx</h1>
+              <p>Clynx makes physical therapy more engaging and enjoyable through
+                gamification via body-sensor cameras and one's laptop. Rebecca
+                cofounded this at the European Innovation Academy last summer.
+              </p>
+              <p>Check out the <a target=_blank href="https://clynx.io/" class="underline-magical">website</a>!</p>
+            </div>
+          </div>
         </div>
 
         <div class="venture-tile">
@@ -210,25 +334,22 @@
             </div>
             <p>Dingo, app for student safety on campus.</p>
             <hr>
-            <a href="https://jenniferzlu.com/dingo.html">Learn More</a>
+            <span id="dingo-open">Learn More</span>
         </div>
-
-        <div class="venture-tile">
-            <div class="venture-image">
-              <img src="./img/projects/flow.png" alt="">
+        <div class="modal" id="dingo-modal">
+          <div class="modal-content">
+            <span class="close" id="dingo-close">&times;</span>
+            <div class="modal-image">
+              <img src="./img/projects/dingo-tabling.jpg">
             </div>
-            <p>Flow, bettering traffic control.</p>
-            <hr>
-            <a href="https://flow-project.github.io/index">Learn More</a>
-        </div>
-
-        <div class="venture-tile">
-            <div class="venture-image">
-              <img src="./img/projects/party.png" alt="">
+            <div class="modal-description">
+              <h1>Dingo</h1>
+              <p>Dingo was an app built by 7 actives that automated
+                the process of notifying one's friends when one got home.
+              </p>
+              <p>Check out the Jennifer's <a target=_blank href="https://jenniferzlu.com/dingo.html" class="underline-magical">post</a> about it!</p>
             </div>
-            <p>Radically Unstable, an events team.</p>
-            <hr>
-            <a href="https://sway.office.com/6C7NAU9mDsSijsVF?ref=Link&loc=play">Learn More</a>
+          </div>
         </div>
       </div>
     </section>
@@ -236,7 +357,7 @@
     <section>
       <h1>WHAT HAS SEP FOUNDED?</h1>
       <div class="grid">
-        <a href="https://www.bayesimpact.org/en/">
+        <a target=_blank href="https://www.bayesimpact.org/en/">
           <figure class="company-tile" id="bayes">
             <img src="./img/ventures/bayes-impact.png" alt="" class="company-image" href="">
             <figcaption>
@@ -245,7 +366,7 @@
             </figcaption>
           </figure>
         </a>
-        <a href="https://www.trycaviar.com/">
+        <a target=_blank href="https://www.trycaviar.com/">
           <figure class="company-tile" id="caviar">
             <img src="./img/ventures/caviar.png" alt="" class="company-image">
             <figcaption>
@@ -254,7 +375,7 @@
             </figcaption>
           </figure>
         </a>
-        <a href="http://www.freeventures.org/">
+        <a target=_blank href="http://www.freeventures.org/">
           <figure class="company-tile" id="freev">
             <img src="./img/ventures/freev.png" alt="" class="company-image">
             <figcaption>
@@ -263,7 +384,7 @@
             </figcaption>
           </figure>
         </a>
-        <a href="https://www.facebook.com/berkeleytechreview/">
+        <a target=_blank href="https://www.facebook.com/berkeleytechreview/">
           <figure class="company-tile" id="btr">
             <img src="./img/ventures/btr.png" alt="" class="company-image">
             <figcaption>
@@ -272,7 +393,7 @@
             </figcaption>
           </figure>
         </a>
-        <a href="https://www.kickstarter.com/projects/1867163750/dot-the-physical-push-notification">
+        <a target=_blank href="https://www.kickstarter.com/projects/1867163750/dot-the-physical-push-notification">
           <figure class="company-tile" id="dot">
             <img src="./img/ventures/dot.png" alt="" class="company-image">
             <figcaption>
