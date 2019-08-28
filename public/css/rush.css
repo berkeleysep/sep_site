@@ -114,8 +114,8 @@ html {
   border-left-style: solid;
   padding-left: 10vw;
   margin: auto;
-  width: 30vw;
-  min-width: 400px;
+  width: 35vw;
+  min-width: 300px;
   border-top:0;
   border-right:0;
   border-bottom:0;
@@ -255,6 +255,11 @@ html {
 }
 
 @media screen and (max-width: 767px) {
+  .timeline-point, .timeline-gradient {
+    padding-left: 5vw;
+    width: 50vw;
+  }
+
   .faq .question {
     font-size: 18px;
     width: 100%;
