@@ -29,7 +29,7 @@
   }
   function resizeImg() {
     var width = paper.view.size.width;
-    var scale = (width / raster.bounds.width) * 1.2;
+    var scale = (width / raster.bounds.width) * 0.825;
     raster.scale(scale);
     raster.position = view.center;
     console.log(width);
@@ -166,6 +166,8 @@
           </ul>
         </div>
       </nav>
+    <section class="background">
+    </section>
     <canvas id="myCanvas" resize="true"></canvas>
     <img id="liquify" src="/img/theme/liquify-paper.png" style="display:none;">
     <section class="content" id="grid-wrapper">
