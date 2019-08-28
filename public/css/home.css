@@ -372,9 +372,9 @@
   }
 
   .landing-info {
-    width: 100%;
+    width: 90%;
     font-size: 17px;
-    margin-left: 10vw;
+    margin: auto;
   }
 
   .navbar {
@@ -441,6 +441,11 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .landing-liquid {
+    right: -200px;
+  }
+}
 /* Keyframes */
 
 @keyframes fadein {
