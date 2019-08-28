@@ -110,14 +110,15 @@ html {
 .timeline-point, .timeline-gradient {
   position: relative;
   text-align: left;
-  padding-left: 10vw;
-  border-left-style: solid;
   border-left-width: 5px;
   border-left-style: solid;
+  padding-left: 10vw;
   margin: auto;
   width: 30vw;
   min-width: 400px;
-  border-collapse: collapse;
+  border-top:0;
+  border-right:0;
+  border-bottom:0;
 }
 
 .timeline-point span {
