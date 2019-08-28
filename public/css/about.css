@@ -248,6 +248,10 @@ i {
     color: var(--grayText);
   }
 
+  .box { 
+    margin: 20px 0px;
+  }
+
   .about-text { 
     width: 100%;
   }

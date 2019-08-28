@@ -48,6 +48,7 @@
   letter-spacing: 1.5px;
   margin-top: 25vh;
   margin-left: 8vw;
+  z-index: 1;
 }
 
 .sep-title {
@@ -202,8 +203,6 @@
   }
   
 }
-
-
 
 .arrow {
   position: absolute;
