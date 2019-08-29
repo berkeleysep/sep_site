@@ -279,6 +279,10 @@ canvas {
 }
 
 @media screen and (max-width: 767px) {
+  .background {
+    margin-top: 52px;
+  }
+
   .timeline-point, .timeline-gradient {
     padding-left: 5vw;
     width: 50vw;

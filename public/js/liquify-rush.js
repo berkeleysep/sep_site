@@ -3,10 +3,17 @@ raster.onLoad = function() {
   resizeImg();
 }
 function resizeImg() {
-  var width = paper.view.size.width;
-  var scale = (width / raster.bounds.width) * 1.2;
-  raster.scale(scale);
-  raster.position = view.center;
+  if (paper.view.size.width >= paper.view.size.height) {
+    var width = paper.view.size.width;
+    var scale = (width / raster.bounds.width) * 1.2;
+    raster.scale(scale);
+    raster.position = view.center;
+  } else {
+    var height = paper.view.size.height;
+    var scale = (height / raster.bounds.height) * 1.2;
+    raster.scale(scale);
+    raster.position = view.center;
+  }
 }
 
 var values = {
@@ -71,6 +78,17 @@ function onResize() {
   size = view.bounds.size;
   path = createPath(0.05);
   resizeImg();
+  var testPoint = new Point(paper.view.size.width / 2 - 4, 300);
+  var location = path.getNearestLocation(testPoint);
+  var segment = location.segment;
+  var point = segment.point;
+
+  if (!point.fixed && location.distance < size.height / 4) {
+    var y = testPoint.y;
+    point.y += (y - point.y) / 6;
+  }
+  updateWave(path);
+  console.log("ENDED");
 }
 
 function onMouseMove(event) {
@@ -97,6 +115,7 @@ function onFrame(event) {
 }
 
 function updateWave(path) {
+  console.log("UDPATING WAVE");
   var force = 1 - values.friction * values.timeStep * values.timeStep;
   for (var i = 0, l = path.segments.length; i < l; i++) {
     var point = path.segments[i].point;
