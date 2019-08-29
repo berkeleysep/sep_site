@@ -1,0 +1,483 @@
+:root {
+  --blue: #3858FB;
+  --darkBlue: #0A2998;
+  --mediumBlue: #64DCF0;
+  --lightBlue: #F2FBFC;
+  --grayText: #393939;
+  --violet: #0D004C;
+  --hFont: 'Futura';
+  --pFont: 'Open Sans';
+}
+
+.navbar {
+  background-color: rgba(255,255,255,0);
+  width: 100%;
+  position: absolute;
+  color: white;
+  z-index: 2;
+}
+
+#home-navbar {
+  box-shadow: none;
+}
+
+.nav-link a {
+  color: white;
+}
+
+.landing {
+  background-image: linear-gradient(to bottom right, #343686, #0d0d30);
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  max-height: 700px;
+  min-height: 550px;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.landing-info {
+  width: 75%;
+  text-align: left;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  margin-top: 25vh;
+  margin-left: 8vw;
+  z-index: 1;
+}
+
+.sep-title {
+  font-size: 100px;
+  position: relative;
+  font-weight: 800;
+  letter-spacing: 5px;
+  line-height: 1;
+  white-space: nowrap;
+  text-shadow: 5px 5px var(--blue);
+}
+
+.rush-container {
+  margin-top: 40px;
+}
+
+.landing-liquid {
+  height: 100vh;
+  max-height: 700px;
+  min-height: 550px;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+
+.liquify-home {
+  height: 100%;
+  max-width: none;
+}
+
+.rush-text {
+  height: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.rush-landing {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+}
+
+/* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */
+
+
+@media screen and (max-width: 700px) {
+  .rush-button {
+    background-color: rgba(255,255,255, 0.13);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 8px;
+    width: 50%;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rush-button img {
+    height: 30px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .rush-button {
+    border-radius: 10px;
+    width: 310px;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    font-size: 0;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+  }
+
+  .rush-button:hover {
+    background-color: rgba(255,255,255, 0.2);
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    cursor: pointer;
+  }
+  
+  .rush-button::before, .rush-button::after{
+    content:"";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #fff;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:1px;
+    height:0;
+    position: absolute;
+    transition: all 0.3s linear;
+    background: #fff;
+  }
+  
+  .rush-button-border::before, .rush-button-border::after{
+    width: 100%;
+  }
+  
+  .rush-button-border span::before, .rush-button-border span::after{
+    height: 100%;
+  }
+  
+  .rush-button::before, .rush-button::after{
+    transition-delay: 0s;
+  }
+  .rush-button span::before, .rush-button span::after{
+    transition-delay: 0.5s;
+  }
+  .rush-button::before{
+    right: 0;
+    top: 0;
+  }
+  .rush-button::after{
+    left: 0;
+    bottom: 0;
+  }
+  .rush-button span::before{
+    left: 0;
+    top: 0;
+  }
+  .rush-button span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .rush-button-border::before, .rush-button-border::after{
+    transition-delay: 0.3s;
+  }
+  
+  .piece {
+    background: rgba(255,255,255, 0.13);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .rush-button img {
+    position: absolute;
+    height: 50%;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    margin-left: 100px;
+  }
+  
+}
+
+.arrow {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-left: -3vw;
+  opacity: 0.5;
+  width: 6vw;
+  min-width: 40px;
+}
+
+/* Welcome section */
+.president-section {
+  margin: 0 10%;
+}
+
+.president-message {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 60%;
+  margin-left: 5%;
+  padding-left: 5%;
+  border-left-style: solid;
+  border-left-color: #d82959;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-image-source: linear-gradient(180deg, var(--blue), var(--mediumBlue));
+  border-image-slice: 1;
+}
+
+.president-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+}
+
+.president-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Options section */
+
+.option {
+  background-color: #EBFEFF;
+  padding: 2vw;
+  width: 25vw;
+}
+
+.option h1 {
+  text-align: left;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 20vw;
+}
+
+.option-group span {
+  font-size: 36px;
+  position: absolute;
+  right: 2vw;
+  top: 30%;
+}
+
+@media screen and (min-width: 700px) {
+  .home-image {
+    position: absolute;
+    z-index: -1;
+    width: 50vw;
+    height: 35vw;
+    margin-left: 10vw;
+  }
+
+  .home-options {
+    width: 100%;
+    height: 70vh;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  .option {
+    position: absolute;
+    right: 10vw;
+    padding: 2vw;
+    width: 25vw;
+    overflow: hidden;
+    transition:width 0.5s ease-in-out;
+    -webkit-transition: width 0.5s;
+  }
+
+  .option p {
+    width: 25vw;
+    text-align: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: inline-block;
+  }
+
+  .about-option {
+    top: 5%;
+  }
+
+  .projects-option {
+    top: 38%;
+  }
+
+  .rush-option {
+    top: 71%;
+  }
+
+  .option:hover {
+    cursor: pointer;
+    width: 60vw;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+  }
+
+  .option:hover h1 {
+    transition: all 1s linear;
+  }
+
+  .option-group {
+    display:inline-block;
+    width:60vw;
+  }
+}
+
+
+/* .about-option:hover::after {
+  content: 'Sigma Eta Pi is UC Berkeley’s premier co-ed entrepreneurship fraternity.';
+} */
+
+/* Medium spotlight */
+.medium {
+  margin: 0;
+  font-family: 'Lato';
+  background-color: var(--lightBlue);
+}
+
+.medium-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 5vh;
+}
+
+.medium-title img {
+  height: 50px;
+}
+
+.medium-title > * {
+  margin: 30px;
+}
+
+#medium-widget {
+  margin: 0 10%;
+}
+
+/* Mobile-responsive */
+
+@media screen and (max-width: 800px) {
+  .landing {
+    background-image: none;
+    background-color:#1f2357;
+  }
+
+  .landing-info {
+    width: 90%;
+    font-size: 17px;
+    margin: auto;
+  }
+
+  .navbar {
+    background-color: #1f2357;
+    position: relative;
+  }
+
+  .sep-title {
+    font-size: 50px;
+  }
+
+  .rush-text {
+    height: 28px;
+  }
+
+  .landing-liquid {
+    right: -190px;
+  }
+
+  .president-section {
+    margin: 0;
+  }
+
+  .president-message {
+    width: 100%;
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .president-image {
+    width: 70%;
+    margin-bottom: 5vh;
+  }
+
+  .arrow, .medium {
+    display: none;
+  }
+
+  .home-image {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .home-options {
+    margin-top: 20px;
+  }
+
+  .option {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .option p {
+    display: none;
+  }
+
+  .option h1 {
+    width: auto;
+  }
+
+  .option-group span {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-liquid {
+    right: -200px;
+  }
+}
+/* Keyframes */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

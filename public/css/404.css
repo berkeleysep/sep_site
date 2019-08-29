@@ -1,0 +1,65 @@
+/* ALL CREDIT GOES TO https://codepen.io/cesar2535/pen/ByYXpN */
+body {
+  height: 100vh;
+}
+
+svg {
+  font-size: 5em;
+  font-family: 'Open Sans', sans-serif;
+  width: 50%;
+  margin: auto;
+}
+
+p {
+  top: 50%;
+  max-width: 50%;
+  margin: auto;
+}
+
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 305;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 20s infinite linear;
+  animation: stroke 20s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #ed7cf1;
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #0A2998;
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #f6b4be;
+  -webkit-animation-delay: -16s;
+  animation-delay: -16s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #64DCF0;
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -375;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -375;
+  }
+}
+
+

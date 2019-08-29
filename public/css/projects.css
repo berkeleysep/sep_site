@@ -1,0 +1,321 @@
+:root {
+  --blue: #3858FB;
+  --darkBlue: #0A2998;
+  --mediumBlue: #64DCF0;
+  --lightBlue: #F2FBFC;
+  --grayText: #393939;
+  --hFont: 'Futura';
+  --pFont: 'Open Sans';
+}
+
+.grid {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+a {
+  color: var(--grayText);
+}
+
+span {
+  font-family: 'Futura';
+}
+
+/* Venture process section */
+.pledging .section-description {
+  text-align: left;
+  width: 80vmin;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.pledging-aspect {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  margin: 10px;
+}
+
+.pledging-image-circle {
+  margin: auto;
+  width: 75px;
+  height: 75px;
+  background-color: var(--lightBlue);
+  border-radius: 50%;
+}
+
+.pledging-image-circle p {
+  font-size: 30px;
+  font-family: 'Futura';
+  font-weight: bold;
+  color: #6c9dcc;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 17px;
+}
+
+
+.pledging-aspect h3 {
+  margin: 10px 0;
+  color: var(--blue);
+  font-family: 'Futura';
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Projects section */
+
+.venture-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 2px 10px #dddddd;
+  border-radius: 10px;
+  margin: 30px;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+  -o-animation: fadein 2.5s; /* Opera < 12.1 */
+  animation: fadein 2.5s;
+  -webkit-transition: all 250ms;
+  background-color: white;
+}
+
+.venture-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 10px #ccd3e6;
+  -webkit-transition: all 250ms;
+  /*box-shadow: 0px 5px 30px rgb(0, 0, 0, 0.2);*/
+}
+
+.venture-image {
+  width: 200px;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.venture-tile p {
+  margin: 20px 15px 10px 15px;
+  font-size: 16px;
+  color: var(--grayText);
+}
+
+hr {
+  border: 1px solid #EEEEEE;
+  width: 150px;
+}
+
+.venture-tile span {
+  text-align: center;
+  justify-content: center;
+  color: var(--blue);
+  font-size: 15px;
+}
+
+.venture-tile span:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  z-index: 1;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  display: block;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.modal-image, .modal-description {
+  margin: 50px auto;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.modal-description {
+  margin-left: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Companies section */
+.company-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  position: relative;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.company-tile img {
+	max-width: 100%;
+	display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.company-tile figcaption {
+	position: absolute;
+	padding: 20px;
+	background: #2c3f52;
+  color: var(--mediumBlue);
+
+  height: 100px;
+	width: 100%;
+	bottom: 0;
+  opacity: 0;
+  font-size: 14px;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.company-tile figcaption h3 {
+	margin: 0;
+	padding: 0;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Futura';
+}
+
+.company-tile figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	color: #fff;
+}
+
+.company-tile:hover img {
+	-webkit-transform: translateY(-50px) scale(0.6,0.6);
+	-moz-transform: translateY(-50px) scale(0.6,0.6);
+	-ms-transform: translateY(-50px) scale(0.6,0.6);
+  transform: translateY(-50px) scale(0.6,0.6);
+}
+
+.company-tile:hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#bayes {
+  background-color: #0e3a5b;
+}
+
+#caviar {
+  background-color: #ff7600;
+}
+
+#freev {
+  background-color: #3f1d67;
+}
+
+#btr {
+  background-color: #000000;
+}
+
+#goodpoint-image {
+  background-color: #6DA4E4;
+}
+
+#dot {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .modal-image, .modal-description {
+    padding-top: 20px;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .modal-description p {
+    text-align: left;
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0.15; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0.15; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0.15; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0.15; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0.15; }
+    to   { opacity: 1; }
+}

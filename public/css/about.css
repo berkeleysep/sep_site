@@ -1,0 +1,280 @@
+:root {
+  --blue: #3858FB;
+  --mediumBlue: #64DCF0;
+  --lightBlue: #F2FBFC;
+  --grayText: #393939;
+  --hFont: 'Futura';
+  --pFont: 'Open Sans';
+}
+
+.section-description {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* About section */
+
+.liquify-diagonal {
+  position: absolute;
+  z-index: 1;
+}
+
+.about-section {
+  width: 80%;
+  margin: auto;
+  color: var(--grayText);
+  z-index: 2;
+}
+
+.box { 
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
+  text-align: left;
+}
+
+.about-text { 
+  width: 45%;
+}
+
+.about-image {
+  width: 40%;
+}
+
+/* Members section */
+.members-grid {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.member-tile {
+  position: relative;
+  width: 20vmin;
+  margin: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  background-image: linear-gradient(to right, rgba(204,83,51,0.85), rgba(35, 7, 77, 0.85));
+  color: white;
+  font-family: 'Futura', sans-serif;
+  font-size: 3vmin;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1vmin;
+  text-align: left;
+}
+
+.member-tile:hover .overlay {
+  opacity: 1.0;
+}
+
+.member-links {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-link {
+  padding-right: 1.5vmin;
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+#in-memory-of {
+  padding-top: 15vh;
+}
+
+.justin-tile {
+  position: relative;
+  width: 30vmin;
+  margin: 10px;
+}
+
+.justin-tile:hover .overlay {
+  opacity: 1.0;
+}
+
+.main-gallery {
+  margin-top: 100px;
+  height: 300px;
+}
+
+.gallery-cell {
+  height: 100%;
+  width: 450px;
+  margin-right: 10px;
+}
+
+.gallery-cell img {
+  height: 100%;
+  width: auto;
+}
+
+/* Careers section */
+
+.company-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 20vmin;
+  margin: 10px;
+  transition: all 250ms;
+  -webkit-transition: all 250ms;
+}
+
+.company-tile:hover {
+  border-radius: 10px;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px #dddddd;
+  transition: all 250ms;
+  -webkit-transition: all 250ms;
+}
+
+/* Sister chapter section */
+
+.chapter {
+  position: relative;
+  width: 50vmin;
+  margin: 5px;
+  background: var(--blue);
+}
+
+.chapter img {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  z-index: 1;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+.chapter figcaption::before,
+.chapter figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.chapter figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.chapter figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+}
+
+.chapter p {
+  z-index: 2;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  color: #ffffff;
+  font-size: 24px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+/* Justin */
+#in-memory-of {
+  width: 300px;
+  margin: auto;
+}
+
+/* Mobile Responsive */
+
+@media screen and (min-width: 800px) {
+  .chapter:hover img {
+    opacity: 0.4;
+  }
+
+  /** Bubba hover only on non-mobile */
+  .chapter:hover figcaption::before,
+  .chapter:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .chapter:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .liquify-diagonal {
+    opacity: 0;
+  }
+
+  .about-section {
+    width: 90%;
+    margin: auto;
+    color: var(--grayText);
+  }
+
+  .box { 
+    margin: 20px 0px;
+  }
+
+  .about-text { 
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .grid {
+    width: 90%;
+  }
+
+  .box { 
+    margin: 10px 0px;
+  }
+
+  .company-tile {
+    margin: 5px;
+  }
+}
