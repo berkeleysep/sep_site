@@ -288,6 +288,10 @@ canvas {
     width: 50vw;
   }
 
+  .title-text {
+      text-shadow: 3px 3px var(--blue);
+  }
+
   .faq .question {
     font-size: 18px;
     width: 100%;
