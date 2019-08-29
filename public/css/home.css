@@ -232,6 +232,9 @@
   border-left-style: solid;
   border-image-source: linear-gradient(180deg, var(--blue), var(--mediumBlue));
   border-image-slice: 1;
+  border-top:0;
+  border-right:0;
+  border-bottom:0;
 }
 
 .president-image {
@@ -411,7 +414,11 @@
     margin-bottom: 5vh;
   }
 
-  .arrow, .medium {
+  .medium {
+    display: none;
+  }
+
+  .arrow-right > span {
     display: none;
   }
 
