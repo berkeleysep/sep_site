@@ -75,6 +75,11 @@ function createPath(strength) {
 function onResize() {
   if (path)
     path.remove();
+  if (paper.view.size.width < paper.view.size.height) {
+    values.amount = 11;
+  } else {
+    values.amount = 15;
+  }
   size = view.bounds.size;
   path = createPath(0.05);
   resizeImg();
