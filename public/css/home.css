@@ -264,6 +264,7 @@
   font-size: 36px;
   position: absolute;
   right: 2vw;
+  top: 30%;
 }
 
 @media screen and (min-width: 700px) {
@@ -438,6 +439,10 @@
 
   .option h1 {
     width: auto;
+  }
+
+  .option-group span {
+    top: 20%;
   }
 }
 

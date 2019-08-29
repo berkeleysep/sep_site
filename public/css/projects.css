@@ -41,11 +41,22 @@ span {
 
 .pledging-image-circle {
   margin: auto;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   background-color: var(--lightBlue);
   border-radius: 50%;
 }
+
+.pledging-image-circle p {
+  font-size: 30px;
+  font-family: 'Futura';
+  font-weight: bold;
+  color: #6c9dcc;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 17px;
+}
+
 
 .pledging-aspect h3 {
   margin: 10px 0;
@@ -128,6 +139,8 @@ hr {
   padding: 20px;
   width: 80%;
   display: block;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
 }
 
 .modal-image, .modal-description {
@@ -263,6 +276,19 @@ hr {
 
 #dot {
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .modal-image, .modal-description {
+    padding-top: 20px;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .modal-description p {
+    text-align: left;
+  }
 }
 
 @keyframes fadein {

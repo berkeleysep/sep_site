@@ -131,6 +131,17 @@ canvas {
   padding-bottom: 0;
 }
 
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  margin-top: -120px;
+  left: 32.5vw;
+  height: 200px;
+  z-index: 0;
+  background-color: var(--mediumBlue);
+}
+
 .timeline-point, .timeline-gradient {
   position: relative;
   text-align: left;
@@ -278,18 +289,24 @@ canvas {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 857px) {
+  .timeline-container::before {
+    left: calc((100% - 300px)/2);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .background {
     margin-top: 52px;
   }
-
+  
   .timeline-point, .timeline-gradient {
-    padding-left: 5vw;
+    padding-left: 15vw;
     width: 50vw;
   }
 
   .title-text {
-      text-shadow: 3px 3px var(--blue);
+    text-shadow: 3px 3px var(--blue);
   }
 
   .faq .question {
@@ -303,10 +320,6 @@ canvas {
     width: 100%;
     display: block;
     margin-top: 0;
-  }
-
-  .timeline-point, .timeline-gradient {
-    padding-left: 15vw;
   }
 
   .timeline-point::before {
