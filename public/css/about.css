@@ -215,6 +215,12 @@ i {
   transform: translate3d(0,20px,0);
 }
 
+/* Justin */
+#in-memory-of {
+  width: 300px;
+  margin: auto;
+}
+
 /* Mobile Responsive */
 
 @media screen and (min-width: 800px) {
