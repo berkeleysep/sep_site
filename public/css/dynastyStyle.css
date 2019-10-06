@@ -4,7 +4,7 @@
 }
 
 body {
-	padding: 100px 0px;
+	padding: 50px 0px;
 }
 
 .tree {
@@ -125,5 +125,8 @@ right connector from last child*/
 	border-color:  #e81d25;
 }
 
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
+.logo {
+	margin: auto;
+	text-align: center;
+
+}
