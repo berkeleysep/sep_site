@@ -8,7 +8,7 @@ body {
 }
 
 .tree {
-	/*text-align: center;*/
+	text-align: center;
 	white-space: nowrap;
 	overflow: auto;
 	margin: 0 auto;
@@ -37,14 +37,7 @@ body {
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-}
-
-
-.centeredFamily {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
+} 
 
 /*We will use ::before and ::after to draw the connectors*/
 
