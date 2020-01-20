@@ -85,3 +85,19 @@ $('#dingo-open').on('click', function () {
 $('#dingo-close').on('click', function () {
     $('#dingo-modal').css("display", "none");
 });
+
+$('#codex-open').on('click', function () {
+    $('#codex-modal').css("display", "block");
+});
+
+$('#codex-close').on('click', function () {
+    $('#codex-modal').css("display", "none");
+});
+
+$('#impact-open').on('click', function () {
+    $('#impact-modal').css("display", "block");
+});
+
+$('#impact-close').on('click', function () {
+    $('#impact-modal').css("display", "none");
+});

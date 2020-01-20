@@ -79,36 +79,13 @@
   height: 100%;
   max-width: none;
 
-      /*Transition*/
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  
-  /*Reflection*/
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
 }
 
 .liquify-home:hover {
   opacity: 1;
    
-   /*Reflection*/
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
- 
-   /*Glow*/
-  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
-  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
 }
 
-.liquify-home img {
-    /*Transition*/
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  
-  /*Reflection*/
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
-}
 
 .liquify-home img:hover {  
    opacity: 1;
