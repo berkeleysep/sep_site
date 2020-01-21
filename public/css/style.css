@@ -1,6 +1,6 @@
 :root {
   --blue: #3858FB;
-  --darkBlue: #0A2998;
+  --darkBlue: #000350;
   --mediumBlue: #64DCF0;
   --lightBlue: #F2FBFC;
   --grayText: #393939;
@@ -178,7 +178,7 @@ section h1 {
 
 /* Credit: https://gist.github.com/CodeMyUI/1742d679c031cfea06948681e24cefd4 */
 .underline-magical {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #3858FB 0%, #EA8173 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
