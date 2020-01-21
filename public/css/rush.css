@@ -87,6 +87,7 @@ canvas {
 }
 
 .btn-primary {
+  z-index: 10000;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
