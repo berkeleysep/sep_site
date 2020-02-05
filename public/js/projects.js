@@ -101,3 +101,11 @@ $('#impact-open').on('click', function () {
 $('#impact-close').on('click', function () {
     $('#impact-modal').css("display", "none");
 });
+
+$('#marq-open').on('click', function () {
+    $('#marq-modal').css("display", "block");
+});
+
+$('#marq-close').on('click', function () {
+    $('#marq-modal').css("display", "none");
+});
