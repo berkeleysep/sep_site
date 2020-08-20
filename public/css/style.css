@@ -195,7 +195,7 @@ section h1 {
 /* Footer */
 
 footer {
-  padding: 20px 0;
+  padding: 10px 0;
   position: absolute;
   width: 100%;
   background: var(--violet);
@@ -213,7 +213,7 @@ footer a img:hover {
 
 footer p {
     color: white;
-    padding: 10px;
+    padding: 0px;
     opacity: 0.7;
 }
 
