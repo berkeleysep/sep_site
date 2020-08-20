@@ -25,3 +25,4 @@ Pushing/merging to master triggers a deploy for the website automatically.
 * Fall 2018: Tyler Yath, LeAnne Chan
 * Spring 2019: Nikita Ashok, Joelene Latief
 * Fall 2019: Jennifer Lu, Jonathan Li, Isabel Llacer
+* Fall 2020: Chirag Sharma, Matthew Hallac
