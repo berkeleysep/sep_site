@@ -256,3 +256,10 @@ footer p {
     padding: 50px 50px;
   }
 }
+
+#mc_embed_signup_scroll {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
