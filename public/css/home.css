@@ -45,7 +45,7 @@
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 1.5px;
   margin-top: 25vh;
   margin-left: 8vw;
@@ -215,6 +215,10 @@
   min-width: 40px;
 }
 
+.arrow-right {
+  color: white;
+}
+
 /* Welcome section */
 .president-section {
   margin: 0 10%;
@@ -258,6 +262,7 @@
 }
 
 .option h1 {
+  vertical-align: middle;
   text-align: left;
   margin-bottom: 0;
   display: inline-block;
@@ -273,24 +278,32 @@
 }
 
 @media screen and (min-width: 700px) {
+
+  section {
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    position: relative;
+  }
+
   .home-image {
     position: absolute;
     z-index: -1;
-    width: 50vw;
-    height: 35vw;
-    margin-left: 10vw;
+    width: 70%;
+    height: 70vh;
   }
 
   .home-options {
     width: 100%;
     height: 70vh;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
     vertical-align: middle;
     position: relative;
   }
 
   .option {
     position: absolute;
-    right: 10vw;
+    right: 0vw;
     padding: 2vw;
     width: 28vw;
     overflow: hidden;
@@ -305,6 +318,8 @@
     margin-right: 5vw;
     display: inline-block;
     vertical-align: middle;
+    color: white;
+    opacity: 90%;
   }
 
   .about-option {
@@ -381,7 +396,7 @@
 
   .landing-info {
     width: 90%;
-    font-size: 17px;
+    font-size: 20px;
     margin: auto;
   }
 
@@ -424,6 +439,7 @@
 
   .arrow-right > span {
     display: none;
+    color: white;
   }
 
   .home-image {
