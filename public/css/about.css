@@ -54,7 +54,7 @@
 }
 
 .about-text { 
-  width: 45%;
+  width: 50%;
 }
 
 .about-image {
@@ -265,7 +265,7 @@ i {
 
 @media screen and (max-width: 800px) {
   .liquify-diagonal {
-    opacity: 0;
+    visibility: hidden;
   }
 
   .banner-text {

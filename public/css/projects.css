@@ -26,7 +26,7 @@ span {
 }
 
 .pledging {
-  width: 100%;
+  width: 100vw;
   color: var(--grayText);
   font-size: 22px;
 }
@@ -38,7 +38,7 @@ span {
 /* Venture process section */
 .pledging .section-description {
   text-align: left;
-  width: 150vmin;
+  width: 80vw;
   margin: auto;
   margin-bottom: 50px;
 }
@@ -46,8 +46,8 @@ span {
 .pledging-aspect {
   display: inline-block;
   vertical-align: top;
-  width: 36vmin;
-  height: 40vmin;
+  width: 250px;
+  height: 300px;
   margin: 10px;
   border-radius: 25px;
   border: 1px var(--dark) solid;

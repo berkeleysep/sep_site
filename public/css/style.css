@@ -39,6 +39,7 @@ a:hover {
   color: white;
   z-index: 2;
   border-bottom: 1px solid var(--yellow);
+  z-index: 3;
 }
 
 .navbar a {
