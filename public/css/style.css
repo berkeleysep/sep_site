@@ -7,6 +7,8 @@
   --violet: #0D004C;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
+  --yellow: #c5b789;
+  --dark: #121328;
 }
 
 html {
@@ -30,9 +32,13 @@ a:hover {
   cursor: pointer;
 }
 
-nav {
-  background-color: white;
-  box-shadow: 0px 0px 5px #DDDDDD;
+.navbar {
+  background-color: var(--dark);
+  width: 100%;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  border-bottom: 1px solid var(--yellow);
 }
 
 .navbar a {
@@ -40,6 +46,10 @@ nav {
   font-weight: 800;
   color: #505050;
   font-size: 16px;
+}
+
+.nav-link a {
+  color: white;
 }
 
 .nav-item {
@@ -163,7 +173,7 @@ section h1 {
   font-family: var(--hFont);
   font-size: 36px;
   font-weight: bold;
-  color: var(--blue);
+  color: var(--dark);
   margin-bottom: 30px;
 }
 
@@ -198,7 +208,7 @@ footer {
   padding: 10px 0;
   position: absolute;
   width: 100%;
-  background: var(--violet);
+  background: var(--dark);
 }
 
 footer a img {
@@ -238,7 +248,7 @@ footer p {
     margin: 0 auto;
     width: 90%;
     padding-top: 2px;
-    border-bottom: 3px solid var(--blue);
+    border-bottom: 3px solid var(--yellow);
     animation: scale 0.75s;
 	  -webkit-animation: scale 0.75s;
   }

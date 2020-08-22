@@ -3,8 +3,10 @@
   --mediumBlue: #64DCF0;
   --lightBlue: #F2FBFC;
   --grayText: #393939;
+  --yellow: #c5b789;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
+  --dark: #121328;
 }
 
 .section-description {
@@ -19,11 +21,29 @@
   z-index: 1;
 }
 
+.about-banner {
+  background-color: var(--dark);
+  width: 100%;
+  margin: auto;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--yellow);
+}
+
+.banner-text {
+  color: white;
+  font-size: 60px;
+  margin-top: 60px;
+}
+
 .about-section {
-  width: 80%;
+  width: 100%;
   margin: auto;
   color: var(--grayText);
   z-index: 2;
+  font-size: 22px;
 }
 
 .box { 
@@ -246,6 +266,10 @@ i {
 @media screen and (max-width: 800px) {
   .liquify-diagonal {
     opacity: 0;
+  }
+
+  .banner-text {
+    font-size: 40px;
   }
 
   .about-section {
