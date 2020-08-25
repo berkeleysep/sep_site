@@ -212,6 +212,11 @@
 }
 
 /* Welcome section */
+.home-banner p {
+    font-size: 60px;
+    color: black;
+}
+
 .president-section {
   margin: 0 10%;
 }
@@ -453,6 +458,11 @@
 
   .landing-liquid {
     right: -190px;
+  }
+
+  .home-banner p {
+    font-size: 28px;
+    color: black;
   }
 
   .president-section {
