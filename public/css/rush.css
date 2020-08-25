@@ -9,6 +9,7 @@
   --pink: #EA8173;
   --orange: #FEB75F;
   --yellow: #c5b789;
+  --dark: #121328;
 }
 
 html, body {
@@ -21,7 +22,7 @@ html, body {
   width: 100%;
   position: absolute;
   color: white;
-  z-index: 2;
+  z-index: 200;
   box-shadow: none;
 }
 
@@ -41,7 +42,7 @@ canvas {
 }
 
 .background {
-  background-image: linear-gradient(to bottom, var(--darkBlue),var(--darkBlue));
+  background-color: var(--dark);
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -50,18 +51,31 @@ canvas {
   z-index: 0;
 }
 
-.rush-landing {
+.landing-design {
+  height: 100vh;
+  width: 100%;
+  max-height: 700px;
+  min-height: 550px;
+  z-index: 0;
   position: absolute;
-  width: 100vw;
-  height: calc(100vh - 70px);
-  top: 0;
-  z-index: 100;
-  display: flex;
-  margin-top: 70px;
+}
+
+.rush-banner {
+  width: 100%;
+  max-height: none;
+}
+
+.rush-landing {
   padding: 0px;
-  flex-direction: column;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  max-height: 700px;
+  min-height: 280px;
+  color: white;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
 
 .rush-landing h1 {
@@ -102,12 +116,13 @@ canvas {
   border-width: 2px;
   /*border-radius: 20px;*/
   padding: 0;
-  border-color: var(--blue);
+  border-color: var(--yellow);
+  margin-top: 75vh;
 }
 
 .scroll {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   left: 50%;
   z-index: 2;
   display: inline-block;
@@ -160,12 +175,12 @@ canvas {
 .timeline-container::before {
   content: '';
   position: absolute;
-  width: 5px;
-  margin-top: -120px;
+  width: 15px;
+  margin-top: -105px;
   left: 32.5vw;
-  height: 200px;
+  height: 180px;
   z-index: 0;
-  background-color: var(--mediumBlue);
+  background-image: linear-gradient(180deg, var(--dark), #FBF6B5);
 }
 
 .timeline-container a {
@@ -175,7 +190,7 @@ canvas {
 .timeline-point, .timeline-gradient {
   position: relative;
   text-align: left;
-  border-left-width: 5px;
+  border-left-width: 15px;
   border-left-style: solid;
   padding-left: 10vw;
   margin: auto;
@@ -189,7 +204,7 @@ canvas {
 .timeline-point span {
   padding-left: 10px;
   padding-right: 10px;
-  background-size: 0.2em 88%;
+  background-size: 0.3em 88%;
   background-repeat: no-repeat;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
@@ -217,60 +232,77 @@ canvas {
   content: '';
   position: absolute;
   width: calc(10vw - 10px);
-  top: 50%;
-  height: 5px;
+  top: 40%;
+  height: 10px;
   margin-left: -10vw;
   z-index: 1;
 }
 
 .timeline-point.mtc {
-  border-left-color: var(--mediumBlue);
+  border-left-color: #FBF6B5;
 }
 
 .timeline-point.mtc span {
-  background-image: linear-gradient(120deg, var(--mediumBlue) 0%, var(--mediumBlue) 100%);
+  background-image: linear-gradient(120deg, #FBF6B5 0%, #FBF6B5 100%);
 }
 
 .timeline-point.mtc::before {
-  background-color: var(--mediumBlue);
+  background-color: #FBF6B5;
 }
 
 .timeline-gradient.mtc {
-  border-image-source: linear-gradient(180deg, var(--mediumBlue), #6469f4);
+  border-image-source: linear-gradient(180deg, #FBF6B5, #E87093);
+  border-image-slice: 1;
+}
+
+.timeline-point.sep-women {
+  border-left-color: #E87093;
+}
+
+.timeline-point.sep-women span {
+  background-image: linear-gradient(120deg, #E87093 0%, #E87093 100%);
+}
+
+.timeline-point.sep-women::before {
+  background-color: #E87093;
+}
+
+.timeline-gradient.sep-women {
+  border-image-source: linear-gradient(180deg, #E87093, #B0389D);
   border-image-slice: 1;
 }
 
 .timeline-point.social-night {
-  border-left-color: #6469f4;
+  border-left-color: #B0389D;
 }
 
 .timeline-point.social-night span {
-  background-image: linear-gradient(120deg, #6469f4 0%, #6469f4 100%);
+  background-image: linear-gradient(120deg, #B0389D 0%, #B0389D 100%);
 }
 
 .timeline-point.social-night::before {
-  background-color: #6469f4;
+  background-color: #B0389D;
 }
 
 .timeline-gradient.social-night {
-  border-image-source: linear-gradient(180deg, #6469f4, var(--pink));
+  border-image-source: linear-gradient(180deg, #B0389D, #78B6E4);
   border-image-slice: 1;
 }
 
 .timeline-point.apps-due {
-  border-left-color: var(--pink);
+  border-left-color: #78B6E4;
 }
 
 .timeline-point.apps-due span {
-  background-image: linear-gradient(120deg, var(--pink) 0%, var(--pink) 100%);
+  background-image: linear-gradient(120deg, #78B6E4 0%, #78B6E4 100%);
 }
 
 .timeline-point.apps-due::before {
-  background-color: var(--pink)
+  background-color: #78B6E4
 }
 
 .timeline-gradient.apps-due {
-  border-image-source: linear-gradient(180deg, var(--pink), var(--orange));
+  border-image-source: linear-gradient(180deg, #78B6E4, var(--orange));
   border-image-slice: 1;
 }
 
@@ -321,7 +353,28 @@ canvas {
 
 @media screen and (max-width: 857px) {
   .timeline-container::before {
-    left: calc((100% - 300px)/2);
+    display: none;
+  }
+
+  .rush-banner {
+    object-fit: cover;
+    height: 280px;
+    object-position: 55%;
+  }
+
+  .btn-primary {
+    margin-top: 200px;
+    font-size: 22px;
+    width: 100px;
+    height:40px;
+    z-index: 2;
+  }
+
+  .rush-landing {
+    height: 40vh;
+  }
+  .scroll {
+    display: none;
   }
 }
 

@@ -9,6 +9,7 @@
   --pFont: 'Open Sans';
   --yellow: #c5b789;
   --dark: #121328;
+  --pink: #EA8173;
 }
 
 html {
@@ -189,7 +190,7 @@ section h1 {
 
 /* Credit: https://gist.github.com/CodeMyUI/1742d679c031cfea06948681e24cefd4 */
 .underline-magical {
-  background-image: linear-gradient(120deg, #3858FB 0%, #EA8173 100%);
+  background-image: linear-gradient(90deg, #fcf3ce, #dda48e, #b368a2, #a2ccec);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
