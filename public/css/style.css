@@ -190,7 +190,7 @@ section h1 {
 
 /* Credit: https://gist.github.com/CodeMyUI/1742d679c031cfea06948681e24cefd4 */
 .underline-magical {
-  background-image: linear-gradient(90deg, #fcf3ce, #dda48e, #b368a2, #a2ccec);
+  background-image: linear-gradient(90deg, var(--yellow), rgba(120, 182, 228, 0.85));
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
