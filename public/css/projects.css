@@ -55,6 +55,12 @@ span {
   box-shadow: 0px 0px 5px -1px var(--dark);
 }
 
+.pledging-aspect:hover {
+  box-shadow: 0px 0px 5px 2px var(--dark);
+  transform: translateY(-5px);
+  -webkit-transition: all 250ms;
+}
+
 .pledging-image-circle {
   margin: auto;
   width: 60px;
