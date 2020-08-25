@@ -4,6 +4,7 @@
   --lightBlue: #F2FBFC;
   --grayText: #393939;
   --yellow: #c5b789;
+  --pink: #EA8173;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
   --dark: #121328;
@@ -86,7 +87,7 @@
   width: 100%;
   opacity: 0;
   transition: .2s ease;
-  background-image: linear-gradient(to right, rgba(204,83,51,0.85), rgba(35, 7, 77, 0.85));
+  background-image: linear-gradient(to right, rgba(176, 56, 157, 0.85), rgba(120, 182, 228, 0.85));
   color: white;
   font-family: 'Futura', sans-serif;
   font-size: 3vmin;
@@ -190,7 +191,7 @@ i {
   position: relative;
   width: 50vmin;
   margin: 5px;
-  background: var(--blue);
+  background: var(--dark);
 }
 
 .chapter img {
