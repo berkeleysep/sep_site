@@ -3,8 +3,10 @@
   --mediumBlue: #64DCF0;
   --lightBlue: #F2FBFC;
   --grayText: #393939;
+  --yellow: #c5b789;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
+  --dark: #121328;
 }
 
 .section-description {
@@ -19,11 +21,29 @@
   z-index: 1;
 }
 
+.about-banner {
+  background-color: var(--dark);
+  width: 100%;
+  margin: auto;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--yellow);
+}
+
+.banner-text {
+  color: white;
+  font-size: 60px;
+  margin-top: 60px;
+}
+
 .about-section {
-  width: 80%;
+  width: 100%;
   margin: auto;
   color: var(--grayText);
   z-index: 2;
+  font-size: 22px;
 }
 
 .box { 
@@ -34,7 +54,7 @@
 }
 
 .about-text { 
-  width: 45%;
+  width: 50%;
 }
 
 .about-image {
@@ -93,6 +113,18 @@
 .member-link {
   padding-right: 1.5vmin;
   color: white;
+}
+
+.family-tree:hover {
+  box-shadow: 0px 0px 5px 2px var(--dark);
+}
+
+.family-tree h1 {
+  height: 30px;
+  top: 10px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0px 0px 5px 0px black;
 }
 
 i {
@@ -245,7 +277,11 @@ i {
 
 @media screen and (max-width: 800px) {
   .liquify-diagonal {
-    opacity: 0;
+    visibility: hidden;
+  }
+
+  .banner-text {
+    font-size: 40px;
   }
 
   .about-section {

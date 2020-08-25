@@ -19,12 +19,14 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="home-navbar">
       <a class="navbar-brand">
-        <img src="/img/SEP_logo.png" width="60" height=auto alt="SEP logo">
+        <img src="./img/sep-white.png" width="60" height=auto alt="SEP logo">
       </a>
-      <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon">
+      <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="animated-icon animated-icon-dark">
           <span></span><span></span><span></span><span></span>
         </div>
       </button>
@@ -42,20 +44,25 @@
           <li class="nav-item">
             <a class="nav-link" href="https://medium.com/sep-berkeley" target=_blank>BLOG</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./familytree">FAMILY TREE</a>
-          </li>
           <li class="nav-item nav-rush">
-            <a class="nav-link" href="./rush">RUSH</a>
+            <a class="nav-link" href="./rush" style="color:#c5b789">RUSH</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <main>
-      <div class="liquify-diagonal">
-        <img src="./img/theme/liquify-diagonal.png">
+      <div class="about-banner">
+        <span class="banner-text">
+          Entrepreneurship. <br>
+          Family. Passion.
+        </span>
       </div>
+
+      <div class="liquify-diagonal">
+        <img src="./img/theme/twists-diagonal.png">
+      </div>
+      
       <section class="about-section">
         <h1 class="title-text">ABOUT</h1>
         <div class="box about-text">
@@ -1353,6 +1360,19 @@
       </section>
 
       <section>
+        <h1>SOCIAL MEDIA</h1>
+        <p class="section-description">Find out more about us through our social media accounts!</p>
+        <div class="grid">
+          <div style="padding: 20px 20px 20px 20px; float:left"><a href="https://www.facebook.com/berkeley-sep/"
+              target=_blank><img src="/img/facebook_logo.png" height="60px"></a></div>
+          <div style="padding: 20px 20px 20px 20px; float: left"><a href="https://www.instagram.com/ucbsigmaetapi/"
+              target=_blank><img src="/img/instagram_logo.png" height="60px"></a></div>
+          <div style="padding: 20px 20px 20px 20px; float: left"><a href="https://www.medium.com/sep-berkeley" target=_blank><img
+                src="/img/medium_logo.png" height="60px"></a></div>
+        </div>
+      </section>
+
+      <section class="dark-section">
         <h1>CAREERS</h1>
         <p class="section-description">Startups don’t have to be the end-all-be-all. We support each other’s professional growth and exploration in different industries, too.</p>
         <div class="grid">
@@ -1593,9 +1613,9 @@
         </div>
       </section>
 
-      <section class="dark-section">
+      <section>
         <h1>SISTER CHAPTERS</h1>
-        <p class="section-description">Want to start a chapter? Email main.sep@gmail.com for more information.</p>
+        <p class="section-description">Want to start a chapter? Email <a href = "mailto:main.sep@gmail.com" target=_blank>main.sep@gmail.com</a> for more information.</p>
 
         <div class="grid">
           <a target=_blank href="https://uclasep.com/">
@@ -1660,9 +1680,9 @@
           </a>
         </div>
       </section>
-      <section id="in-memory-of">
+      <section id="in-memory-of" class="dark-section" style="width: 100%">
         <p>IN MEMORY OF</p>
-        <img src="./img/individuals/Justin-Yeo.jpg" alt="Justin Yeo">
+        <img src="./img/individuals/Justin-Yeo.jpg" alt="Justin Yeo" style="width: 20%">
       </section>
     </main>
 
@@ -1671,5 +1691,9 @@
     <script src="/js/navbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0"
+      nonce="3lKNsCdQ"></script>
+    <script src="https://www.retainable.app/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
   </body>
 </html>

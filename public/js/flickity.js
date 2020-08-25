@@ -3,8 +3,8 @@ $('.main-gallery').flickity({
     cellAlign: 'center',
     initialIndex: 1,
     setGallerySize: false,
-    pageDots: false
-
+    pageDots: false,
+    autoPlay: true
   });
 
 

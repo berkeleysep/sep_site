@@ -23,11 +23,13 @@
   </script>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="home-navbar">
       <a class="navbar-brand">
         <img src="./img/sep-white.png" width="60" height=auto alt="SEP logo">
       </a>
-      <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false"
+        aria-label="Toggle navigation">
         <div class="animated-icon animated-icon-dark">
           <span></span><span></span><span></span><span></span>
         </div>
@@ -46,22 +48,16 @@
           <li class="nav-item">
             <a class="nav-link" href="https://medium.com/sep-berkeley" target=_blank>BLOG</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./familytree">FAMILY TREE</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./rush">RUSH</a>
+          <li class="nav-item nav-rush active">
+            <a class="nav-link" href="./rush" style="color:#c5b789">RUSH</a>
           </li>
         </ul>
       </div>
     </nav>
-    <section class="background">
-    </section>
-    <canvas id="myCanvas" resize="true"></canvas>
-    <img id="liquify" src="/img/theme/explore-rush.png" style="display:none;">
     <section class="rush-landing" id="section04">
-      <h1>EXPLORE YOUR PATH</h1>
-      <p>SPRING RUSH 2020</p>
+      <div class="landing-design">
+        <img class="rush-banner" src="/img/theme/design-rush.png">
+      </div>
       <a type="btn btn-primary" href="https://airtable.com/shrEwz1z7WwYMTcrK" class="btn btn-primary">APPLY</a>
       <a href="#rush-timeline" class="scroll"><span></span></a>
     </section>
@@ -72,25 +68,31 @@
         <h3><span>Meet the Chapter</span></h3>
       </div>
       <div class="timeline-gradient mtc">
-        <p>1/27 | 8-10 pm<br>
-          International House Ida Sproul Room (<a class="underline-magical" href="https://www.google.com/maps/place/International+House/@37.8695605,-122.2518032,15z/data=!4m2!3m1!1s0x0:0xd1060f2f482f3b62?sa=X&ved=2ahUKEwjGvIu7pKvkAhWEhJ4KHQ7QD8AQ_BIwCnoECAoQCA">2299 Piedmont</a>)<br>
-          {Business casual}
+        <p>8/31 | 7-9 pm (PST)<br>
+          <a href=https://berkeley.zoom.us/j/98686143415 class="underline-magical">Zoom link</a>
+        </p>
+      </div>
+      <div class="timeline-point sep-women">
+        <h3><span>Women of SEP</span></h3>
+      </div>
+      <div class="timeline-gradient sep-women">
+        <p>9/02 | 7-9 pm (PST)<br>
+          <a href=https://berkeley.zoom.us/j/99885233825 class="underline-magical">Zoom link</a>
         </p>
       </div>
       <div class="timeline-point social-night">
         <h3><span>Social Night</span></h3>
       </div>
       <div class="timeline-gradient social-night">
-        <p>1/30 | 8-10 pm<br>
-          The House (<a class="underline-magical" href="https://www.google.com/maps/place/The+House/@37.8685354,-122.2588819,17z/data=!3m1!4b1!4m5!3m4!1s0x80857c2f651e18eb:0x8660b7702f923af!8m2!3d37.8685354!4d-122.2566932">2311 Bowditch St.</a>)<br>
-          {Campus casual}
+        <p>9/03 | 7-9 pm (PST)<br>
+          <a href=https://berkeley.zoom.us/j/91553554186 class="underline-magical">Zoom link</a>
         </p>
       </div>
       <div class="timeline-point apps-due">
         <h3><span>Applications DUE</span></h3>
       </div>
       <div class="timeline-gradient apps-due">
-        <p>1/31 | 12 pm NOON<br>
+        <p>9/04 | 11:59 PM (PST)<br>
           Apply <a href="https://airtable.com/shrEwz1z7WwYMTcrK" class="underline-magical">here</a>!
         </p>
       </div>
@@ -98,7 +100,6 @@
         <h3><span>Interviews</span></h3>
       </div>
       <div class="timeline-gradient interviews">
-        <p>2/1-2/2</p>
       </div>
     </section>
 
@@ -143,29 +144,35 @@
 
     <section>
       <div id="mc_embed_signup">
-        <form action="https://ucberkeleysep.us20.list-manage.com/subscribe/post?u=effabe799afda4080ebdaf4c3&amp;id=c3f0aab460" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form
+          action="https://ucberkeleysep.us20.list-manage.com/subscribe/post?u=effabe799afda4080ebdaf4c3&amp;id=c3f0aab460"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+          novalidate>
           <div id="mc_embed_signup_scroll">
             <h2>Want to hear updates on our rush events?</h2>
-            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="indicates-required" style="font-size: 16px"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-            </label>
-            <input type="email" value="" name="EMAIL" class="required email custom-input" id="mce-EMAIL">
-          </div>
-          <div class="mc-field-group" id="inline-FNAME">
-            <label for="mce-FNAME">First Name </label>
-            <input type="text" value="" name="FNAME" class="custom-input" id="mce-FNAME">
-          </div>
-          <div class="mc-field-group" id="inline-LNAME">
-            <label for="mce-LNAME">Last Name </label>
-            <input type="text" value="" name="LNAME" class="custom-input" id="mce-LNAME">
-          </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_effabe799afda4080ebdaf4c3_c3f0aab460" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class="button"></div>
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+              </label>
+              <input type="email" value="" name="EMAIL" class="required email custom-input" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group" id="inline-FNAME">
+              <label for="mce-FNAME">First Name </label>
+              <input type="text" value="" name="FNAME" class="custom-input" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group" id="inline-LNAME">
+              <label for="mce-LNAME">Last Name </label>
+              <input type="text" value="" name="LNAME" class="custom-input" id="mce-LNAME">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                name="b_effabe799afda4080ebdaf4c3_c3f0aab460" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class="button"
+                style="font-size: 20px"></div>
           </div>
         </form>
       </div>

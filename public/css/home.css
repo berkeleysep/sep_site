@@ -6,16 +6,19 @@
   --grayText: #393939;
   --violet: #0D004C;
   --pink: #EA8173;
+  --yellow: #c5b789;
+  --dark: #121328;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
 }
 
 .navbar {
-  background-color: #000350;
+  background-color: var(--dark);
   width: 100%;
   position: absolute;
   color: white;
   z-index: 2;
+  border-bottom: 1px solid var(--yellow);
 }
 
 #home-navbar {
@@ -33,15 +36,16 @@
   width: 100%;
   height: 100vh;
   max-height: 700px;
-  min-height: 550px;
+  min-height: 400px;
   color: white;
   display: flex;
   overflow: hidden;
 }
 
 .landing-info {
-  width: 75%;
-  text-align: left;
+  width: 80%;
+  display: flex;
+  justify-content: center;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -63,7 +67,7 @@
 }
 
 .rush-container {
-  margin-top: 40px;
+  margin-top: 300px;
 }
 
 .landing-liquid {
@@ -75,9 +79,18 @@
   right: 0;
 }
 
+.landing-design {
+  height: 100vh;
+  width: 100%;
+  max-height: 700px;
+  min-height: 550px;
+  z-index: 0;
+  position: absolute;
+}
+
 .liquify-home {
-  height: 100%;
-  max-width: none;
+  width: 100%;
+  max-height: none;
 }
 
 .rush-text {
@@ -93,27 +106,6 @@
 }
 
 /* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */
-
-
-@media screen and (max-width: 700px) {
-  .rush-button {
-    background-color: rgba(255,255,255, 0.13);
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-top: 8px;
-    width: 50%;
-    padding: 15px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .rush-button img {
-    height: 30px;
-    position: relative;
-    z-index: 1;
-  }
-}
 
 @media screen and (min-width: 700px) {
   .rush-button {
@@ -220,12 +212,18 @@
 }
 
 /* Welcome section */
+.home-banner p {
+    font-size: 60px;
+    color: black;
+}
+
 .president-section {
   margin: 0 10%;
 }
 
 .president-message {
   display: inline-block;
+  font-size: 22px;
   vertical-align: middle;
   text-align: left;
   width: 60%;
@@ -235,7 +233,7 @@
   border-left-color: #d82959;
   border-left-width: 3px;
   border-left-style: solid;
-  border-image-source: linear-gradient(180deg, var(--blue), var(--pink));
+  border-image-source: linear-gradient(180deg, #FBF6B5, #E87093, #B0389D, #78B6E4);
   border-image-slice: 1;
   border-top:0;
   border-right:0;
@@ -256,7 +254,7 @@
 /* Options section */
 
 .option {
-  background-color: var(--darkBlue);
+  background-color: var(--dark);
   padding: 2vw;
   width: 25vw;
 }
@@ -392,16 +390,61 @@
   .landing {
     background-image: none;
     background-color:#1f2357;
+    height: 438px;
   }
 
   .landing-info {
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-top: 25vh;
+    margin-left: 8vw;
+    z-index: 2;
+  }
+
+  .liquify-home {
+    object-fit: cover;
+    height: 300px;
+    object-position: 15%;
+  }
+
+  .rush-container {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    background-color: var(--dark);
+    padding: 20px 20px 20px 20px;
+    border-top: 1px solid var(--yellow);
+    border-bottom: 1px solid var(--yellow);
+  }
+
+  .rush-button {
+    background-color: rgba(255,255,255, 0.13);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 8px;
+    width: 50%;
+    padding: 15px 0px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rush-button img {
+    height: 30px;
+    position: relative;
+    z-index: 1;
   }
 
   .navbar {
-    background-color: #000350;
+    background-color: var(--dark);
     position: relative;
   }
 
@@ -415,6 +458,11 @@
 
   .landing-liquid {
     right: -190px;
+  }
+
+  .home-banner p {
+    font-size: 28px;
+    color: black;
   }
 
   .president-section {
@@ -473,11 +521,6 @@
   }
 }
 
-@media screen and (max-width: 400px) {
-  .landing-liquid {
-    right: -200px;
-  }
-}
 /* Keyframes */
 
 @keyframes fadein {

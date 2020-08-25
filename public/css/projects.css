@@ -6,6 +6,7 @@
   --grayText: #393939;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
+  --yellow: #c5b789;
 }
 
 .grid {
@@ -24,10 +25,20 @@ span {
   font-family: 'Futura';
 }
 
+.pledging {
+  width: 100vw;
+  color: var(--grayText);
+  font-size: 22px;
+}
+
+.pledging h1 {
+  margin-top: 50px;
+}
+
 /* Venture process section */
 .pledging .section-description {
   text-align: left;
-  width: 80vmin;
+  width: 80vw;
   margin: auto;
   margin-bottom: 50px;
 }
@@ -35,15 +46,20 @@ span {
 .pledging-aspect {
   display: inline-block;
   vertical-align: top;
-  width: 200px;
+  width: 250px;
+  height: 300px;
   margin: 10px;
+  border-radius: 25px;
+  border: 1px var(--dark) solid;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 5px -1px var(--dark);
 }
 
 .pledging-image-circle {
   margin: auto;
-  width: 75px;
-  height: 75px;
-  background-color: var(--lightBlue);
+  width: 60px;
+  height: 60px;
+  background-color: var(--dark);
   border-radius: 50%;
 }
 
@@ -51,16 +67,15 @@ span {
   font-size: 30px;
   font-family: 'Futura';
   font-weight: bold;
-  color: #6c9dcc;
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 17px;
+  color: var(--yellow);
+  position: relative;
+  top: 8px;
 }
 
 
 .pledging-aspect h3 {
   margin: 10px 0;
-  color: var(--blue);
+  color: var(--dark);
   font-family: 'Futura';
   font-weight: bold;
   font-size: 18px;

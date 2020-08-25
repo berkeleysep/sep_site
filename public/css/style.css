@@ -7,6 +7,9 @@
   --violet: #0D004C;
   --hFont: 'Futura';
   --pFont: 'Open Sans';
+  --yellow: #c5b789;
+  --dark: #121328;
+  --pink: #EA8173;
 }
 
 html {
@@ -30,9 +33,14 @@ a:hover {
   cursor: pointer;
 }
 
-nav {
-  background-color: white;
-  box-shadow: 0px 0px 5px #DDDDDD;
+.navbar {
+  background-color: var(--dark);
+  width: 100%;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  border-bottom: 1px solid var(--yellow);
+  z-index: 3;
 }
 
 .navbar a {
@@ -40,6 +48,10 @@ nav {
   font-weight: 800;
   color: #505050;
   font-size: 16px;
+}
+
+.nav-link a {
+  color: white;
 }
 
 .nav-item {
@@ -163,7 +175,7 @@ section h1 {
   font-family: var(--hFont);
   font-size: 36px;
   font-weight: bold;
-  color: var(--blue);
+  color: var(--dark);
   margin-bottom: 30px;
 }
 
@@ -178,7 +190,7 @@ section h1 {
 
 /* Credit: https://gist.github.com/CodeMyUI/1742d679c031cfea06948681e24cefd4 */
 .underline-magical {
-  background-image: linear-gradient(120deg, #3858FB 0%, #EA8173 100%);
+  background-image: linear-gradient(90deg, #fcf3ce, #dda48e, #b368a2, #a2ccec);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -198,13 +210,15 @@ footer {
   padding: 10px 0;
   position: absolute;
   width: 100%;
-  background: var(--violet);
+  background: var(--dark);
 }
 
 footer a img {
   width: 40px;
   height: auto;
   opacity: 0.7;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 footer a img:hover {
@@ -236,7 +250,7 @@ footer p {
     margin: 0 auto;
     width: 90%;
     padding-top: 2px;
-    border-bottom: 3px solid var(--blue);
+    border-bottom: 3px solid var(--yellow);
     animation: scale 0.75s;
 	  -webkit-animation: scale 0.75s;
   }
@@ -255,4 +269,11 @@ footer p {
   section {
     padding: 50px 50px;
   }
+}
+
+#mc_embed_signup_scroll {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
