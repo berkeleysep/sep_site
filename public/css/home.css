@@ -269,24 +269,22 @@
   }
 
   .home-image {
-    position: absolute;
+    display: flex;
     z-index: -1;
-    width: 70%;
-    height: 70vh;
+    height: 100%;
+    float: left;
   }
 
   .home-options {
+    display: flex;
+    z-index: 0;
     width: 100%;
-    height: 70vh;
-    margin-bottom: 10vh;
-    margin-top: 10vh;
-    vertical-align: middle;
-    position: relative;
+    height: 100%;
   }
 
   .option {
     position: absolute;
-    right: 0vw;
+    right: 50px;
     padding: 2vw;
     width: 28vw;
     overflow: hidden;
@@ -306,20 +304,20 @@
   }
 
   .about-option {
-    top: 5%;
+    top: 15%;
   }
 
   .projects-option {
-    top: 38%;
+    top: 45%;
   }
 
   .rush-option {
-    top: 72%;
+    top: 75%;
   }
 
   .option:hover {
     cursor: pointer;
-    width: 60vw;
+    width: 70vw;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
   }
@@ -563,6 +561,16 @@
     width: 5px;
     top: 0px;
     background-color: var(--yellow);
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1036px) {
+  .option {
+    width: 31vw;
+  }
+
+  .option p {
+    margin-left: 9vw;
   }
 }
 
