@@ -61,17 +61,14 @@ canvas {
 }
 
 .rush-banner {
+  object-fit: cover;
   width: 100%;
-  max-height: none;
 }
 
 .rush-landing {
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 100vh;
-  max-height: 700px;
-  min-height: 280px;
   color: white;
   display: flex;
   justify-content: center;
@@ -117,7 +114,8 @@ canvas {
   /*border-radius: 20px;*/
   padding: 0;
   border-color: var(--yellow);
-  margin-top: 75vh;
+  margin-top: 250px;
+  margin-bottom: 50px;
 }
 
 .scroll {
@@ -149,14 +147,13 @@ canvas {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 800px) {
   .rush-landing::after {
     position: absolute;
     bottom: 0;
     left: 0;
     content: '';
     width: 100%;
-    height: 50%;
     background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(6, 2, 56, 0.3) 80%,rgba(6, 2, 56, .5) 100%);
     background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(6, 2, 56, 0.3) 80%,rgba(6, 2, 56, .5) 100%);
   }
@@ -180,7 +177,7 @@ canvas {
   left: 32.5vw;
   height: 180px;
   z-index: 0;
-  background-image: linear-gradient(180deg, var(--dark), #FBF6B5);
+  background-image: linear-gradient(180deg, #FAEFB3, #EC899A);
 }
 
 .timeline-container a {
@@ -239,87 +236,87 @@ canvas {
 }
 
 .timeline-point.mtc {
-  border-left-color: #FBF6B5;
+  border-left-color: #EC899A;
 }
 
 .timeline-point.mtc span {
-  background-image: linear-gradient(120deg, #FBF6B5 0%, #FBF6B5 100%);
+  background-image: linear-gradient(120deg, #EC899A 0%, #EC899A 100%);
 }
 
 .timeline-point.mtc::before {
-  background-color: #FBF6B5;
+  background-color: #EC899A;
 }
 
 .timeline-gradient.mtc {
-  border-image-source: linear-gradient(180deg, #FBF6B5, #E87093);
+  border-image-source: linear-gradient(180deg, #EC899A, #CD5598);
   border-image-slice: 1;
 }
 
 .timeline-point.sep-women {
-  border-left-color: #E87093;
+  border-left-color: #CD5598;
 }
 
 .timeline-point.sep-women span {
-  background-image: linear-gradient(120deg, #E87093 0%, #E87093 100%);
+  background-image: linear-gradient(120deg, #CD5598 0%, #CD5598 100%);
 }
 
 .timeline-point.sep-women::before {
-  background-color: #E87093;
+  background-color: #CD5598;
 }
 
 .timeline-gradient.sep-women {
-  border-image-source: linear-gradient(180deg, #E87093, #B0389D);
+  border-image-source: linear-gradient(180deg, #CD5598, #AA46A5);
   border-image-slice: 1;
 }
 
 .timeline-point.social-night {
-  border-left-color: #B0389D;
+  border-left-color: #AA46A5;
 }
 
 .timeline-point.social-night span {
-  background-image: linear-gradient(120deg, #B0389D 0%, #B0389D 100%);
+  background-image: linear-gradient(120deg, #AA46A5 0%, #AA46A5 100%);
 }
 
 .timeline-point.social-night::before {
-  background-color: #B0389D;
+  background-color: #AA46A5;
 }
 
 .timeline-gradient.social-night {
-  border-image-source: linear-gradient(180deg, #B0389D, #78B6E4);
+  border-image-source: linear-gradient(180deg, #AA46A5, #9771BD);
   border-image-slice: 1;
 }
 
 .timeline-point.apps-due {
-  border-left-color: #78B6E4;
+  border-left-color: #9771BD;
 }
 
 .timeline-point.apps-due span {
-  background-image: linear-gradient(120deg, #78B6E4 0%, #78B6E4 100%);
+  background-image: linear-gradient(120deg, #9771BD 0%, #9771BD 100%);
 }
 
 .timeline-point.apps-due::before {
-  background-color: #78B6E4
+  background-color: #9771BD
 }
 
 .timeline-gradient.apps-due {
-  border-image-source: linear-gradient(180deg, #78B6E4, var(--orange));
+  border-image-source: linear-gradient(180deg, #9771BD, #7AB1E2);
   border-image-slice: 1;
 }
 
 .timeline-point.interviews {
-  border-left-color: var(--orange);
+  border-left-color: #7AB1E2;
 }
 
 .timeline-point.interviews span {
-  background-image: linear-gradient(120deg, var(--orange) 0%, var(--orange) 100%);
+  background-image: linear-gradient(120deg, #7AB1E2 0%, #7AB1E2 100%);
 }
 
 .timeline-point.interviews::before {
-  background-color: var(--orange);
+  background-color: #7AB1E2;
 }
 
 .timeline-gradient.interviews {
-  border-left-color: var(--orange);
+  border-left-color: #7AB1E2;
 }
 
 
@@ -351,7 +348,7 @@ canvas {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 857px) {
+@media screen and (max-width: 799px) {
   .timeline-container::before {
     display: none;
   }
@@ -370,15 +367,12 @@ canvas {
     z-index: 2;
   }
 
-  .rush-landing {
-    height: 40vh;
-  }
   .scroll {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 799px) {
   .navbar {
     background-color: #1f2357;
     position: relative;
@@ -418,6 +412,30 @@ canvas {
   .timeline-point::before {
     margin-left: -15vw;
     width: calc(15vw - 10px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .rush-banner {
+    object-fit: cover;
+    height: 250px;
+    object-position: 50%;
+  }
+
+  .rush-landing {
+    height: 413px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .rush-landing {
+    min-height: 40vw;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .btn-primary {
+    margin-top: 220px;
   }
 }
 

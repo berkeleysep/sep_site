@@ -30,20 +30,17 @@
 }
 
 .landing {
-  background-image: linear-gradient(to bottom right, #343686, var(--pink));
+  background-color: var(--dark);
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 100vh;
-  max-height: 700px;
-  min-height: 400px;
   color: white;
   display: flex;
   overflow: hidden;
 }
 
 .landing-info {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   font-family: futura-pt, sans-serif;
@@ -51,8 +48,8 @@
   font-style: normal;
   font-size: 30px;
   letter-spacing: 1.5px;
-  margin-top: 25vh;
-  margin-left: 8vw;
+  margin-top: 250px;
+  margin-bottom: 50px;
   z-index: 1;
 }
 
@@ -64,10 +61,6 @@
   line-height: 1;
   white-space: nowrap;
   text-shadow: 5px 5px var(--blue);
-}
-
-.rush-container {
-  margin-top: 300px;
 }
 
 .landing-liquid {
@@ -89,8 +82,8 @@
 }
 
 .liquify-home {
+  object-fit: cover;
   width: 100%;
-  max-height: none;
 }
 
 .rush-text {
@@ -107,7 +100,8 @@
 
 /* Border animation creds for this button: https://codepen.io/sarath-ar/pen/dMKxxM */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
+
   .rush-button {
     border-radius: 10px;
     width: 310px;
@@ -275,7 +269,7 @@
   top: 30%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
 
   section {
     padding: 50px 50px 50px 50px;
@@ -386,7 +380,7 @@
 
 /* Mobile-responsive */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
   .landing {
     background-image: none;
     background-color:#1f2357;
@@ -414,6 +408,7 @@
   }
 
   .rush-container {
+    margin-top: 300px;
     position: absolute;
     top: 0px;
     width: 100%;
@@ -518,6 +513,58 @@
 
   .option-group span {
     top: 20%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .liquify-home {
+    object-fit: cover;
+    height: 275px;
+    object-position: 20%;
+  }
+
+  .rush-container {
+    top: -25px;
+  }
+
+  .landing {
+    height: 413px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .landing {
+    min-height: 40vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .landing-info {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .landing-info {
+    margin-top: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .landing-info {
+    margin-top: 500px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .landing-info {
+    margin-top: 600px;
+  }
+}
+
+@media screen and (min-width: 1970px) {
+  .landing-info {
+    margin-top: 750px;
   }
 }
 
