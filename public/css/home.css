@@ -240,6 +240,7 @@
 
 .option {
   background-color: var(--dark);
+  opacity: 90%;
   padding: 2vw;
   width: 25vw;
 }
@@ -320,6 +321,7 @@
     width: 70vw;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
+    opacity: 100%;
   }
 
   .option:hover h1 {
