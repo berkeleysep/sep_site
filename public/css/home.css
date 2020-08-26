@@ -208,41 +208,32 @@
 /* Welcome section */
 .home-banner p {
     font-size: 60px;
-    color: black;
+    color: var(--dark);
+    border-bottom: 5px solid var(--dark);
 }
 
 .president-section {
-  margin: 0 10%;
+  margin: 0 0%;
 }
 
 .president-message {
   display: inline-block;
   font-size: 22px;
-  vertical-align: middle;
-  text-align: left;
-  width: 60%;
-  margin-left: 5%;
-  padding-left: 5%;
-  border-left-style: solid;
-  border-left-color: #d82959;
-  border-left-width: 3px;
-  border-left-style: solid;
-  border-image-source: linear-gradient(180deg, #FBF6B5, #E87093, #B0389D, #78B6E4);
-  border-image-slice: 1;
-  border-top:0;
-  border-right:0;
-  border-bottom:0;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .president-image {
   display: inline-block;
-  vertical-align: middle;
-  width: 25%;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
 }
 
 .president-image img {
-  width: 100%;
+  width: 60%;
   border-radius: 50%;
+  padding: 10px 10px 10px 10px;
 }
 
 /* Options section */
@@ -471,11 +462,6 @@
     margin-left: 0;
   }
 
-  .president-image {
-    width: 70%;
-    margin-bottom: 5vh;
-  }
-
   .medium {
     display: none;
   }
@@ -559,6 +545,24 @@
 @media screen and (min-width: 1970px) {
   .landing-info {
     margin-top: 750px;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .president-message {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--yellow);
+  }
+}
+
+@media screen and (min-width: 455px) {
+  .divider {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 5px;
+    top: 0px;
+    background-color: var(--yellow);
   }
 }
 
