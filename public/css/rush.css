@@ -103,10 +103,10 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 31px;
+  font-size: 24px;
   font-weight: bolder;
-  width: 225px;
-  height: 70px;
+  width: 150px;
+  height: 50px;
   color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.3);
   font-family: sans-serif;
@@ -118,9 +118,14 @@ canvas {
   margin-bottom: 50px;
 }
 
+.btn-primary:hover {
+  background-image: linear-gradient(to right, rgba(176, 56, 157, 0.85), rgba(120, 182, 228, 0.85));
+  border-color: var(--yellow);
+}
+
 .scroll {
   position: absolute;
-  bottom: 0px;
+  margin-top: 350px;
   left: 50%;
   z-index: 2;
   display: inline-block;
@@ -128,7 +133,6 @@ canvas {
   transform: translate(0, -50%);
   color: #fff;
   transition: opacity .3s;
-  padding-top: 60px;
 }
 
 .scroll span {
@@ -173,7 +177,7 @@ canvas {
   content: '';
   position: absolute;
   width: 15px;
-  margin-top: -105px;
+  margin-top: -100px;
   left: 32.5vw;
   height: 180px;
   z-index: 0;
@@ -427,15 +431,60 @@ canvas {
   }
 }
 
-@media screen and (min-width: 1750px) {
-  .rush-landing {
-    min-height: 40vw;
-  }
-}
-
 @media screen and (min-width: 620px) {
   .btn-primary {
     margin-top: 220px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .rush-banner {
+    height: 400px;
+  }
+
+  .btn-primary {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .rush-banner {
+    height: 600px;
+  }
+
+  .btn-primary {
+    margin-top: 500px;
+  }
+
+  .scroll {
+    margin-top: 550px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .rush-landing {
+    height: 900px;
+  }
+
+  .rush-banner {
+    height: 900px;
+  }
+
+  .btn-primary {
+    font-size: 32px;
+    width: 200px;
+    height: 70px;
+    margin-top: 700px;
+  }
+
+  .scroll {
+    margin-top: 800px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .timeline-container::before {
+    display: none;
   }
 }
 

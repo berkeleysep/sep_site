@@ -532,12 +532,6 @@
   }
 }
 
-@media screen and (min-width: 1750px) {
-  .landing {
-    min-height: 40vw;
-  }
-}
-
 @media screen and (min-width: 900px) {
   .landing-info {
     margin-top: 300px;
