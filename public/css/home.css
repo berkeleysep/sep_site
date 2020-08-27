@@ -209,6 +209,7 @@
 .home-banner p {
     font-size: 60px;
     color: var(--dark);
+    padding-bottom: 50px;
     border-bottom: 5px solid var(--dark);
 }
 
