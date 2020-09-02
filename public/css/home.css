@@ -207,10 +207,17 @@
 
 /* Welcome section */
 .home-banner p {
-    font-size: 60px;
-    color: var(--dark);
-    padding-bottom: 50px;
-    border-bottom: 5px solid var(--dark);
+  font-size: 60px;
+  color: var(--dark);
+  padding-bottom: 50px;
+  border-bottom: 5px solid var(--dark);
+}
+
+.video {
+  display: flex;
+  width: 80vw;
+  height: 55vw;
+  justify-content: center;
 }
 
 .president-section {
