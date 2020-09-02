@@ -102,6 +102,14 @@ $('#impact-close').on('click', function () {
     $('#impact-modal').css("display", "none");
 });
 
+$('#im-open').on('click', function () {
+    $('#im-modal').css("display", "block");
+});
+
+$('#im-close').on('click', function () {
+    $('#im-modal').css("display", "none");
+});
+
 $('#marq-open').on('click', function () {
     $('#marq-modal').css("display", "block");
 });
