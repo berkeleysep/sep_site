@@ -120,7 +120,12 @@ span {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   overflow: hidden;
-  object-fit: fill;
+}
+
+.venture-image img {
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
 }
 
 .venture-tile p {
@@ -176,8 +181,12 @@ hr {
   text-align: left;
 }
 
+.modal-image img {
+    max-height: 450px;
+}
+
 .modal-description {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 /* The Close Button */
