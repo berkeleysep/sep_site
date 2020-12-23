@@ -1,35 +1,3 @@
-$('#fratty-open').on('click', function () {
-    $('#fratty-modal').css("display", "block");
-});
-
-$('#fratty-close').on('click', function () {
-    $('#fratty-modal').css("display", "none");
-});
-
-$('#tt-open').on('click', function () {
-    $('#tt-modal').css("display", "block");
-});
-
-$('#tt-close').on('click', function () {
-    $('#tt-modal').css("display", "none");
-});
-
-$('#fmb-open').on('click', function () {
-    $('#fmb-modal').css("display", "block");
-});
-
-$('#fmb-close').on('click', function () {
-    $('#fmb-modal').css("display", "none");
-});
-
-$('#cs-open').on('click', function () {
-    $('#cs-modal').css("display", "block");
-});
-
-$('#cs-close').on('click', function () {
-    $('#cs-modal').css("display", "none");
-});
-
 $('#blitz-open').on('click', function () {
     $('#blitz-modal').css("display", "block");
 });
@@ -38,52 +6,12 @@ $('#blitz-close').on('click', function () {
     $('#blitz-modal').css("display", "none");
 });
 
-$('#gp-open').on('click', function () {
-    $('#gp-modal').css("display", "block");
-});
-
-$('#gp-close').on('click', function () {
-    $('#gp-modal').css("display", "none");
-});
-
 $('#gr-open').on('click', function () {
     $('#gr-modal').css("display", "block");
 });
 
 $('#gr-close').on('click', function () {
     $('#gr-modal').css("display", "none");
-});
-
-$('#dv-open').on('click', function () {
-    $('#dv-modal').css("display", "block");
-});
-
-$('#dv-close').on('click', function () {
-    $('#dv-modal').css("display", "none");
-});
-
-$('#be-open').on('click', function () {
-    $('#be-modal').css("display", "block");
-});
-
-$('#be-close').on('click', function () {
-    $('#be-modal').css("display", "none");
-});
-
-$('#clynx-open').on('click', function () {
-    $('#clynx-modal').css("display", "block");
-});
-
-$('#clynx-close').on('click', function () {
-    $('#clynx-modal').css("display", "none");
-});
-
-$('#dingo-open').on('click', function () {
-    $('#dingo-modal').css("display", "block");
-});
-
-$('#dingo-close').on('click', function () {
-    $('#dingo-modal').css("display", "none");
 });
 
 $('#codex-open').on('click', function () {
@@ -116,4 +44,76 @@ $('#marq-open').on('click', function () {
 
 $('#marq-close').on('click', function () {
     $('#marq-modal').css("display", "none");
+});
+
+$('#welody-open').on('click', function () {
+    $('#welody-modal').css("display", "block");
+});
+
+$('#welody-close').on('click', function () {
+    $('#welody-modal').css("display", "none");
+});
+
+$('#tiger-open').on('click', function () {
+    $('#tiger-modal').css("display", "block");
+});
+
+$('#tiger-close').on('click', function () {
+    $('#tiger-modal').css("display", "none");
+});
+
+$('#obre-open').on('click', function () {
+    $('#obre-modal').css("display", "block");
+});
+
+$('#obre-close').on('click', function () {
+    $('#obre-modal').css("display", "none");
+});
+
+$('#ksa-open').on('click', function () {
+    $('#ksa-modal').css("display", "block");
+});
+
+$('#ksa-close').on('click', function () {
+    $('#ksa-modal').css("display", "none");
+});
+
+$('#grow-open').on('click', function () {
+    $('#grow-modal').css("display", "block");
+});
+
+$('#grow-close').on('click', function () {
+    $('#grow-modal').css("display", "none");
+});
+
+$('#joelene-open').on('click', function () {
+    $('#joelene-modal').css("display", "block");
+});
+
+$('#joelene-close').on('click', function () {
+    $('#joelene-modal').css("display", "none");
+});
+
+$('#jorge-open').on('click', function () {
+    $('#jorge-modal').css("display", "block");
+});
+
+$('#jorge-close').on('click', function () {
+    $('#jorge-modal').css("display", "none");
+});
+
+$('#fmb-open').on('click', function () {
+    $('#fmb-modal').css("display", "block");
+});
+
+$('#fmb-close').on('click', function () {
+    $('#fmb-modal').css("display", "none");
+});
+
+$('#ntp-open').on('click', function () {
+    $('#ntp-modal').css("display", "block");
+});
+
+$('#ntp-close').on('click', function () {
+    $('#ntp-modal').css("display", "none");
 });

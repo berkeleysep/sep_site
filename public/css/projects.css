@@ -120,10 +120,12 @@ span {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   overflow: hidden;
+  object-fit: fill;
 }
 
 .venture-tile p {
-  margin: 20px 15px 10px 15px;
+  margin: 15px 15px 0px 15px;
+  margin-top: auto;
   font-size: 16px;
   color: var(--grayText);
 }
@@ -131,6 +133,7 @@ span {
 hr {
   border: 1px solid #EEEEEE;
   width: 150px;
+  margin-top: auto;
 }
 
 .venture-tile span {
@@ -138,6 +141,7 @@ hr {
   justify-content: center;
   color: var(--blue);
   font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .venture-tile span:hover {
@@ -168,7 +172,7 @@ hr {
   margin: 50px auto;
   width: 40%;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: left;
 }
 
