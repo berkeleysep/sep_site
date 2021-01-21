@@ -181,7 +181,7 @@ canvas {
   left: 32.5vw;
   height: 180px;
   z-index: 0;
-  background-image: linear-gradient(180deg, #FAEFB3, #EC899A);
+  background-image: linear-gradient(180deg, #B6DAFF, #FFD4EE);
 }
 
 .timeline-container a {
