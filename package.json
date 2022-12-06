@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/berkeleysep/sep_site#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "paper": "^0.12.3"
   },
   "devDependencies": {
